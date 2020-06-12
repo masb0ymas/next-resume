@@ -3,7 +3,11 @@ $section-padding-medium: 9rem 1.5rem !default;
 $section-padding-large: 18rem 1.5rem !default;
 
 .section {
-  padding: $section-padding;
+  max-width: 1440px;
+  margin: auto;
+  transition: all 0.2s;
+
+  padding: 3% 8%;
   // Responsiveness
   + desktop {
     // Sizes
@@ -14,4 +18,233 @@ $section-padding-large: 18rem 1.5rem !default;
       padding: $section-padding-large;
     }
   }
+}
+
+// header
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 4vh;
+}
+
+.hero-menu-icon {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5vh;
+}
+
+// hero
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 1em;
+  box-sizing: border-box;
+  color: white;
+  background: url(https://images.unsplash.com/photo-1500417148159-68083bd7333a)
+    center center no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  max-width: 16em;
+  margin: 0;
+  font-size: 12vh;
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+@media only screen and (min-width: 32em) {
+  .hero-title {
+    font-size: 16vh;
+  }
+}
+
+.hero-footer {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+// article
+.article {
+  max-width: 36em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.progress {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 290486px;
+  display: block;
+  height: 1rem;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+.progress::-webkit-progress-bar {
+  background-color: #dbdbdb;
+}
+.progress::-webkit-progress-value {
+  background-color: #4a4a4a;
+}
+.progress::-moz-progress-bar {
+  background-color: #4a4a4a;
+}
+.progress::-ms-fill {
+  background-color: #4a4a4a;
+  border: none;
+}
+.progress.is-white::-webkit-progress-value {
+  background-color: white;
+}
+.progress.is-white::-moz-progress-bar {
+  background-color: white;
+}
+.progress.is-white::-ms-fill {
+  background-color: white;
+}
+.progress.is-white:indeterminate {
+  background-image: linear-gradient(to right, white 30%, #dbdbdb 30%);
+}
+.progress.is-black::-webkit-progress-value {
+  background-color: #0a0a0a;
+}
+.progress.is-black::-moz-progress-bar {
+  background-color: #0a0a0a;
+}
+.progress.is-black::-ms-fill {
+  background-color: #0a0a0a;
+}
+.progress.is-black:indeterminate {
+  background-image: linear-gradient(to right, #0a0a0a 30%, #dbdbdb 30%);
+}
+.progress.is-light::-webkit-progress-value {
+  background-color: whitesmoke;
+}
+.progress.is-light::-moz-progress-bar {
+  background-color: whitesmoke;
+}
+.progress.is-light::-ms-fill {
+  background-color: whitesmoke;
+}
+.progress.is-light:indeterminate {
+  background-image: linear-gradient(to right, whitesmoke 30%, #dbdbdb 30%);
+}
+.progress.is-dark::-webkit-progress-value {
+  background-color: #363636;
+}
+.progress.is-dark::-moz-progress-bar {
+  background-color: #363636;
+}
+.progress.is-dark::-ms-fill {
+  background-color: #363636;
+}
+.progress.is-dark:indeterminate {
+  background-image: linear-gradient(to right, #363636 30%, #dbdbdb 30%);
+}
+.progress.is-primary::-webkit-progress-value {
+  background-color: #01ae6e;
+}
+.progress.is-primary::-moz-progress-bar {
+  background-color: #01ae6e;
+}
+.progress.is-primary::-ms-fill {
+  background-color: #01ae6e;
+}
+.progress.is-primary:indeterminate {
+  background-image: linear-gradient(to right, #01ae6e 30%, #dbdbdb 30%);
+}
+.progress.is-link::-webkit-progress-value {
+  background-color: #3273dc;
+}
+.progress.is-link::-moz-progress-bar {
+  background-color: #3273dc;
+}
+.progress.is-link::-ms-fill {
+  background-color: #3273dc;
+}
+.progress.is-link:indeterminate {
+  background-image: linear-gradient(to right, #3273dc 30%, #dbdbdb 30%);
+}
+.progress.is-info::-webkit-progress-value {
+  background-color: #209cee;
+}
+.progress.is-info::-moz-progress-bar {
+  background-color: #209cee;
+}
+.progress.is-info::-ms-fill {
+  background-color: #209cee;
+}
+.progress.is-info:indeterminate {
+  background-image: linear-gradient(to right, #209cee 30%, #dbdbdb 30%);
+}
+.progress.is-success::-webkit-progress-value {
+  background-color: #01ae6e;
+}
+.progress.is-success::-moz-progress-bar {
+  background-color: #01ae6e;
+}
+.progress.is-success::-ms-fill {
+  background-color: #01ae6e;
+}
+.progress.is-success:indeterminate {
+  background-image: linear-gradient(to right, #01ae6e 30%, #dbdbdb 30%);
+}
+.progress.is-warning::-webkit-progress-value {
+  background-color: #ffdd57;
+}
+.progress.is-warning::-moz-progress-bar {
+  background-color: #ffdd57;
+}
+.progress.is-warning::-ms-fill {
+  background-color: #ffdd57;
+}
+.progress.is-warning:indeterminate {
+  background-image: linear-gradient(to right, #ffdd57 30%, #dbdbdb 30%);
+}
+.progress.is-danger::-webkit-progress-value {
+  background-color: #ff3860;
+}
+.progress.is-danger::-moz-progress-bar {
+  background-color: #ff3860;
+}
+.progress.is-danger::-ms-fill {
+  background-color: #ff3860;
+}
+.progress.is-danger:indeterminate {
+  background-image: linear-gradient(to right, #ff3860 30%, #dbdbdb 30%);
+}
+.progress:indeterminate {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: moveIndeterminate;
+  animation-timing-function: linear;
+  background-color: #dbdbdb;
+  background-image: linear-gradient(to right, #4a4a4a 30%, #dbdbdb 30%);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 150% 150%;
+}
+.progress:indeterminate::-webkit-progress-bar {
+  background-color: transparent;
+}
+.progress:indeterminate::-moz-progress-bar {
+  background-color: transparent;
+}
+.progress.is-small {
+  height: 0.75rem;
+}
+.progress.is-medium {
+  height: 1.25rem;
+}
+.progress.is-large {
+  height: 1.5rem;
 }
