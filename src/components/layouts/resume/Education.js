@@ -17,9 +17,7 @@ function Education() {
             content of a page when looking at its layout
           </p>
         </div>
-        <div
-          className={cx('grid', 'sm:grid-cols-1', 'lg:grid-cols-2', 'gap-4')}
-        >
+        <div className={cx('grid sm:grid-cols-1 lg:grid-cols-2 gap-4')}>
           <div
             className={cx(
               'min-w-ful',

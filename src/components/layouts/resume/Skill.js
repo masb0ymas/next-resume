@@ -5,10 +5,10 @@ import styles from '../../../views/Landing/Landing.module.scss'
 function Skill() {
   return (
     <section className={cx(styles.section)}>
-      <div className={cx('container', 'mx-auto')}>
-        <div className={cx('mb-8')}>
+      <div className={cx('container mx-auto')}>
+        <div>
           <p className={cx('text-3xl font-medium mb-8 text-center')}>
-            My Skills
+            Skill & Portfolio
           </p>
           <p className={cx('text-center')}>
             It is a long established fact that a reader will be distracted by
@@ -17,46 +17,229 @@ function Skill() {
             content of a page when looking at its layout
           </p>
         </div>
-        <div className={cx('grid', 'sm:grid-cols-1', 'lg:grid-cols-2')}>
-          <div className={cx('p-5')}>
-            <p className={cx('pb-5')}>Development</p>
-            <progress
-              className={cx(styles.progress, styles['is-info'])}
-              value="45"
-              max="100"
+
+        <div className={cx('my-8 mx-auto')}>
+          <ul className="flex items-center justify-center">
+            <li className="mr-3">
+              <button
+                className="text-center block border border-blue-500 rounded py-1 px-3 bg-blue-500 text-white"
+                type="button"
+              >
+                All
+              </button>
+            </li>
+            <li className="mr-3">
+              <button
+                className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 bg-white hover:bg-gray-200 py-1 px-3"
+                type="button"
+              >
+                Web Design
+              </button>
+            </li>
+            <li className="mr-3">
+              <button
+                className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 bg-white hover:bg-gray-200 py-1 px-3"
+                type="button"
+              >
+                Frontend
+              </button>
+            </li>
+            <li className="mr-3">
+              <button
+                className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 bg-white hover:bg-gray-200 py-1 px-3"
+                type="button"
+              >
+                Backend
+              </button>
+            </li>
+            <li className="mr-3">
+              <button
+                className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 bg-white hover:bg-gray-200 py-1 px-3"
+                type="button"
+              >
+                Mobile
+              </button>
+            </li>
+            <li className="mr-3">
+              <button
+                className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 bg-white hover:bg-gray-200 py-1 px-3"
+                type="button"
+              >
+                DevOps
+              </button>
+            </li>
+            <li className="mr-3">
+              <button
+                className="text-center block border border-white rounded hover:border-gray-200 text-blue-500 bg-white hover:bg-gray-200 py-1 px-3"
+                type="button"
+              >
+                Other
+              </button>
+            </li>
+          </ul>
+
+          <div className={cx('flex flex-wrap -mx-1 lg:-mx-4 my-6')}>
+            <div
+              className={cx(
+                'my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3',
+              )}
             >
-              45%
-            </progress>
-          </div>
-          <div className={cx('p-5')}>
-            <p className={cx('pb-5')}>Web Design</p>
-            <progress
-              className={cx(styles.progress, styles['is-info'])}
-              value="45"
-              max="100"
+              <article
+                className={cx('bg-white overflow-hidden rounded-lg shadow-lg')}
+              >
+                <a href="/">
+                  <img
+                    alt="Placeholder"
+                    className={cx('block h-auto w-full')}
+                    src="https://picsum.photos/600/400/?random"
+                  />
+                </a>
+
+                <header
+                  className={cx(
+                    'flex items-center justify-between leading-tight p-2 md:p-4',
+                  )}
+                >
+                  <h1 className={cx('text-lg')}>
+                    <a
+                      className={cx('no-underline hover:underline text-black')}
+                      href="/"
+                    >
+                      Article Title
+                    </a>
+                  </h1>
+                  <p className={cx('text-grey-darker text-sm')}>11/1/19</p>
+                </header>
+
+                <footer
+                  className={cx(
+                    'flex items-center justify-between leading-none p-2 md:p-4',
+                  )}
+                >
+                  <a
+                    className={cx(
+                      'flex items-center no-underline hover:underline text-black',
+                    )}
+                    href="/"
+                  >
+                    <img
+                      alt="Placeholder"
+                      className={cx('block h-auto w-10')}
+                      src="https://i.ibb.co/9NmvBfv/logo.png"
+                    />
+                    <p className={cx('ml-4 text-md')}>Indramayu</p>
+                  </a>
+                </footer>
+              </article>
+            </div>
+
+            <div
+              className={cx(
+                'my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3',
+              )}
             >
-              45%
-            </progress>
-          </div>
-          <div className={cx('p-5')}>
-            <p className={cx('pb-5')}>Development</p>
-            <progress
-              className={cx(styles.progress, styles['is-info'])}
-              value="45"
-              max="100"
+              <article
+                className={cx('bg-white overflow-hidden rounded-lg shadow-lg')}
+              >
+                <a href="/">
+                  <img
+                    alt="Placeholder"
+                    className={cx('block h-auto w-full')}
+                    src="https://picsum.photos/600/400/?random"
+                  />
+                </a>
+
+                <header
+                  className={cx(
+                    'flex items-center justify-between leading-tight p-2 md:p-4',
+                  )}
+                >
+                  <h1 className={cx('text-lg')}>
+                    <a
+                      className={cx('no-underline hover:underline text-black')}
+                      href="/"
+                    >
+                      Article Title
+                    </a>
+                  </h1>
+                  <p className={cx('text-grey-darker text-sm')}>11/1/19</p>
+                </header>
+
+                <footer
+                  className={cx(
+                    'flex items-center justify-between leading-none p-2 md:p-4',
+                  )}
+                >
+                  <a
+                    className={cx(
+                      'flex items-center no-underline hover:underline text-black',
+                    )}
+                    href="/"
+                  >
+                    <img
+                      alt="Placeholder"
+                      className={cx('block h-auto w-10')}
+                      src="https://i.ibb.co/9NmvBfv/logo.png"
+                    />
+                    <p className={cx('ml-4 text-md')}>Indramayu</p>
+                  </a>
+                </footer>
+              </article>
+            </div>
+
+            <div
+              className={cx(
+                'my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3',
+              )}
             >
-              45%
-            </progress>
-          </div>
-          <div className={cx('p-5')}>
-            <p className={cx('pb-5')}>Web Design</p>
-            <progress
-              className={cx(styles.progress, styles['is-info'])}
-              value="45"
-              max="100"
-            >
-              45%
-            </progress>
+              <article
+                className={cx('bg-white overflow-hidden rounded-lg shadow-lg')}
+              >
+                <a href="/">
+                  <img
+                    alt="Placeholder"
+                    className={cx('block h-auto w-full')}
+                    src="https://picsum.photos/600/400/?random"
+                  />
+                </a>
+
+                <header
+                  className={cx(
+                    'flex items-center justify-between leading-tight p-2 md:p-4',
+                  )}
+                >
+                  <h1 className={cx('text-lg')}>
+                    <a
+                      className={cx('no-underline hover:underline text-black')}
+                      href="/"
+                    >
+                      Article Title
+                    </a>
+                  </h1>
+                  <p className={cx('text-grey-darker text-sm')}>11/1/19</p>
+                </header>
+
+                <footer
+                  className={cx(
+                    'flex items-center justify-between leading-none p-2 md:p-4',
+                  )}
+                >
+                  <a
+                    className={cx(
+                      'flex items-center no-underline hover:underline text-black',
+                    )}
+                    href="/"
+                  >
+                    <img
+                      alt="Placeholder"
+                      className={cx('block h-auto w-10')}
+                      src="https://i.ibb.co/9NmvBfv/logo.png"
+                    />
+                    <p className={cx('ml-4 text-md')}>Indramayu</p>
+                  </a>
+                </footer>
+              </article>
+            </div>
           </div>
         </div>
       </div>
