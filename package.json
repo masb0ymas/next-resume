@@ -23,7 +23,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.26.10",
-    "tailwindcss": "^1.4.6",
+    "tailwindcss": "^1.5.1",
     "typewriter-effect": "^2.13.1"
   },
   "devDependencies": {
