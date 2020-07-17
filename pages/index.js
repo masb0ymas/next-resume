@@ -1,16 +1,10 @@
 import React from 'react'
-import Head from 'next/head'
-import Landing from '../src/views/Landing/Landing'
-import Header from '../src/components/layouts/Header/Header'
+import Layout from '../src/containers/Layout/Layout'
 
-export default function Home() {
+export default function IndexPage() {
   return (
     <>
-      <Head>
-        <Header />
-      </Head>
-
-      <Landing />
+      <Layout />
     </>
   )
 }
