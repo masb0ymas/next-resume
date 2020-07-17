@@ -8,15 +8,19 @@
     "lint": "npx eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "@zeit/next-less": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^9.8.5",
     "classnames": "^2.2.6",
-    "next": "^9.2.0",
+    "next": "^9.4.4",
     "next-fonts": "^1.4.0",
     "node-sass": "^4.14.1",
+    "postcss-import": "^12.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "tailwindcss": "^1.5.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -29,7 +33,6 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "4.0.0",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.0.5",
-    "tailwindcss": "^1.4.0"
+    "prettier": "^2.0.5"
   }
 }
