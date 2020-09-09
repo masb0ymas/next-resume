@@ -1,13 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
-import Header from '../Header/Header'
-import Landing from '../../views/Landing/Landing'
+import Landing from 'views/Landing/Landing'
+import Header from 'containers/Header/Header'
 
 function Layout() {
   return (
-    <>
+    <React.Fragment>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Resume | masb0ymas</title>
 
@@ -38,7 +38,7 @@ function Layout() {
       <Header />
 
       <Landing />
-    </>
+    </React.Fragment>
   )
 }
 
