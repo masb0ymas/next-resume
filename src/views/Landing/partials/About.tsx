@@ -1,10 +1,10 @@
 import React from 'react'
 import cx from 'classnames'
-import SectionAbout from 'components/Section/partials/About'
+import Section from 'components/Section/partials/About'
 
 function About() {
   return (
-    <SectionAbout
+    <Section
       title={'About Me'}
       subtitle={'Play with logic, Rewrite, Improve with new technology. '}
     >
@@ -31,7 +31,7 @@ function About() {
           I&apos;m love playing with 🐧 penguins and eating 🍏 apples.
         </span>
       </div>
-    </SectionAbout>
+    </Section>
   )
 }
 
