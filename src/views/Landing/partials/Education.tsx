@@ -1,15 +1,13 @@
 import React from 'react'
 import Card from 'components/Card/Card'
-import Section from 'components/Section/Section'
+import SectionEducation from 'components/Section/partials/Education'
 
 function Education() {
   return (
-    <Section
+    <SectionEducation
       title={'Education & Experience'}
       subtitle={`
-      It is a long established fact that a reader will be distracted by the readable
-      <br />
-      content of a page when looking at its layout
+      My education and experience started from college until now
       `}
     >
       <React.Fragment>
@@ -42,7 +40,7 @@ function Education() {
               Ut enim ad minim veniam quis nostrud.`}
         />
       </React.Fragment>
-    </Section>
+    </SectionEducation>
   )
 }
 
