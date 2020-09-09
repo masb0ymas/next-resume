@@ -11,7 +11,7 @@ export default function Nav() {
       <div className={cx('w-full max-w-screen-xl relative mx-auto px-6')}>
         <div className={cx('flex items-center')}>
           <div className={cx('lg:w-1/4 xl:w-1/5 pl-6 pr-6 lg:pr-8')}>
-            Resume
+            Next - Resume
           </div>
           <div className={cx('flex flex-grow lg:w-3/4 xl:w-4/5 justify-end')}>
             <div
@@ -24,7 +24,7 @@ export default function Nav() {
               >
                 <a
                   className={cx('flex items-center hover:text-gray-700 mr-5')}
-                  href="/"
+                  href="https://github.com/masb0ymas"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -33,8 +33,9 @@ export default function Nav() {
                     src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
                     alt="logo github"
                   />
+                  &nbsp;&nbsp;&nbsp;
+                  <div className={cx('relative mr-4')}>masb0ymas</div>
                 </a>
-                <div className={cx('relative mr-4')}>masb0ymas</div>
               </div>
             </div>
           </div>
