@@ -1,34 +1,37 @@
 import React from 'react'
 import cx from 'classnames'
+import SectionAbout from 'components/Section/partials/About'
 
 function About() {
   return (
-    <section className={cx('bg-white')}>
-      <div className={cx('section')}>
-        <div className={cx('container mx-auto')}>
-          <div className={cx('grid sm:grid-cols-1 lg:grid-cols-2')}>
-            <div className={cx('p-5 rounded-lg my-auto')}>
-              <img
-                className={cx('rounded-full w-2/5 mx-auto')}
-                src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png"
-                alt="img example"
-              />
-            </div>
-            <div className={cx('p-5')}>
-              <p className={cx('text-3xl font-medium mb-8')}>About Me</p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-            </div>
-          </div>
-        </div>
+    <SectionAbout
+      title={'About Me'}
+      subtitle={'Play with logic, Rewrite, Improve with new technology. '}
+    >
+      <div className={cx('p-5 rounded-lg my-auto')}>
+        <img
+          className={cx('rounded-full w-2/5 mx-auto')}
+          src="https://avatars2.githubusercontent.com/u/30567103?s=460&u=f86346bbbb9034bbab000b3cc24133c22f8f711b&v=4"
+          alt="img example"
+        />
       </div>
-    </section>
+      <div className={cx('p-5')}>
+        <span role="img" aria-label="img">
+          Hi, I&apos;m&nbsp;
+          <b>Nurul Fajri</b>
+          , a Full Stack Developer 🚀 from Indonesia, currently, I&apos;m a
+          working on Nusantech.
+          <br />
+          Beside&apos;s programming, I enjoy eating food and traveling.
+          <br />
+          I&apos;m still learning to get the best experience.
+          <br />
+          I like to explore 🏔️ new things related to technology.
+          <br />
+          I&apos;m love playing with 🐧 penguins and eating 🍏 apples.
+        </span>
+      </div>
+    </SectionAbout>
   )
 }
 
