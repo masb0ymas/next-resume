@@ -5,8 +5,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix"
+    "lint": "npx eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
+    "type-check": "tsc --noEmit"
   },
+  "license": "MIT",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-less": "^1.0.1",
@@ -15,7 +17,6 @@
     "classnames": "^2.2.6",
     "next": "^9.5.3",
     "next-fonts": "^1.4.0",
-    "node-sass": "^4.14.1",
     "postcss-import": "^12.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -23,16 +24,29 @@
     "tailwindcss": "^1.8.5"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/node": "^14.6.4",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "7.8.1",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-babel-module": "^5.1.2",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-module-resolver": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "4.1.0",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "typescript": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=10.x"
   }
 }
