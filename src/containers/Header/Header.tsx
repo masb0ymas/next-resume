@@ -23,9 +23,7 @@ export default function Nav() {
                 className={cx('flex justify-end items-center text-gray-500')}
               >
                 <a
-                  className={cx(
-                    'block flex items-center hover:text-gray-700 mr-5',
-                  )}
+                  className={cx('flex items-center hover:text-gray-700 mr-5')}
                   href="/"
                   target="_blank"
                   rel="noopener noreferrer"
