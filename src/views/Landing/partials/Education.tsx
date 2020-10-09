@@ -12,7 +12,7 @@ function Education() {
     >
       <React.Fragment>
         <Card
-          title={'Computer Sience'}
+          title={'Computer Science'}
           subtitle={'Universitas Putra Indonesia YPTK Padang'}
           periode={'Maret 2013 - 2017'}
           text={`Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
