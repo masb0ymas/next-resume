@@ -14,11 +14,11 @@ function Card(props: CardProps) {
     <React.Fragment>
       <div
         className={cx(
-          'min-w-ful rounded-lg overflow-hidden shadow-lg bg-white',
+          'min-w-ful rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-500 ease-in-out bg-white',
         )}
       >
         <div className={cx('px-8 py-8')}>
-          <span className={cx('text-gray-600')}>{periode}</span>
+          <span className={cx('text-gray-600 text-base')}>{periode}</span>
           <h4 className={cx('text-2xl font-medium py-2')}>{title}</h4>
           <span className={cx('text-gray-600')}>{subtitle}</span>
           <p className={cx('py-2')}>{text}</p>
