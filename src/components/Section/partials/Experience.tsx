@@ -19,9 +19,7 @@ function Experience(props: EducationProps) {
           dangerouslySetInnerHTML={{ __html: subtitle }}
         />
       </div>
-      <div className={cx('grid sm:grid-cols-1 lg:grid-cols-2 gap-6')}>
-        {children}
-      </div>
+      {children}
     </SectionGrey>
   )
 }
