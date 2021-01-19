@@ -4,6 +4,7 @@ import About from 'views/Landing/partials/About'
 import Skill from 'views/Landing/partials/Skill'
 import Education from 'views/Landing/partials/Education'
 import Experience from 'views/Landing/partials/Experience'
+import Activity from 'views/Landing/partials/Activity'
 
 function Landing() {
   return (
@@ -17,6 +18,7 @@ function Landing() {
       <Skill />
       <Education />
       <Experience />
+      <Activity />
     </React.Fragment>
   )
 }
