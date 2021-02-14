@@ -14,17 +14,26 @@ function Activity() {
         <div className="row-span-3">
           <div className="my-2">
             <a href="https://github.com/masb0ymas/boilerplate-express-typescript-sequelize">
-              <img src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=boilerplate-express-typescript-sequelize&theme=vue-dark" />
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=boilerplate-express-typescript-sequelize&theme=vue-dark"
+                alt="boilerplate-express-typescript-sequelize"
+              />
             </a>
           </div>
           <div className="my-2">
             <a href="https://github.com/masb0ymas/express-gateway-typescript">
-              <img src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=express-gateway-typescript&theme=vue-dark" />
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=express-gateway-typescript&theme=vue-dark"
+                alt="express-gateway-typescript"
+              />
             </a>
           </div>
           <div className="my-2">
             <a href="https://github.com/masb0ymas/express-mongoose-typescript">
-              <img src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=express-mongoose-typescript&theme=vue-dark" />
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=express-mongoose-typescript&theme=vue-dark"
+                alt="express-mongoose-typescript"
+              />
             </a>
           </div>
         </div>
@@ -37,7 +46,10 @@ function Activity() {
         </div>
         <div className="col-span-2">
           <a href="https://github.com/masb0ymas/koala-sequelize-typescript">
-            <img src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=koala-sequelize-typescript&theme=vue-dark" />
+            <img
+              src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=koala-sequelize-typescript&theme=vue-dark"
+              alt="koala-sequelize-typescript"
+            />
           </a>
         </div>
       </div>
