@@ -1,10 +1,11 @@
-import React from 'react'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-unused-vars */
+import cssContent from '@nexys/components/Content/Content.module.scss'
 import { PageHeader, Space, Tabs } from 'antd'
 import { capitalize, get } from 'lodash'
 import Router, { NextRouter, withRouter } from 'next/router'
+import React from 'react'
 import cssSetting from 'views/Admin/Settings/Settings.module.scss'
-import cssContent from '@nexys/components/Content/Content.module.scss'
-import VehicleRate from 'views/Admin/Settings/Master/VehicleRate'
 
 const { TabPane } = Tabs
 
@@ -37,7 +38,8 @@ function SettingMaster(props: SettingMasterProps) {
           size="middle"
         >
           <TabPane tab="Vehicle Rate" key={`${baseUrl}/vehicle-rate`}>
-            <VehicleRate defaultPage={defaultPage} />
+            {/* <VehicleRate defaultPage={defaultPage} /> */}
+            Page Category
           </TabPane>
         </Tabs>
       </div>
