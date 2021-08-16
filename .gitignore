@@ -4,10 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
-pnpm-lock.yaml
+package-lock.json
 
 # testing
 /coverage
+
+# storybook
+/storybook-static
 
 # next.js
 /.next/
@@ -18,18 +21,16 @@ pnpm-lock.yaml
 
 # misc
 .DS_Store
-*.pem
+.idea
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock*
 
 # local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
+.env
+.env*.local
+.env.development
+.env.production

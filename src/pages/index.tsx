@@ -1,10 +1,3 @@
-import React from 'react'
-import Layout from 'containers/Layout/Layout'
+import Home from 'views/Home'
 
-export default function IndexPage() {
-  return (
-    <React.Fragment>
-      <Layout />
-    </React.Fragment>
-  )
-}
+export default Home

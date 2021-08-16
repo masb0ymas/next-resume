@@ -19,9 +19,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['prettier', 'module-resolver', 'prettier', '@typescript-eslint'],
   parser: '@typescript-eslint/parser',
+  plugins: ['react', 'module-resolver', 'prettier', '@typescript-eslint'],
   rules: {
+    // ISSUE: https://stackoverflow.com/questions/63818415/react-was-used-before-it-was-defined/
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    // ---
     // 'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     'prettier/prettier': 'error',
@@ -47,11 +51,11 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-fragments': [2, 'element'],
     'jsx-a11y/anchor-is-valid': 'off',
-    'no-use-before-define': 'off',
     'import/no-unresolved': [
       2,
       {
         ignore: [
+          '@nexys',
           'components',
           'css',
           'containers',
@@ -62,10 +66,12 @@ module.exports = {
           'utils',
           'views',
           'pages',
+          'models',
           'icons',
           'hooks',
           'data',
           'routes',
+          'constant',
           'constants',
           'svgs',
           'validations',
@@ -77,6 +83,7 @@ module.exports = {
           'helpers',
           'images',
           'HOC',
+          'assets',
         ],
       },
     ],

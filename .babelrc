@@ -2,17 +2,20 @@
   "presets": ["next/babel"],
   "plugins": [
     [
-      "module-resolver",
+      "import",
       {
-        "root": ["./src/"],
-        "alias": {
-          "components": "./src/components",
-          "containers": "./src/containers",
-          "pages": "./src/pages",
-          "styles": "./src/styles",
-          "views": "./src/views"
-        }
+        "libraryName": "antd",
+        "style": true
       }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@ant-design/icons",
+        "libraryDirectory": "es/icons",
+        "camel2DashComponentName": false
+      },
+      "@ant-design/icons"
     ]
   ]
 }
