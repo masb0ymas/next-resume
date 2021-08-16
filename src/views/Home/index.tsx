@@ -3,7 +3,6 @@ import LazyImgwrapper from '@nexys/components/LazyImgWrapper'
 import Text from '@nexys/components/Typography/Text'
 import Title from '@nexys/components/Typography/Title'
 import { Card, Col, Divider, Row } from 'antd'
-import Avatar from 'antd/lib/avatar/avatar'
 import Link from 'next/link'
 import React from 'react'
 import Welcome from 'views/Home/partials/Welcome'
@@ -76,7 +75,12 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <Avatar src="/static/bri_agro.png" />
+                  <img
+                    width={'64'}
+                    height={'64'}
+                    src="/static/bri_agro.png"
+                    alt="logo bri agro"
+                  />
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`BRI Agro Learning`}</Title>
@@ -102,7 +106,12 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <Avatar src="https://upload.wikimedia.org/wikipedia/commons/7/73/Logo_kementerian_keuangan_republik_indonesia.png" />
+                  <img
+                    width={'64'}
+                    height={'64'}
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/73/Logo_kementerian_keuangan_republik_indonesia.png"
+                    alt="logo kemenkeu"
+                  />
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`Nadine ( Kemenkeu )`}</Title>
@@ -128,7 +137,12 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <Avatar src="https://lh3.googleusercontent.com/proxy/O1awYMQfZ5R9FIn0yOFO_hHc5a5HpMxKMxBPfs_1iOfYctA9WXtMv99Jlc7ZX0V4WJzgn7pvkWOGXa18ZOXS8xpTONn7" />
+                  <img
+                    width={'64'}
+                    height={'64'}
+                    src="https://lh3.googleusercontent.com/proxy/O1awYMQfZ5R9FIn0yOFO_hHc5a5HpMxKMxBPfs_1iOfYctA9WXtMv99Jlc7ZX0V4WJzgn7pvkWOGXa18ZOXS8xpTONn7"
+                    alt="logo kementan"
+                  />
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`SIMPEL ( Kementan )`}</Title>
@@ -154,7 +168,12 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <Avatar src="https://rekreartive.com/wp-content/uploads/2019/03/Logo-Kabupaten-Indramayu-Warna.jpg" />
+                  <img
+                    width={'64'}
+                    height={'64'}
+                    src="https://rekreartive.com/wp-content/uploads/2019/03/Logo-Kabupaten-Indramayu-Warna.jpg"
+                    alt="logo indramayu"
+                  />
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`Indramayu Kependudukan`}</Title>
@@ -180,7 +199,12 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <Avatar src="https://rekreartive.com/wp-content/uploads/2019/03/Logo-Kabupaten-Indramayu-Warna.jpg" />
+                  <img
+                    width={'64'}
+                    height={'64'}
+                    src="https://rekreartive.com/wp-content/uploads/2019/03/Logo-Kabupaten-Indramayu-Warna.jpg"
+                    alt="logo indramayu"
+                  />
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`Indramayu All In One`}</Title>
