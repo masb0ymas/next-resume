@@ -28,7 +28,7 @@ function Home() {
           ...styleContent,
         }}
       >
-        <Title>{`About Me`}</Title>
+        <Title color="#269e9a">{`About Me`}</Title>
 
         <Divider />
 
@@ -49,7 +49,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
       >
         <Row gutter={[16, 16]}>
           <Col xs={24}>
-            <Title>{`Skill & Portfolio`}</Title>
+            <Title color="#269e9a">{`Skill & Portfolio`}</Title>
             <Text>
               {`My skills and experience gained while working on projects`}
             </Text>
@@ -75,12 +75,14 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <img
-                    width={'64'}
-                    height={'64'}
-                    src="/static/bri_agro.png"
-                    alt="logo bri agro"
-                  />
+                  <LazyImgwrapper>
+                    <img
+                      width={'32'}
+                      height={'32'}
+                      src="/static/bri_agro.png"
+                      alt="logo bri agro"
+                    />
+                  </LazyImgwrapper>
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`BRI Agro Learning`}</Title>
@@ -106,12 +108,14 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <img
-                    width={'64'}
-                    height={'64'}
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/73/Logo_kementerian_keuangan_republik_indonesia.png"
-                    alt="logo kemenkeu"
-                  />
+                  <LazyImgwrapper>
+                    <img
+                      width={'32'}
+                      height={'32'}
+                      src="/static/kemenkeu-logo.png"
+                      alt="logo kemenkeu"
+                    />
+                  </LazyImgwrapper>
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`Nadine ( Kemenkeu )`}</Title>
@@ -137,12 +141,14 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <img
-                    width={'64'}
-                    height={'64'}
-                    src="https://lh3.googleusercontent.com/proxy/O1awYMQfZ5R9FIn0yOFO_hHc5a5HpMxKMxBPfs_1iOfYctA9WXtMv99Jlc7ZX0V4WJzgn7pvkWOGXa18ZOXS8xpTONn7"
-                    alt="logo kementan"
-                  />
+                  <LazyImgwrapper>
+                    <img
+                      width={'32'}
+                      height={'32'}
+                      src="/static/kementan-logo.png"
+                      alt="logo kementan"
+                    />
+                  </LazyImgwrapper>
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`SIMPEL ( Kementan )`}</Title>
@@ -168,12 +174,14 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <img
-                    width={'64'}
-                    height={'64'}
-                    src="https://rekreartive.com/wp-content/uploads/2019/03/Logo-Kabupaten-Indramayu-Warna.jpg"
-                    alt="logo indramayu"
-                  />
+                  <LazyImgwrapper>
+                    <img
+                      width={'32'}
+                      height={'32'}
+                      src="/static/indramayu-logo.jpg"
+                      alt="logo indramayu"
+                    />
+                  </LazyImgwrapper>
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`Indramayu Kependudukan`}</Title>
@@ -199,12 +207,14 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
             >
               <Row gutter={[16, 16]} justify="center" align="middle">
                 <Col xs={6}>
-                  <img
-                    width={'64'}
-                    height={'64'}
-                    src="https://rekreartive.com/wp-content/uploads/2019/03/Logo-Kabupaten-Indramayu-Warna.jpg"
-                    alt="logo indramayu"
-                  />
+                  <LazyImgwrapper>
+                    <img
+                      width={'32'}
+                      height={'32'}
+                      src="/static/indramayu-logo.jpg"
+                      alt="logo indramayu"
+                    />
+                  </LazyImgwrapper>
                 </Col>
                 <Col xs={18}>
                   <Title size={16}>{`Indramayu All In One`}</Title>
@@ -225,7 +235,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           textAlign: 'center',
         }}
       >
-        <Title>{`Education & Certification`}</Title>
+        <Title color="#269e9a">{`Education & Certification`}</Title>
         <Text>{`Education and certification that I have obtained`}</Text>
 
         <Divider />
@@ -234,6 +244,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           <Col lg={12} md={12} sm={12} xs={24}>
             <Card
               title="Computer Science"
+              hoverable
               bordered={false}
               style={{ textAlign: 'left' }}
             >
@@ -261,7 +272,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           textAlign: 'center',
         }}
       >
-        <Title>{`Experience`}</Title>
+        <Title color="#269e9a">{`Experience`}</Title>
         <Text>{`My experience in both work and community`}</Text>
 
         <Divider />
@@ -270,6 +281,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           <Col lg={12} md={12} sm={12} xs={24}>
             <Card
               title="Minang IT Camp"
+              hoverable
               bordered={false}
               style={{ textAlign: 'left' }}
             >
@@ -289,6 +301,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           <Col lg={12} md={12} sm={12} xs={24}>
             <Card
               title="Nusantech"
+              hoverable
               bordered={false}
               style={{ textAlign: 'left' }}
             >
@@ -308,6 +321,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           <Col lg={12} md={12} sm={12} xs={24}>
             <Card
               title="Nusantech"
+              hoverable
               bordered={false}
               style={{ textAlign: 'left' }}
             >
@@ -327,6 +341,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           <Col lg={12} md={12} sm={12} xs={24}>
             <Card
               title="Karcisbola"
+              hoverable
               bordered={false}
               style={{ textAlign: 'left' }}
             >
@@ -350,7 +365,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
           ...styleContent,
         }}
       >
-        <Title>{`My Open source github`}</Title>
+        <Title color="#269e9a">{`My Open source github`}</Title>
         <Text>{`My activities on open source github`}</Text>
 
         <Divider />

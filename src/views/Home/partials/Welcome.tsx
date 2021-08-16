@@ -3,6 +3,7 @@ import LazyImgwrapper from '@nexys/components/LazyImgWrapper'
 import Text from '@nexys/components/Typography/Text'
 import Title from '@nexys/components/Typography/Title'
 import { Button, Col, Row } from 'antd'
+import Link from 'next/link'
 import React from 'react'
 
 function Welcome() {
@@ -26,12 +27,16 @@ function Welcome() {
             <Text size={21} color="#269e9a" bold>{`Karcisbola`}</Text>
           </Col>
           <Col xs={24}>
-            <Button
-              icon={<MailOutlined />}
-              style={{ borderColor: '#269e9a', color: '#269e9a' }}
-            >
-              n.fajri@outlook.com
-            </Button>
+            <Link href="mailto:n.fajri@outlook.com">
+              <a>
+                <Button
+                  icon={<MailOutlined />}
+                  style={{ borderColor: '#269e9a', color: '#269e9a' }}
+                >
+                  n.fajri@outlook.com
+                </Button>
+              </a>
+            </Link>
           </Col>
         </Row>
       </Col>
