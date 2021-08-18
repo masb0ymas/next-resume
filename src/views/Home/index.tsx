@@ -377,6 +377,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
                 <img
                   src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso&theme=vue-dark"
                   alt="expresso"
+                  width="100%"
                 />
               </a>
             </Link>
@@ -388,6 +389,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
                 <img
                   src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso-mongose&theme=vue-dark"
                   alt="expresso-mongose"
+                  width="100%"
                 />
               </a>
             </Link>
@@ -399,6 +401,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
                 <img
                   src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso-gateway&theme=vue-dark"
                   alt="expresso-gateway"
+                  width="100%"
                 />
               </a>
             </Link>
@@ -410,6 +413,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
                 <img
                   src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=express-functions-typescript&theme=vue-dark"
                   alt="express-functions-typescript"
+                  width="100%"
                 />
               </a>
             </Link>
@@ -421,6 +425,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
                 <img
                   src="https://github-readme-stats.vercel.app/api/pin/?username=chornos13&repo=nexys&theme=vue-dark"
                   alt="nexys"
+                  width="100%"
                 />
               </a>
             </Link>
@@ -432,6 +437,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
                 <img
                   src="https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=gintama&theme=vue-dark"
                   alt="gintama"
+                  width="100%"
                 />
               </a>
             </Link>
@@ -445,6 +451,7 @@ I'm love playing with 🐧 penguins and eating 🍏 apples.`}
                 <img
                   src="https://github-readme-stats.vercel.app/api?username=masb0ymas&show_icons=true&hide_border=true&theme=vue-dark"
                   alt="my board github"
+                  width="100%"
                 />
               </a>
             </Link>
