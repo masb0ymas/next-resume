@@ -1,0 +1,97 @@
+import LazyImgwrapper from '@nexys/components/LazyImgWrapper'
+import Text from '@nexys/components/Typography/Text'
+import Title from '@nexys/components/Typography/Title'
+import { Card, Col, Divider, Row } from 'antd'
+import React from 'react'
+
+function Portfolio() {
+  const data = [
+    {
+      id: 1,
+      urlImage: 'https://picsum.photos/600/400/?random',
+      brand: '/static/bri_agro.png',
+      title: 'BRI Agro Learning',
+      description: 'FullStack ( Frontend, Backend & Mobile )',
+    },
+    {
+      id: 2,
+      urlImage: 'https://picsum.photos/600/400/?random',
+      brand: '/static/kemenkeu-logo.png',
+      title: 'Nadine ( Kemenkeu )',
+      description: 'Backend ( Microservice )',
+    },
+    {
+      id: 3,
+      urlImage: 'https://picsum.photos/600/400/?random',
+      brand: '/static/kementan-logo.png',
+      title: 'SIMPEL ( Kementan )',
+      description: 'FullStack ( Frontend & Backend )',
+    },
+    {
+      id: 4,
+      urlImage: 'https://picsum.photos/600/400/?random',
+      brand: '/static/indramayu-logo.jpg',
+      title: 'Indramayu Kependudukan',
+      description: 'FullStack ( Frontend & Backend )',
+    },
+    {
+      id: 5,
+      urlImage: 'https://picsum.photos/600/400/?random',
+      brand: '/static/indramayu-logo.jpg',
+      title: 'Indramayu All In One',
+      description: 'FullStack ( Frontend & Backend )',
+    },
+  ]
+
+  return (
+    <React.Fragment>
+      <Row gutter={[16, 16]}>
+        <Col xs={24}>
+          <Title color="#269e9a">{`Skill & Portfolio`}</Title>
+          <Text>
+            {`My skills and experience gained while working on projects`}
+          </Text>
+        </Col>
+      </Row>
+
+      <Divider />
+
+      <Row gutter={[16, 16]}>
+        {data.map((item) => {
+          return (
+            <Col lg={6} md={8} sm={12} xs={24} key={item.id}>
+              <Card
+                hoverable
+                bordered={false}
+                cover={
+                  <LazyImgwrapper>
+                    <img width={'100%'} alt="example" src={item.urlImage} />
+                  </LazyImgwrapper>
+                }
+              >
+                <Row gutter={[16, 16]} justify="center" align="middle">
+                  <Col xs={6}>
+                    <LazyImgwrapper>
+                      <img
+                        width={'32'}
+                        height={'32'}
+                        src={item.brand}
+                        alt={item.title}
+                      />
+                    </LazyImgwrapper>
+                  </Col>
+                  <Col xs={18}>
+                    <Title size={16}>{item.title}</Title>
+                    <Text>{item.description}</Text>
+                  </Col>
+                </Row>
+              </Card>
+            </Col>
+          )
+        })}
+      </Row>
+    </React.Fragment>
+  )
+}
+
+export default Portfolio
