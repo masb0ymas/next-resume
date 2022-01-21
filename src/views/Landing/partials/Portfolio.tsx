@@ -9,17 +9,17 @@ function Portfolio() {
   const data = [
     {
       id: 1,
-      urlImage: 'https://picsum.photos/600/300/?random',
-      brand: '/static/bri_agro.png',
-      title: 'BRI Agro Learning',
-      description: 'FullStack ( Frontend, Backend & Mobile )',
+      urlImage: '/static/website-indramayu-satu.png',
+      brand: '/static/indramayu-logo.jpg',
+      title: 'Indramayu All In One',
+      description: 'FullStack ( Frontend & Backend )',
     },
     {
       id: 2,
-      urlImage: '/static/website-nadine.png',
-      brand: '/static/kemenkeu-logo.png',
-      title: 'Nadine ( Kemenkeu )',
-      description: 'Backend ( Microservice )',
+      urlImage: 'https://picsum.photos/600/300/?random',
+      brand: '/static/indramayu-logo.jpg',
+      title: 'Indramayu Kependudukan',
+      description: 'FullStack ( Frontend & Backend )',
     },
     {
       id: 3,
@@ -30,16 +30,23 @@ function Portfolio() {
     },
     {
       id: 4,
-      urlImage: 'https://picsum.photos/600/300/?random',
-      brand: '/static/indramayu-logo.jpg',
-      title: 'Indramayu Kependudukan',
-      description: 'FullStack ( Frontend & Backend )',
+      urlImage: '/static/website-nadine.png',
+      brand: '/static/kemenkeu-logo.png',
+      title: 'Nadine ( Kemenkeu )',
+      description: 'Backend ( Microservice )',
     },
     {
       id: 5,
-      urlImage: '/static/website-indramayu-satu.png',
-      brand: '/static/indramayu-logo.jpg',
-      title: 'Indramayu All In One',
+      urlImage: 'https://picsum.photos/600/300/?random',
+      brand: '/static/bri_agro.png',
+      title: 'BRI Agro Learning',
+      description: 'FullStack ( Frontend, Backend & Mobile )',
+    },
+    {
+      id: 6,
+      urlImage: '/static/website-app-karcisbola.png',
+      brand: '/static/logo-karcisbola.png',
+      title: 'Karcisbola',
       description: 'FullStack ( Frontend & Backend )',
     },
   ]
@@ -58,7 +65,7 @@ function Portfolio() {
       <Divider />
 
       <Row gutter={[16, 16]}>
-        {data.map((item) => {
+        {data.reverse().map((item) => {
           return (
             <Col lg={6} md={8} sm={12} xs={24} key={item.id}>
               <Card
