@@ -1,10 +1,10 @@
+import React from 'react'
+import { DatePicker } from 'antd'
+import { FormikContextType, useField } from 'formik'
 import useTitleAndError, {
   UseTitleAndErrorProps,
 } from '@nexys/fields/useTitleAndError/useTitleAndError'
-import { DatePicker } from 'antd'
 import { RangePickerProps } from 'antd/lib/date-picker'
-import { FormikContextType, useField } from 'formik'
-import React from 'react'
 
 const { RangePicker } = DatePicker
 

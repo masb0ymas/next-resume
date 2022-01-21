@@ -10,7 +10,7 @@ export interface BaseHeaderProps extends ContentProps {
   absolute?: boolean
 }
 
-function BaseHeader(props: BaseHeaderProps) {
+const BaseHeader = function (props: BaseHeaderProps) {
   const {
     absolute,
     children,
@@ -23,6 +23,7 @@ function BaseHeader(props: BaseHeaderProps) {
   return (
     <Content
       {...otherProps}
+      // eslint-disable-next-line react/no-unstable-nested-components
       component={(props) => <header {...props} />}
       className={cx(cssHeader.container, className)}
       style={{
@@ -45,7 +46,7 @@ function BaseHeader(props: BaseHeaderProps) {
           justify={'space-between'}
           align={'middle'}
           style={{
-            padding: '8px 16px',
+            padding: '8px',
             height: 56,
           }}
         >

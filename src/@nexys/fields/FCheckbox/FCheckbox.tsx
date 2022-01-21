@@ -1,12 +1,12 @@
 /* eslint-disable react/destructuring-assignment */
-import Text from '@nexys/components/Typography/Text'
-import useTitleAndError, {
-  UseTitleAndErrorProps,
-} from '@nexys/fields/useTitleAndError/useTitleAndError'
+import React from 'react'
 import { Checkbox } from 'antd'
 import { CheckboxProps } from 'antd/lib/checkbox'
 import { FormikContextType, useField } from 'formik'
-import React from 'react'
+import useTitleAndError, {
+  UseTitleAndErrorProps,
+} from '@nexys/fields/useTitleAndError/useTitleAndError'
+import Text from '@nexys/components/Typography/Text'
 
 export type FCheckboxProps = CheckboxProps &
   UseTitleAndErrorProps & {

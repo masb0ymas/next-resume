@@ -1,10 +1,10 @@
-import useTitleAndError, {
-  UseTitleAndErrorProps,
-} from '@nexys/fields/useTitleAndError/useTitleAndError'
+import React from 'react'
 import { InputNumber } from 'antd'
 import { InputNumberProps } from 'antd/lib/input-number'
 import { FormikContextType, useField } from 'formik'
-import React from 'react'
+import useTitleAndError, {
+  UseTitleAndErrorProps,
+} from '@nexys/fields/useTitleAndError/useTitleAndError'
 
 export type FInputNumberProps = InputNumberProps &
   UseTitleAndErrorProps & {

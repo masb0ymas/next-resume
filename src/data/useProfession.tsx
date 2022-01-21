@@ -1,9 +1,9 @@
+import { useQuery, UseQueryOptions } from 'react-query'
+import ApiCall from 'services/ApiCall'
 import useUrlQuery, {
   UseUrlQueryOptions,
 } from '@nexys/hooks/useUrlQuery/useUrlQuery'
 import { AxiosError } from 'axios'
-import { useQuery, UseQueryOptions } from 'react-query'
-import ApiCall from 'services/ApiCall'
 
 interface UseProfessionData {
   id: string

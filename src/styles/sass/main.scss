@@ -1,0 +1,45 @@
+// @import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// @import "components/bg-video";
+// @import "components/button";
+// @import "components/card";
+// @import "components/composition";
+@import "components/feature-box";
+// @import "components/form";
+// @import "components/popup";
+// @import "components/story";
+
+@import "layout/footer";
+// @import "layout/grid";
+// @import "layout/header";
+@import "layout/navigation";
+
+// @import "pages/home";
+
+// .section-features {
+//   padding: 20rem 0;
+//   background-image: linear-gradient(
+//       to right bottom,
+//       rgba($color-primary-light, 0.8),
+//       rgba($color-primary-dark, 0.8)),
+//   url('/static/images/hotel-2.jpg');
+//   background-size: cover;
+//   transform: skewY(-7deg);
+//   // margin-top: -10rem;
+
+//   & > * {
+//       transform: skewY(7deg);
+//   }
+
+//   @include respond(tab-port) {
+//       padding: 10rem 0;
+//   }
+
+// }

@@ -1,5 +1,5 @@
-import Router from 'next/router'
 import { useCallback, useEffect, useRef } from 'react'
+import Router from 'next/router'
 
 function useRefreshStyle() {
   const refCacheUrl = useRef([])

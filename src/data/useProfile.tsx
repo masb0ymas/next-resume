@@ -3,7 +3,6 @@ import useUrlQuery, {
 } from '@nexys/hooks/useUrlQuery/useUrlQuery'
 import { AxiosError } from 'axios'
 import { BASE_API_URL } from 'constant'
-import { UseRoleData } from 'data/useRole'
 import { useQuery, UseQueryOptions } from 'react-query'
 import ApiCall from 'services/ApiCall'
 
@@ -16,7 +15,6 @@ export interface UseProfileData {
   picturePath?: string | null
   isActive?: boolean | null
   RoleId: string
-  Role: UseRoleData
 }
 
 type UseProfileResult = UseProfileData

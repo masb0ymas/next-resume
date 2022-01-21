@@ -1,8 +1,8 @@
+import React from 'react'
+import { useField } from 'formik'
 import useTitleAndError from '@nexys/fields/useTitleAndError/useTitleAndError'
 import { Upload } from 'antd'
 import { UploadProps } from 'antd/lib/upload'
-import { useField } from 'formik'
-import React from 'react'
 
 export type FUploadProps = Partial<UploadProps> & {
   title?: string
@@ -27,7 +27,7 @@ function FUpload(props: FUploadProps) {
           helpers.setValue([...field.value, file])
           return false
         }}
-        fileList={field.value || []}
+        fileList={field.value}
         {...props}
       />
       {error}

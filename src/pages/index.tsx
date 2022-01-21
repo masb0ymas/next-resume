@@ -1,3 +1,3 @@
-import Home from 'views/Home'
+import Landing from 'views/Landing'
 
-export default Home
+export default Landing

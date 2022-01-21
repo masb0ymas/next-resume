@@ -29,7 +29,7 @@ type Query = QueryObserverBaseResult & {
 
 function getPaginationProps(query: Query): PaginationProps {
   const page = query.helpers.getQueryById('page') || 0
-  const pageSize = query.helpers.getQueryById('pageSize') || 5
+  const pageSize = query.helpers.getQueryById('pageSize') || 10
 
   return {
     current: page,

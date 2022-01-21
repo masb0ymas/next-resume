@@ -11,7 +11,7 @@
       background: white;
       font-size: 20vmin;
       line-height: 30vmin;
-      //animation: heartbeat infinite 1.5s linear, pulse infinite 1.5s linear;
+      animation: pulse infinite 1.5s linear;
     }
 
     .anim {
@@ -33,7 +33,7 @@
       color: #61dafb;
     }
 
-    @keyframes :global(pulse) {
+    @keyframes pulse {
       0% {
         transform: scale(0.7);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);

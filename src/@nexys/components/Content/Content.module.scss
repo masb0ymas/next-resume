@@ -1,5 +1,4 @@
-@import 'src/@nexys/styles/vars';
-
+$max-width: 1200px;
 $xs: 576px;
 
 @mixin xs {
@@ -17,6 +16,7 @@ $xs: 576px;
     padding: 0 24px;
   }
 }
+
 
 .contentForm {
   background-color: #fff;
@@ -130,7 +130,25 @@ $xs: 576px;
   }
 }
 
-#customDivider {
+.cardSelected {
+  background-color: #0b9191;
+  color: #fff;
+
+  :global {
+    .ant-descriptions-item-label {
+      color: #0b9191;
+      font-weight: 600;
+      width: 140px;
+    }
+    .ant-descriptions-item-content {
+      color: #fff;
+    }
+    .ant-divider {
+      border-top: 1px solid #fff;
+    }
+  }
+}
+Ø #customDivider {
   :global {
     .ant-divider-horizontal {
       margin: 5px 0;
@@ -145,3 +163,94 @@ $xs: 576px;
     }
   }
 }
+
+.customDescriptionBordered {
+  :global {
+    .ant-descriptions-item-label {
+      width: 140px;
+    }
+  }
+}
+
+$primaryFont: OpenSans-Regular;
+
+#customTabs {
+  :global {
+    .ant-tabs {
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    .ant-tabs-nav-wrap {
+      background-color: #efeee9;
+    }
+
+    .ant-tabs-content {
+      padding: 1rem;
+    }
+  }
+}
+
+#customTabsCard {
+  :global {
+    p {
+      margin: 0;
+    }
+    .ant-tabs-card .ant-tabs-content {
+      min-height: 120px;
+      margin-top: -16px;
+      font-family: inherit;
+    }
+    .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+      padding: 16px;
+      background: red;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .ant-tabs-card > .ant-tabs-nav::before {
+      display: none;
+    }
+    .ant-tabs-card .ant-tabs-tab,
+    [data-theme='compact'] .ant-tabs-card .ant-tabs-tab {
+      background: transparent;
+      border-color: transparent;
+      font-family: inherit;
+    }
+    .ant-tabs-card .ant-tabs-tab-active,
+    [data-theme='compact']
+      .card-container
+      > .ant-tabs-card
+      .ant-tabs-tab-active {
+      background: #fff;
+      border-color: #fff;
+    }
+    #components-tabs-demo-card-top .code-box-demo {
+      padding: 24px;
+      overflow: hidden;
+      background: #f5f5f5;
+    }
+    [data-theme='compact'] .ant-tabs-card .ant-tabs-content {
+      height: 120px;
+      margin-top: -8px;
+    }
+    [data-theme='dark'] .ant-tabs-card .ant-tabs-tab {
+      background: transparent;
+      border-color: transparent;
+    }
+    [data-theme='dark'] #components-tabs-demo-card-top .code-box-demo {
+      background: #000;
+    }
+    [data-theme='dark']
+      .card-container
+      > .ant-tabs-card
+      .ant-tabs-content
+      > .ant-tabs-tabpane {
+      background: #141414;
+    }
+    [data-theme='dark'] .ant-tabs-card .ant-tabs-tab-active {
+      background: #141414;
+      border-color: #141414;
+    }
+  }
+}
+

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import React, { CSSProperties } from 'react'
 import { connect, FormikContextType, getIn } from 'formik'
 import { get } from 'lodash'

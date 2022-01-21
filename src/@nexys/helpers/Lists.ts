@@ -1,6 +1,6 @@
-import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 import isFunction from 'lodash/isFunction'
+import get from 'lodash/get'
 import isNil from 'lodash/isNil'
 
 export interface ITransform {

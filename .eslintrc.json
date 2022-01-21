@@ -1,0 +1,101 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier", "module-resolver"],
+  "rules": {
+    // ISSUE: https://stackoverflow.com/questions/63818415/react-was-used-before-it-was-defined/
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+
+    // ---
+
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    // "prettier/prettier": "error",
+    "import/no-cycle": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "arrow-body-style": "off",
+    "semi": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["off"],
+    "no-undef": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "react/no-danger": "off",
+    "camelcase": "off",
+    "consistent-return": "off",
+    "no-underscore-dangle": "off",
+    "jsx-a11y/label-has-for": "off",
+    "react/state-in-constructor": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prefer-stateless-function": "off",
+    "react/function-component-definition": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-fragments": [2, "element"],
+    "jsx-a11y/anchor-is-valid": "off",
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "@nexys",
+          "components",
+          "css",
+          "containers",
+          "contexts",
+          "fields",
+          "stores",
+          "styles",
+          "utils",
+          "views",
+          "pages",
+          "models",
+          "icons",
+          "hooks",
+          "data",
+          "routes",
+          "constant",
+          "constants",
+          "svgs",
+          "validations",
+          "shortcuts",
+          "library",
+          "proptypes",
+          "services",
+          "layouts",
+          "helpers",
+          "images",
+          "HOC",
+          "assets"
+        ]
+      }
+    ]
+  }
+}

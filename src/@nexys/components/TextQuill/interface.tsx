@@ -1,10 +1,10 @@
 import {
-  BoundsStatic,
-  DeltaStatic,
   QuillOptionsStatic,
+  DeltaStatic,
   RangeStatic,
-  Sources,
+  BoundsStatic,
   StringMap,
+  Sources,
 } from 'quill'
 
 export type Value = string | DeltaStatic

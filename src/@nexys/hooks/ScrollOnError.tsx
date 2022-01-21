@@ -1,6 +1,6 @@
-import usePreviousValue from '@nexys/hooks/usePreviousValue/usePreviousValue'
 import { useFormikContext } from 'formik'
 import { useEffect, useRef } from 'react'
+import usePreviousValue from '@nexys/hooks/usePreviousValue/usePreviousValue'
 
 function scrollToView(element, offset) {
   const bodyRect = document.body.getBoundingClientRect().top

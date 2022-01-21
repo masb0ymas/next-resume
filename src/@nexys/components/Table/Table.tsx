@@ -1,8 +1,8 @@
-import cssTable from '@nexys/components/Table/Table.module.scss'
-import { Col, Row } from 'antd'
-import cx from 'classnames'
 import ReactTable, { TableProps } from 'react-table-6'
 import 'react-table-6/react-table.css'
+import cssTable from '@nexys/components/Table/Table.module.scss'
+import cx from 'classnames'
+import { Col, Row } from 'antd'
 
 function Table<D>(props: Partial<TableProps<D>>) {
   const { className, ...otherProps } = props
@@ -13,8 +13,8 @@ function Table<D>(props: Partial<TableProps<D>>) {
         <Col xs={24}>
           <ReactTable
             className={cx(className)}
-            {...otherProps}
             showPagination={false}
+            {...otherProps}
           />
         </Col>
       </Row>

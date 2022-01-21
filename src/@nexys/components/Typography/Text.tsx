@@ -1,7 +1,7 @@
+import { CSSProperties } from 'react'
 import { Typography } from 'antd'
 import { TextProps } from 'antd/lib/typography/Text'
-import { TextAlignProperty } from 'csstype'
-import { CSSProperties } from 'react'
+// import { TextAlignProperty } from 'csstype'
 
 const { Text: CurText } = Typography
 
@@ -15,8 +15,8 @@ const mapColor = {
 }
 
 const mapFontFamily = {
-  bold: 'OpenSans-Bold',
-  regular: 'OpenSans-Regular',
+  bold: 'SFProText-Bold',
+  regular: 'SFProText-Regular',
 }
 
 interface IText extends TextProps {
@@ -24,7 +24,7 @@ interface IText extends TextProps {
   size?: number
   color?: 'primary' | 'white' | 'black' | 'gray' | 'red' | 'green' | any
   bold?: boolean
-  align?: TextAlignProperty
+  align?:  "center" | "end" | "justify" | "left" | "match-parent" | "right" | "start"|any
   style?: CSSProperties
   fontFamily?: 'bold' | 'regular'
   block?: boolean

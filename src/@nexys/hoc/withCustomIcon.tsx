@@ -1,8 +1,8 @@
+import * as React from 'react'
 import Icon, {
   CustomIconComponentProps,
   IconComponentProps,
 } from '@ant-design/icons/lib/components/Icon'
-import * as React from 'react'
 
 type WithCustomIconProps = Omit<IconComponentProps, 'ref'>
 type SvgIcon = React.ComponentType<

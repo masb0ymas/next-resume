@@ -1,7 +1,5 @@
-import dashboardRoutes from 'layouts/routes/admin/dashboard'
-import settingsRoutes from 'layouts/routes/admin/settings'
-import homeRoutes from 'layouts/routes/public/home'
+import userRoutes from 'layouts/routes/user'
 
-const globalRoutes = [].concat(homeRoutes, dashboardRoutes, settingsRoutes)
+const globalRoutes = [].concat(userRoutes)
 
 export default globalRoutes

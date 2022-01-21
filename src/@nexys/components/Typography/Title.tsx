@@ -1,7 +1,7 @@
+import { CSSProperties } from 'react'
 import { Typography } from 'antd'
 import { TitleProps } from 'antd/lib/typography/Title'
-import { TextAlignProperty } from 'csstype'
-import { CSSProperties } from 'react'
+// import { TextAlignProperty } from 'csstype'
 
 const { Title: CurTitle } = Typography
 
@@ -11,7 +11,7 @@ const mapColor = {
 }
 
 const mapFontFamily = {
-  regular: 'OpenSans-Regular',
+  regular: 'SFProText-Regular',
 }
 
 interface CustomTitleProps extends TitleProps {
@@ -19,7 +19,7 @@ interface CustomTitleProps extends TitleProps {
   color?: 'default' | 'primary' | any
   size?: number
   noMargin?: boolean
-  align?: TextAlignProperty
+  align?:  "center" | "end" | "justify" | "left" | "match-parent" | "right" | "start"|any
   style?: CSSProperties
   fontFamily?: 'regular' | any
 }

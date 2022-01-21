@@ -1,10 +1,10 @@
-import useTitleAndError, {
-  UseTitleAndErrorProps,
-} from '@nexys/fields/useTitleAndError/useTitleAndError'
+import React from 'react'
 import { Input } from 'antd'
 import { TextAreaProps } from 'antd/lib/input'
 import { FormikContextType, useField } from 'formik'
-import React from 'react'
+import useTitleAndError, {
+  UseTitleAndErrorProps,
+} from '@nexys/fields/useTitleAndError/useTitleAndError'
 
 const { TextArea } = Input
 

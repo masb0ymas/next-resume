@@ -1,10 +1,10 @@
-import { ReactQuillProps } from '@nexys/components/TextQuill/interface'
+import React from 'react'
+import { FormikContextType, useField } from 'formik'
 import useTitleAndError, {
   UseTitleAndErrorProps,
 } from '@nexys/fields/useTitleAndError/useTitleAndError'
-import { FormikContextType, useField } from 'formik'
 import dynamic from 'next/dynamic'
-import React from 'react'
+import { ReactQuillProps } from '@nexys/components/TextQuill/interface'
 
 const TextQuill = dynamic(
   () => import('@nexys/components/TextQuill/TextQuill'),

@@ -4,21 +4,33 @@ import 'moment/locale/id'
 
 moment.locale('id')
 
-class DateMoment {
-  public static formatDate(date: string | Date) {
-    return moment(date).format('DD MMMM YYYY')
-  }
-
-  public static formatDateTime(date: string | Date) {
-    return moment(date).format('DD MMMM YYYY HH:mm:ss')
-  }
-
-  public static parse(date: string | Moment | null | undefined) {
-    if (isNil(date)) {
-      return date
-    }
-    return moment.isMoment(date) ? date : moment(date)
-  }
+const formatDate = (date: string | Date) => {
+  return moment(date).format('DD MMMM YYYY')
 }
 
-export default DateMoment
+const formatDateTime = (date: string | Date) => {
+  return moment(date).format('DD MMMM YYYY HH:mm:ss')
+}
+
+const formatDateYear = (date: string | Date) => {
+  return moment(date).format('YYYY')
+}
+
+const formatYearToDate = (year: number | string) => {
+  return moment([year])
+}
+
+function parse(date: string | Moment | null | undefined) {
+  if (isNil(date)) {
+    return date
+  }
+  return moment.isMoment(date) ? date : moment(date)
+}
+
+export default {
+  formatDate,
+  formatDateTime,
+  formatDateYear,
+  formatYearToDate,
+  parse,
+}

@@ -9,12 +9,14 @@ import ApiCall from 'services/ApiCall'
 
 export interface UseUserData {
   id: string
-  fullName: string
+  fullName?: string
+  firstName: string
+  lastName: string
   email?: string | null
   phone: string
   picturePath: string
   isActive?: boolean | null
-  address: string
+  address?: string
   RoleId: string
   Role: UseRoleData
   createdAt: string

@@ -1,7 +1,7 @@
+import { useEffect } from 'react'
 import Router from 'next/router'
 import NProgress from 'nprogress' // nprogress module
 import 'nprogress/nprogress.css' // styles of nprogress//Binding events.
-import { useEffect } from 'react'
 
 function useNProgress() {
   useEffect(() => {

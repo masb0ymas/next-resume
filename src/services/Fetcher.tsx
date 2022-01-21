@@ -56,10 +56,10 @@ function createAuthAxios(
   }
 
   instanceAxios.interceptors.response.use(
-    function onSuccess(response) {
+    (response) => {
       return response
     },
-    function onError(error: AxiosError) {
+    (error: AxiosError) => {
       showNotification(error)
       // const status = get(error, 'response.status', null)
       // if (status === 401) {

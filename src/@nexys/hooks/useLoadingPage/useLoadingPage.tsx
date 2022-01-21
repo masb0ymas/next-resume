@@ -1,5 +1,3 @@
-import Loading from '@nexys/components/Loading/Loading'
-import Router from 'next/router'
 import {
   ReactNode,
   useCallback,
@@ -8,6 +6,8 @@ import {
   useRef,
   useState,
 } from 'react'
+import Router from 'next/router'
+import Loading from '@nexys/components/Loading/Loading'
 
 interface UseLoadingPageOptions {
   loading: ReactNode

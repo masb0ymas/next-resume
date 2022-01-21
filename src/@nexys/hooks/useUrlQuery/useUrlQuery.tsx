@@ -1,7 +1,7 @@
 import QueryUrl, { QueryUrlOptions } from '@nexys/hooks/useUrlQuery/QueryUrl'
-import _ from 'lodash'
-import queryString from 'query-string'
 import { useMemo, useRef, useState } from 'react'
+import queryString from 'query-string'
+import _ from 'lodash'
 
 export type UseUrlQueryOptions = {} & QueryUrlOptions
 

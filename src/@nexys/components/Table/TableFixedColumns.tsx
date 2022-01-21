@@ -1,8 +1,8 @@
-import cssTable from '@nexys/components/Table/Table.module.scss'
-import { Col, Row } from 'antd'
-import cx from 'classnames'
 import ReactTable, { TableProps } from 'react-table-6'
 import 'react-table-6/react-table.css'
+import cssTable from '@nexys/components/Table/Table.module.scss'
+import cx from 'classnames'
+import { Col, Row } from 'antd'
 import withFixedColumns from 'react-table-hoc-fixed-columns'
 import 'react-table-hoc-fixed-columns/lib/styles.css'
 

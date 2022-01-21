@@ -22,8 +22,7 @@ function HamburgerButton(props: HamburgerButtonProps) {
   }, [isOpen])
 
   return (
-    <React.Fragment>
-      <Dropdown
+    <Dropdown
         overlay={menu}
         trigger={['click']}
         placement={'bottomRight'}
@@ -59,7 +58,6 @@ function HamburgerButton(props: HamburgerButtonProps) {
           </svg>
         </button>
       </Dropdown>
-    </React.Fragment>
   )
 }
 
