@@ -1,6 +1,7 @@
 import Text from '@nexys/components/Typography/Text'
 import Title from '@nexys/components/Typography/Title'
 import { Card, Col, Divider, Row } from 'antd'
+import { formatDistance } from 'date-fns'
 import React from 'react'
 
 function Experience() {
@@ -12,6 +13,7 @@ function Experience() {
       description:
         'I joined this community at the end of 2017. I learned a lot here from versioning with git, learning coding with case studies, and managing a project in the field. And now I manage this community both in terms of websites and participants who want to learn together.',
       period: 'Okt 2017 - Present',
+      distance: formatDistance(new Date('2017-10-01'), new Date()),
       isActive: false,
     },
     {
@@ -21,15 +23,17 @@ function Experience() {
       description:
         'The development of an application using the sprint method, the task that is carried out becomes more neat and directed. I also explore various programming languages. and I build a coding standard that is used in the office, especially for projects and products.',
       period: 'Jun 2019 - Sep 2020',
+      distance: formatDistance(new Date('2019-06-01'), new Date('2020-09-01')),
       isActive: false,
     },
     {
       id: 3,
       title: 'Nusantech',
-      subTitle: 'Full Stack Developer ( Fulltime )',
+      subTitle: 'Fullstack Developer ( Fulltime )',
       description:
         'With the experience I got before, now I maintain open source code, also analyze an application that will be built or developed in the future what it looks like. As well as finding critical solutions when there are major changes.',
       period: 'Sep 2020 - Mar 2021',
+      distance: formatDistance(new Date('2020-09-01'), new Date('2021-03-01')),
       isActive: false,
     },
     {
@@ -39,6 +43,7 @@ function Experience() {
       description:
         'With the experience I got before, now I maintain open source code, also analyze an application that will be built or developed in the future what it looks like. As well as finding critical solutions when there are major changes.',
       period: 'Mar 2021 - Present',
+      distance: formatDistance(new Date('2021-03-01'), new Date()),
       isActive: true,
     },
   ]
@@ -76,7 +81,7 @@ function Experience() {
                   {item.subTitle}
                 </Text>
                 <br />
-                <Text size={14}>{item.period}</Text>
+                <Text size={14}>{`${item.period} ( ${item.distance} )`}</Text>
                 <br />
                 <br />
                 <Text>{item.description}</Text>
