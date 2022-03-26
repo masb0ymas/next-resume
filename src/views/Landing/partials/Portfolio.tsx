@@ -16,7 +16,7 @@ function Portfolio() {
     },
     {
       id: 2,
-      urlImage: 'https://picsum.photos/600/300/?random',
+      urlImage: '/static/website-indramayu-kependudukan.png',
       brand: '/static/indramayu-logo.jpg',
       title: 'Indramayu Kependudukan',
       description: 'FullStack ( Frontend & Backend )',
@@ -37,7 +37,7 @@ function Portfolio() {
     },
     {
       id: 5,
-      urlImage: 'https://picsum.photos/600/300/?random',
+      urlImage: '/static/website-bri-agro-learning.png',
       brand: '/static/bri_agro.png',
       title: 'BRI Agro Learning',
       description: 'FullStack ( Frontend, Backend & Mobile )',
