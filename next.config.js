@@ -1,22 +1,10 @@
-/** @type {import('next').NextConfig} */
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
-/* eslint-disable */
-const withAntdLess = require('next-plugin-antd-less')
-
-const lessConfig = withAntdLess({
-  lessVarsFilePath: './src/styles/variables.less',
-  javascriptEnabled: true,
-  webpack(config) {
-    return config
+module.exports = withBundleAnalyzer({
+  reactStrictMode: false,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-})
-
-module.exports = {
-  ...lessConfig,
-  // reactStrictMode: true,
-  env: {
-    BRAND: process.env.BRAND,
-    URL_ENV: process.env.URL_ENV,
-    LOCAL_STORAGE_SESSION: process.env.LOCAL_STORAGE_SESSION,
-  },
-}
+});
