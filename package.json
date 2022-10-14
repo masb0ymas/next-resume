@@ -1,7 +1,7 @@
 {
-  "name": "mantine-next-template",
+  "name": "next-resume",
   "version": "1.0.0",
-  "private": true,
+  "description": "NextJS with Mantine UI",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +17,12 @@
     "test": "npm run prettier:check && npm run lint && npm run typecheck && npm run jest",
     "storybook": "start-storybook -p 7001",
     "storybook:build": "build-storybook"
+  },
+  "author": "masb0ymas",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": "16.x"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
