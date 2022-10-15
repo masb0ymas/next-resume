@@ -1,4 +1,5 @@
 import Footer from 'layouts/Footer'
+import React from 'react'
 import EducationSection from './partials/EducationSection'
 import ExperienceSection from './partials/ExperienceSection'
 import GithubSection from './partials/GithubSection'

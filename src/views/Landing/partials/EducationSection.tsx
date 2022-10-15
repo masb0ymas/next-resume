@@ -11,6 +11,7 @@ import {
   Title,
 } from '@mantine/core'
 import { IconSchool } from '@tabler/icons'
+import React from 'react'
 
 export const MOCK_DATA = [
   {

@@ -1,5 +1,14 @@
+import ColorSchemeToggle from '@core/components/ColorSchemeToggle/ColorSchemeToggle'
 import Dots from '@core/components/Dots'
-import { Avatar, Center, Container, createStyles, Text, Title } from '@mantine/core'
+import {
+  Avatar,
+  Center,
+  Container,
+  createStyles,
+  Text,
+  Title,
+} from '@mantine/core'
+import React from 'react'
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -126,6 +135,10 @@ function HeroSection() {
             new things, both in technology and other fields.
           </Text>
         </Container>
+
+        <Center>
+          <ColorSchemeToggle />
+        </Center>
       </div>
     </Container>
   )

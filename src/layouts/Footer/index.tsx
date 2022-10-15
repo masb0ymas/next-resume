@@ -1,4 +1,3 @@
-import ColorSchemeToggle from '@core/components/ColorSchemeToggle/ColorSchemeToggle'
 import {
   ActionIcon,
   Container,
@@ -13,6 +12,7 @@ import {
   IconBrandTwitter,
 } from '@tabler/icons'
 import Link from 'next/link'
+import React from 'react'
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -46,7 +46,7 @@ function Footer() {
 
   return (
     <div className={classes.footer}>
-      <Container className={classes.inner}>
+      <Container className={classes.inner} size={1280}>
         <Link href="https://github.com/masb0ymas" passHref>
           <UnstyledButton component="a">
             <Group noWrap spacing="xs">
@@ -55,10 +55,6 @@ function Footer() {
             </Group>
           </UnstyledButton>
         </Link>
-
-        <Group>
-          <ColorSchemeToggle styleGroup={{ marginTop: 0 }} />
-        </Group>
 
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <Link href="https://twitter.com/masb0ymas" passHref>

@@ -11,6 +11,7 @@ import {
 } from '@mantine/core'
 import { IconDeviceLaptop, IconDevices, IconSocial } from '@tabler/icons'
 import { formatDistance } from 'date-fns'
+import React from 'react'
 
 export const MOCK_DATA = [
   {

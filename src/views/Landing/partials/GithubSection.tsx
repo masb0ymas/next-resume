@@ -9,6 +9,7 @@ import {
   UnstyledButton,
 } from '@mantine/core'
 import Link from 'next/link'
+import React from 'react'
 
 const MOCK_DATA = [
   {
@@ -41,17 +42,38 @@ const MOCK_DATA = [
   },
   {
     id: 5,
+    title: 'gofiber-gorm',
+    repositoryURL: 'https://github.com/masb0ymas/gofiber-gorm',
+    githubStatURL:
+      'https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=gofiber-gorm&theme=vue-dark',
+  },
+  {
+    id: 6,
+    title: 'gintama',
+    repositoryURL: 'https://github.com/masb0ymas/gintama',
+    githubStatURL:
+      'https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=gintama&theme=vue-dark',
+  },
+  {
+    id: 7,
     title: 'nextive-admin',
     repositoryURL: 'https://github.com/masb0ymas/nextive-admin',
     githubStatURL:
       'https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=nextive-admin&theme=vue-dark',
   },
   {
-    id: 6,
-    title: 'gofiber-gorm',
-    repositoryURL: 'https://github.com/masb0ymas/gofiber-gorm',
+    id: 8,
+    title: 'expresso-cloud-functions',
+    repositoryURL: 'https://github.com/masb0ymas/expresso-cloud-functions',
     githubStatURL:
-      'https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=gofiber-gorm&theme=vue-dark',
+      'https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso-cloud-functions&theme=vue-dark',
+  },
+  {
+    id: 9,
+    title: 'next-resume',
+    repositoryURL: 'https://github.com/masb0ymas/next-resume',
+    githubStatURL:
+      'https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=next-resume&theme=vue-dark',
   },
 ]
 
@@ -161,12 +183,23 @@ function GithubSection() {
         {features}
       </SimpleGrid>
 
-      <Container size={560} p={0}>
-        <Image
+      <Container size={1080} p={0}>
+        <SimpleGrid
           mt="md"
-          src="https://github-readme-stats.vercel.app/api?username=masb0ymas&show_icons=true&hide_border=true&theme=vue-dark"
-          alt="my github board"
-        />
+          cols={2}
+          spacing="md"
+          breakpoints={[{ maxWidth: 'sm', cols: 1 }]}
+        >
+          <Image
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=masb0ymas&hide_border=true&layout=compact&theme=vue-dark"
+            alt="my github board"
+          />
+
+          <Image
+            src="https://github-readme-stats.vercel.app/api?username=masb0ymas&show_icons=true&hide_border=true&theme=vue-dark"
+            alt="my github board"
+          />
+        </SimpleGrid>
       </Container>
     </Container>
   )
