@@ -6,50 +6,66 @@ import {
   createStyles,
   Group,
   Image,
+  Modal,
   SimpleGrid,
   Text,
   Title,
+  UnstyledButton,
 } from '@mantine/core'
-import React from 'react'
+import React, { useState } from 'react'
 
 export const MOCK_DATA = [
   {
     id: 1,
+    src: '/static/website-holding-mining.png',
+    logoSrc: '/static/holding-mining-logo.png',
+    title: 'Holding Mining',
+    description: 'Backend',
+  },
+  {
+    id: 2,
+    src: '/static/website-trasmi.png',
+    logoSrc: '/static/trasmi-logo.png',
+    title: 'Trasmi (Insurance)',
+    description: 'Backend',
+  },
+  {
+    id: 3,
     src: '/static/website-app-karcisbola.png',
     logoSrc: '/static/karcisbola-logo.png',
     title: 'Karcisbola',
     description: 'Fullstack ( Frontend & Backend )',
   },
   {
-    id: 2,
+    id: 4,
     src: '/static/website-bri-agro-learning.png',
     logoSrc: '/static/bri-agro-logo.png',
     title: 'BRI Agro Learning',
     description: 'Fullstack ( Frontend, Backend, Mobile )',
   },
   {
-    id: 3,
+    id: 5,
     src: '/static/website-nadine.png',
     logoSrc: '/static/kemenkeu-logo.png',
     title: 'Nadine (Kemenkeu)',
     description: 'Backend ( Microservice )',
   },
   {
-    id: 4,
+    id: 6,
     src: '/static/website-kementan.png',
     logoSrc: '/static/kementan-logo.png',
     title: 'SIMPEL (Kementan)',
     description: 'Fullstack ( Frontend & Backend )',
   },
   {
-    id: 5,
+    id: 7,
     src: '/static/website-indramayu-kependudukan.png',
     logoSrc: '/static/indramayu-logo.jpg',
     title: 'Indramayu Kependudukan',
     description: 'Fullstack ( Frontend & Backend )',
   },
   {
-    id: 6,
+    id: 8,
     src: '/static/website-indramayu-satu.png',
     logoSrc: '/static/indramayu-logo.jpg',
     title: 'Indramayu All In One',
@@ -109,34 +125,48 @@ export function Feature({
   description,
 }: FeatureProps) {
   const { classes } = useStyles()
+  const [opened, setOpened] = useState(false)
 
   return (
-    <Card
-      key={id}
-      p="md"
-      radius="md"
-      component="a"
-      href="#"
-      className={classes.card}
-    >
-      <AspectRatio ratio={16 / 9}>
+    <>
+      <UnstyledButton onClick={() => setOpened(true)}>
+        <Card key={id} p="md" radius="md" className={classes.card}>
+          <AspectRatio ratio={16 / 9}>
+            <Image src={src} alt={`${title}`} fit="contain" />
+          </AspectRatio>
+
+          <Text
+            color="dimmed"
+            size="xs"
+            transform="uppercase"
+            weight={700}
+            mt="md"
+          >
+            {title}
+          </Text>
+
+          <Group position="apart" mt={5}>
+            <Text
+              className={classes.description}
+              style={{ textAlign: 'left', fontWeight: 900 }}
+            >
+              {description}
+            </Text>
+
+            <Avatar src={logoSrc} />
+          </Group>
+        </Card>
+      </UnstyledButton>
+
+      <Modal
+        opened={opened}
+        onClose={() => setOpened(false)}
+        title={`${title} - ${description}`}
+        size="70%"
+      >
         <Image src={src} alt={`${title}`} fit="contain" />
-      </AspectRatio>
-      <Text color="dimmed" size="xs" transform="uppercase" weight={700} mt="md">
-        {title}
-      </Text>
-
-      <Group position="apart" mt={5}>
-        <Text
-          className={classes.description}
-          style={{ textAlign: 'left', fontWeight: 900 }}
-        >
-          {description}
-        </Text>
-
-        <Avatar src={logoSrc} />
-      </Group>
-    </Card>
+      </Modal>
+    </>
   )
 }
 
