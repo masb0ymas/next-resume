@@ -10,6 +10,8 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useState } from 'react'
 
+const cookieName = 'masb0ymas-resume'
+
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props
 
@@ -18,7 +20,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark')
     setColorScheme(nextColorScheme)
-    setCookie('mantine-color-scheme', nextColorScheme, {
+    setCookie(`${cookieName}-scheme`, nextColorScheme, {
       maxAge: 60 * 60 * 24 * 30,
     })
   }
@@ -71,5 +73,5 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
 }
 
 App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
-  colorScheme: getCookie('mantine-color-scheme', ctx) || 'light',
+  colorScheme: getCookie(`${cookieName}-scheme`, ctx) || 'dark',
 })
