@@ -45,7 +45,7 @@ module.exports = {
     'import/no-unresolved': [
       2,
       {
-        ignore: ['@core', 'layouts', 'pages', 'views'],
+        ignore: ['@core', '@data', '@layouts', '@pages', '@views'],
       },
     ],
   },

@@ -18,10 +18,11 @@
     "downlevelIteration": true,
     "paths": {
       "@core/*": ["@core/*"],
-      "config/*": ["config/*"],
-      "layouts/*": ["layouts/*"],
-      "pages/*": ["pages/*"],
-      "views/*": ["views/*"],
+      "@data/*": ["data/*"],
+      "@config/*": ["config/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@views/*": ["views/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
