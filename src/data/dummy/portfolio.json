@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "src": "/static/website-holding-mining.png",
+      "logoSrc": "/static/holding-mining-logo.png",
+      "title": "Holding Mining",
+      "job": "Backend Developer",
+      "stack": "ExpressJS, TypeORM, PostgreSQL, Docker",
+      "description": "Mine management website development, both from requests, finance, barges, etc."
+    },
+    {
+      "id": 2,
+      "src": "/static/website-trasmi.png",
+      "logoSrc": "/static/trasmi-logo.png",
+      "title": "Trasmi (Insuance)",
+      "job": "Backend Developer",
+      "stack": "ExpressJS, TypeORM, PostgreSQL, Docker",
+      "description": "Website development for buying insurance and claims, both Business to Customer and Business to Business."
+    },
+    {
+      "id": 3,
+      "src": "/static/website-app-karcisbola.png",
+      "logoSrc": "/static/karcisbola-logo.png",
+      "title": "Karcisbola",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, React Query, Formik, Mantine UI, Docker",
+      "description": "Website development for buying football tickets and prize draws."
+    },
+    {
+      "id": 4,
+      "src": "/static/website-bri-agro-learning.png",
+      "logoSrc": "/static/bri-agro-logo.png",
+      "title": "BRI Agro LMS",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, PostgreSQL, NextJS, React Query, Ant Design, Formik, Flutter",
+      "description": "Development of a learning management system website for internal BRI Agro."
+    },
+    {
+      "id": 5,
+      "src": "/static/website-nadine.png",
+      "logoSrc": "/static/kemenkeu-logo.png",
+      "title": "Nadine (Kemenkeu)",
+      "job": "Backend Developer",
+      "stack": "Laravel, MongoDB, SSO, Docker, MinIO",
+      "description": "The development of the old application, Nadine (Electronic Service Memorandum) focuses on electronic mail within the Ministry of Finance."
+    },
+    {
+      "id": 6,
+      "src": "/static/website-kementan.png",
+      "logoSrc": "/static/kementan-logo.png",
+      "title": "SIMPEL (Kementan)",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, MySQL, ReactJS, Bulma CSS, Formik",
+      "description": "The development of the old, simple application from the Ministry of Agriculture is more focused on licensing fertilizers and pesticides."
+    },
+    {
+      "id": 7,
+      "src": "/static/website-indramayu-kependudukan.png",
+      "logoSrc": "/static/indramayu-logo.jpg",
+      "title": "Indramayu Kependudukan",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, MySQL, ReactJS, Bulma CSS",
+      "description": "Development of the Indramayu population website (KTP, KK, and other documents) and integration with the Bandung City Samsat."
+    },
+    {
+      "id": 8,
+      "src": "/static/website-indramayu-satu.png",
+      "logoSrc": "/static/indramayu-logo.jpg",
+      "title": "Indramayu All In One",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, MySQL, ReactJS, Bootstrap",
+      "description": "Development of a smart city website Indramayu but more on information services and public complaints."
+    }
+  ]
+}
