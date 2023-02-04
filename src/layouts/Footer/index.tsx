@@ -9,6 +9,7 @@ import {
 import {
   IconBrandGithub,
   IconBrandInstagram,
+  IconBrandLinkedin,
   IconBrandTwitter,
 } from '@tabler/icons'
 import Link from 'next/link'
@@ -48,7 +49,7 @@ function Footer() {
     <div className={classes.footer}>
       <Container className={classes.inner} size={1280}>
         <Link href="https://github.com/masb0ymas" passHref>
-          <UnstyledButton component="a">
+          <UnstyledButton component="a" target="_blank">
             <Group noWrap spacing="xs">
               <IconBrandGithub size={28} />
               <Text style={{ fontWeight: 600 }}>@masb0ymas</Text>
@@ -57,14 +58,20 @@ function Footer() {
         </Link>
 
         <Group spacing={0} className={classes.links} position="right" noWrap>
+          <Link href="https://www.linkedin.com/in/masb0ymas/" passHref>
+            <ActionIcon size="lg" component="a" target="_blank">
+              <IconBrandLinkedin size={18} stroke={1.5} />
+            </ActionIcon>
+          </Link>
+
           <Link href="https://twitter.com/masb0ymas" passHref>
-            <ActionIcon size="lg" component="a">
+            <ActionIcon size="lg" component="a" target="_blank">
               <IconBrandTwitter size={18} stroke={1.5} />
             </ActionIcon>
           </Link>
 
           <Link href="https://www.instagram.com/masb0ymas/" passHref>
-            <ActionIcon size="lg" component="a">
+            <ActionIcon size="lg" component="a" target="_blank">
               <IconBrandInstagram size={18} stroke={1.5} />
             </ActionIcon>
           </Link>

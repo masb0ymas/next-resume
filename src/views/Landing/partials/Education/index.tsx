@@ -1,7 +1,7 @@
 import Dots from '@core/components/Dots'
+import dummyData from '@data/dummy/education.json'
 import {
   Container,
-  createStyles,
   Group,
   Paper,
   SimpleGrid,
@@ -12,94 +12,7 @@ import {
 } from '@mantine/core'
 import { IconSchool } from '@tabler/icons'
 import React from 'react'
-
-export const MOCK_DATA = [
-  {
-    id: 1,
-    title: 'Computer Science',
-    subTitle: 'Universitas Putra Indonesia YPTK Padang',
-    description:
-      'I continue my education in computer science, understand how to analyze a problem and find a solution, then this is applied to an application / software. Besides that, we also understand AI in broad outline, not in detail, such as: machine learning, deep learning, and neural networks.',
-    period: 'Agust 2013 - Mar 2017',
-  },
-]
-
-const useStyles = createStyles((theme) => ({
-  wrapper: {
-    paddingTop: theme.spacing.xl * 4,
-    paddingBottom: theme.spacing.xl * 4,
-  },
-
-  inner: {
-    position: 'relative',
-    zIndex: 1,
-  },
-
-  dots: {
-    position: 'absolute',
-    color:
-      theme.colorScheme === 'dark'
-        ? theme.colors.dark[5]
-        : theme.colors.gray[1],
-
-    '@media (max-width: 755px)': {
-      display: 'none',
-    },
-  },
-
-  dotsLeft: {
-    left: 0,
-    top: 0,
-  },
-
-  title: {
-    fontWeight: 600,
-    marginBottom: theme.spacing.md,
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    textAlign: 'center',
-
-    [theme.fn.smallerThan('sm')]: {
-      fontSize: 28,
-      textAlign: 'left',
-    },
-  },
-
-  description: {
-    textAlign: 'center',
-
-    [theme.fn.smallerThan('sm')]: {
-      textAlign: 'left',
-    },
-  },
-
-  card: {
-    position: 'relative',
-    cursor: 'pointer',
-    overflow: 'hidden',
-    transition: 'transform 150ms ease, box-shadow 100ms ease',
-    padding: theme.spacing.xl,
-    paddingLeft: theme.spacing.xl * 2,
-
-    '&:hover': {
-      boxShadow: theme.shadows.md,
-      transform: 'scale(1.02)',
-    },
-
-    '&::before': {
-      content: '""',
-      position: 'absolute',
-      top: 0,
-      bottom: 0,
-      left: 0,
-      width: 6,
-      backgroundImage: theme.fn.linearGradient(
-        0,
-        theme.colors.blue[6],
-        theme.colors.cyan[6],
-      ),
-    },
-  },
-}))
+import educationStyles from './styles'
 
 interface FeatureProps {
   id: number
@@ -110,7 +23,7 @@ interface FeatureProps {
 }
 
 function Feature({ id, title, subTitle, description, period }: FeatureProps) {
-  const { classes } = useStyles()
+  const { classes } = educationStyles()
 
   return (
     <Paper withBorder radius="md" className={classes.card} key={id}>
@@ -146,12 +59,12 @@ function Feature({ id, title, subTitle, description, period }: FeatureProps) {
 }
 
 function EducationSection() {
-  const { classes, cx } = useStyles()
+  const { classes, cx } = educationStyles()
 
   const title = 'Education & Certification'
   const description = 'Education and certification that I have obtained.'
 
-  const data = MOCK_DATA
+  const { data } = dummyData
 
   const features = data.map((feature) => (
     <Feature {...feature} key={feature.id} />
