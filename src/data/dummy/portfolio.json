@@ -13,7 +13,7 @@
       "id": 2,
       "src": "/static/website-trasmi.png",
       "logoSrc": "/static/trasmi-logo.png",
-      "title": "Trasmi (Insuance)",
+      "title": "Trasmi (Insurance)",
       "job": "Backend Developer",
       "stack": "ExpressJS, TypeORM, PostgreSQL, Docker",
       "description": "Website development for buying insurance and claims, both Business to Customer and Business to Business."
