@@ -1,11 +1,7 @@
 import ColorSchemeToggle from '@core/components/ColorSchemeToggle/ColorSchemeToggle'
 import Dots from '@core/components/Dots'
-import {
-  Avatar,
-  Center,
-  Container, Text,
-  Title
-} from '@mantine/core'
+import { Avatar, Center, Container, Text, Title } from '@mantine/core'
+import { motion } from 'framer-motion'
 import heroStyles from './styles'
 
 function HeroSection() {
@@ -19,15 +15,23 @@ function HeroSection() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Center my="md">
-          <Avatar size="xl" radius="xl" src="/static/avatar.jpeg" />
-        </Center>
-        <Title className={classes.title}>
-          {`Halo, i'm `}
-          <Text component="span" className={classes.highlight} inherit>
-            Nurul Fajri
-          </Text>
-        </Title>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: 'easeOut', duration: 1 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <Center my="md">
+            <Avatar size="xl" radius="xl" src="/static/avatar.jpeg" />
+          </Center>
+          <Title className={classes.title}>
+            {`Halo, i'm `}
+            <Text component="span" className={classes.highlight} inherit>
+              Nurul Fajri
+            </Text>
+          </Title>
+        </motion.div>
 
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
