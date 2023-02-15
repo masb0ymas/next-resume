@@ -1,3 +1,4 @@
+import MyFrameMotion from '@core/components/MyFrameMotion'
 import dummyData from '@data/dummy/portfolio.json'
 import {
   AspectRatio,
@@ -42,32 +43,34 @@ export function Feature({
   return (
     <>
       <UnstyledButton onClick={() => setOpened(true)}>
-        <Card key={id} p="md" radius="md" withBorder className={classes.card}>
-          <AspectRatio ratio={16 / 9}>
-            <Image src={src} alt={`${title}`} fit="contain" />
-          </AspectRatio>
+        <MyFrameMotion>
+          <Card key={id} p="md" radius="md" withBorder className={classes.card}>
+            <AspectRatio ratio={16 / 9}>
+              <Image src={src} alt={`${title}`} fit="contain" />
+            </AspectRatio>
 
-          <Text
-            color="dimmed"
-            size="xs"
-            transform="uppercase"
-            weight={700}
-            mt="md"
-          >
-            {title}
-          </Text>
-
-          <Group position="apart" mt={5}>
             <Text
-              className={classes.description}
-              style={{ textAlign: 'left', fontWeight: 900 }}
+              color="dimmed"
+              size="xs"
+              transform="uppercase"
+              weight={700}
+              mt="md"
             >
-              {job}
+              {title}
             </Text>
 
-            <Avatar src={logoSrc} />
-          </Group>
-        </Card>
+            <Group position="apart" mt={5}>
+              <Text
+                className={classes.description}
+                style={{ textAlign: 'left', fontWeight: 900 }}
+              >
+                {job}
+              </Text>
+
+              <Avatar src={logoSrc} />
+            </Group>
+          </Card>
+        </MyFrameMotion>
       </UnstyledButton>
 
       <Modal

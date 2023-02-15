@@ -1,3 +1,4 @@
+import MyFrameMotion from '@core/components/MyFrameMotion'
 import dummyData from '@data/dummy/experience.json'
 import {
   Container,
@@ -58,50 +59,52 @@ function Feature({
   }
 
   return (
-    <Paper
-      withBorder
-      radius="md"
-      className={isActive ? classes.cardActive : classes.card}
-      key={id}
-    >
-      <Group>
-        <ThemeIcon
-          size="xl"
-          radius="md"
-          variant="gradient"
-          gradient={
-            isActive
-              ? { deg: 0, from: 'cyan', to: 'blue' }
-              : { deg: 0, from: 'gray', to: '#0e0e0e' }
-          }
-        >
-          {renderIcon}
-        </ThemeIcon>
-        <Text size="xl" weight={600} className={classes.colorTheme}>
-          {title}
-        </Text>
-      </Group>
-
-      <Stack spacing={5}>
-        <Text size="lg" weight={600} mt="md" className={classes.colorTheme}>
-          {subTitle}
-        </Text>
-
-        <Group position="apart">
-          <Text size="sm" weight={500} color="dimmed">
-            {period}
-          </Text>
-
-          <Text size="sm" weight={500} color="dimmed">
-            {formatDistance(new Date(distance), new Date())}
+    <MyFrameMotion>
+      <Paper
+        withBorder
+        radius="md"
+        className={isActive ? classes.cardActive : classes.card}
+        key={id}
+      >
+        <Group>
+          <ThemeIcon
+            size="xl"
+            radius="md"
+            variant="gradient"
+            gradient={
+              isActive
+                ? { deg: 0, from: 'cyan', to: 'blue' }
+                : { deg: 0, from: 'gray', to: '#0e0e0e' }
+            }
+          >
+            {renderIcon}
+          </ThemeIcon>
+          <Text size="xl" weight={600} className={classes.colorTheme}>
+            {title}
           </Text>
         </Group>
-      </Stack>
 
-      <Text size="md" mt="sm">
-        {description}
-      </Text>
-    </Paper>
+        <Stack spacing={5}>
+          <Text size="lg" weight={600} mt="md" className={classes.colorTheme}>
+            {subTitle}
+          </Text>
+
+          <Group position="apart">
+            <Text size="sm" weight={500} color="dimmed">
+              {period}
+            </Text>
+
+            <Text size="sm" weight={500} color="dimmed">
+              {formatDistance(new Date(distance), new Date())}
+            </Text>
+          </Group>
+        </Stack>
+
+        <Text size="md" mt="sm">
+          {description}
+        </Text>
+      </Paper>
+    </MyFrameMotion>
   )
 }
 

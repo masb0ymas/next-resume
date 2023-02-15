@@ -1,7 +1,7 @@
 import ColorSchemeToggle from '@core/components/ColorSchemeToggle/ColorSchemeToggle'
 import Dots from '@core/components/Dots'
+import MyFrameMotion from '@core/components/MyFrameMotion'
 import { Avatar, Center, Container, Text, Title } from '@mantine/core'
-import { motion } from 'framer-motion'
 import heroStyles from './styles'
 
 function HeroSection() {
@@ -15,13 +15,7 @@ function HeroSection() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: 'easeOut', duration: 1 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
+        <MyFrameMotion>
           <Center my="md">
             <Avatar size="xl" radius="xl" src="/static/avatar.jpeg" />
           </Center>
@@ -31,23 +25,23 @@ function HeroSection() {
               Nurul Fajri
             </Text>
           </Title>
-        </motion.div>
 
-        <Container p={0} size={600}>
-          <Text size="lg" color="dimmed" className={classes.description}>
-            Software Engineer at <b>Karcisbola</b>,
-          </Text>
-          <Text
-            mt={10}
-            size="lg"
-            color="dimmed"
-            className={classes.description}
-          >
-            Currently I work as a software engineer at <b>Karcisbola</b>, I like
-            sports and also traveling. On the other hand, I also enjoy learning
-            new things, both in technology and other fields.
-          </Text>
-        </Container>
+          <Container p={0} size={600}>
+            <Text size="lg" color="dimmed" className={classes.description}>
+              Software Engineer at <b>Karcisbola</b>,
+            </Text>
+            <Text
+              mt={10}
+              size="lg"
+              color="dimmed"
+              className={classes.description}
+            >
+              Currently I work as a software engineer at <b>Karcisbola</b>, I
+              like sports and also traveling. On the other hand, I also enjoy
+              learning new things, both in technology and other fields.
+            </Text>
+          </Container>
+        </MyFrameMotion>
 
         <Center>
           <ColorSchemeToggle />

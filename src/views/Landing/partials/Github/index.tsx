@@ -1,4 +1,5 @@
 import Dots from '@core/components/Dots'
+import MyFrameMotion from '@core/components/MyFrameMotion'
 import dummyData from '@data/dummy/github.json'
 import {
   Container,
@@ -20,11 +21,13 @@ interface FeatureProps {
 
 function Feature({ id, title, repositoryURL, githubStatURL }: FeatureProps) {
   return (
-    <Link href={repositoryURL} passHref key={id}>
-      <UnstyledButton component="a">
-        <Image src={githubStatURL} alt={title} width="100%" />
-      </UnstyledButton>
-    </Link>
+    <MyFrameMotion>
+      <Link href={repositoryURL} passHref key={id}>
+        <UnstyledButton component="a">
+          <Image src={githubStatURL} alt={title} width="100%" />
+        </UnstyledButton>
+      </Link>
+    </MyFrameMotion>
   )
 }
 
@@ -75,15 +78,19 @@ function GithubSection() {
           spacing="md"
           breakpoints={[{ maxWidth: 'sm', cols: 1 }]}
         >
-          <Image
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=masb0ymas&hide_border=true&layout=compact&theme=vue-dark"
-            alt="my github board"
-          />
+          <MyFrameMotion>
+            <Image
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=masb0ymas&hide_border=true&layout=compact&theme=vue-dark"
+              alt="my github board"
+            />
+          </MyFrameMotion>
 
-          <Image
-            src="https://github-readme-stats.vercel.app/api?username=masb0ymas&show_icons=true&hide_border=true&theme=vue-dark"
-            alt="my github board"
-          />
+          <MyFrameMotion>
+            <Image
+              src="https://github-readme-stats.vercel.app/api?username=masb0ymas&show_icons=true&hide_border=true&theme=vue-dark"
+              alt="my github board"
+            />
+          </MyFrameMotion>
         </SimpleGrid>
       </Container>
     </Container>

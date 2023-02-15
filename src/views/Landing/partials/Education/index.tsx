@@ -1,4 +1,5 @@
 import Dots from '@core/components/Dots'
+import MyFrameMotion from '@core/components/MyFrameMotion'
 import dummyData from '@data/dummy/education.json'
 import {
   Container,
@@ -26,35 +27,37 @@ function Feature({ id, title, subTitle, description, period }: FeatureProps) {
   const { classes } = educationStyles()
 
   return (
-    <Paper withBorder radius="md" className={classes.card} key={id}>
-      <Group>
-        <ThemeIcon
-          size="xl"
-          radius="md"
-          variant="gradient"
-          gradient={{ deg: 0, from: 'cyan', to: 'blue' }}
-        >
-          <IconSchool size={28} stroke={1.5} />
-        </ThemeIcon>
-        <Text size="xl" weight={500}>
-          {title}
-        </Text>
-      </Group>
+    <MyFrameMotion>
+      <Paper withBorder radius="md" className={classes.card} key={id}>
+        <Group>
+          <ThemeIcon
+            size="xl"
+            radius="md"
+            variant="gradient"
+            gradient={{ deg: 0, from: 'cyan', to: 'blue' }}
+          >
+            <IconSchool size={28} stroke={1.5} />
+          </ThemeIcon>
+          <Text size="xl" weight={500}>
+            {title}
+          </Text>
+        </Group>
 
-      <Stack spacing={5}>
-        <Text size="lg" weight={600} mt="md">
-          {subTitle}
-        </Text>
+        <Stack spacing={5}>
+          <Text size="lg" weight={600} mt="md">
+            {subTitle}
+          </Text>
 
-        <Text size="sm" weight={500} color="dimmed">
-          {period}
-        </Text>
-      </Stack>
+          <Text size="sm" weight={500} color="dimmed">
+            {period}
+          </Text>
+        </Stack>
 
-      <Text size="md" mt="sm">
-        {description}
-      </Text>
-    </Paper>
+        <Text size="md" mt="sm">
+          {description}
+        </Text>
+      </Paper>
+    </MyFrameMotion>
   )
 }
 
