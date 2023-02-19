@@ -2,9 +2,9 @@
   "data": [
     {
       "id": 1,
-      "title": "expresso",
-      "repositoryURL": "https://github.com/masb0ymas/expresso",
-      "githubStatURL": "https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso&theme=vue-dark"
+      "title": "expresso-sequelize",
+      "repositoryURL": "https://github.com/masb0ymas/expresso-sequelize",
+      "githubStatURL": "https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso-sequelize&theme=vue-dark"
     },
     {
       "id": 2,
@@ -53,6 +53,24 @@
       "title": "expresso-cloud-functions",
       "repositoryURL": "https://github.com/masb0ymas/expresso-cloud-functions",
       "githubStatURL": "https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso-cloud-functions&theme=vue-dark"
+    },
+    {
+      "id": 10,
+      "title": "expresso-mongoose",
+      "repositoryURL": "https://github.com/masb0ymas/expresso-mongoose",
+      "githubStatURL": "https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso-mongoose&theme=vue-dark"
+    },
+    {
+      "id": 11,
+      "title": "expresso",
+      "repositoryURL": "https://github.com/masb0ymas/expresso",
+      "githubStatURL": "https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=expresso&theme=vue-dark"
+    },
+    {
+      "id": 12,
+      "title": "create-expresso-app",
+      "repositoryURL": "https://github.com/masb0ymas/create-expresso-app",
+      "githubStatURL": "https://github-readme-stats.vercel.app/api/pin/?username=masb0ymas&repo=create-expresso-app&theme=vue-dark"
     }
   ]
 }
