@@ -4,6 +4,7 @@ import {
   createStyles,
   Group,
   Text,
+  Tooltip,
   UnstyledButton,
 } from '@mantine/core'
 import {
@@ -11,6 +12,7 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandTwitter,
+  IconBrandWhatsapp,
 } from '@tabler/icons'
 import Link from 'next/link'
 import React from 'react'
@@ -39,6 +41,19 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('xs')]: {
       marginTop: theme.spacing.md,
     },
+  },
+
+  floatButton: {
+    position: 'fixed',
+    width: '60px',
+    height: '60px',
+    bottom: '30px',
+    right: '30px',
+    backgroundColor: '#4dc247',
+    color: '#FFF',
+    borderRadius: '50px',
+    textAlign: 'center',
+    zIndex: 9999,
   },
 }))
 
@@ -77,6 +92,17 @@ function Footer() {
           </Link>
         </Group>
       </Container>
+
+      <Link
+        href="https://api.whatsapp.com/send/?phone=+6287837554403&text=Hi, I am interested in your portfolio, would you be willing to discuss it with me?"
+        passHref
+      >
+        <Tooltip label="Hire me..." position="left" withArrow>
+          <UnstyledButton className={classes.floatButton}>
+            <IconBrandWhatsapp size={40} />
+          </UnstyledButton>
+        </Tooltip>
+      </Link>
     </div>
   )
 }
