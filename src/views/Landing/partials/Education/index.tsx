@@ -1,6 +1,3 @@
-import Dots from '@core/components/Dots'
-import MyFrameMotion from '@core/components/MyFrameMotion'
-import dummyData from '@data/dummy/education.json'
 import {
   Container,
   Group,
@@ -13,6 +10,9 @@ import {
 } from '@mantine/core'
 import { IconSchool } from '@tabler/icons'
 import React from 'react'
+import Dots from '~/core/components/Dots'
+import MyFrameMotion from '~/core/components/MyFrameMotion'
+import dummyData from '~/data/dummy/education.json'
 import educationStyles from './styles'
 
 interface FeatureProps {

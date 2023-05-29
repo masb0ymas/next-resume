@@ -1,5 +1,3 @@
-import MyFrameMotion from '@core/components/MyFrameMotion'
-import dummyData from '@data/dummy/portfolio.json'
 import {
   AspectRatio,
   Avatar,
@@ -16,6 +14,8 @@ import {
   UnstyledButton,
 } from '@mantine/core'
 import { useState } from 'react'
+import MyFrameMotion from '~/core/components/MyFrameMotion'
+import dummyData from '~/data/dummy/portfolio.json'
 import portfolioStyles from './styles'
 
 interface FeatureProps {

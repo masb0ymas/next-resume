@@ -1,7 +1,7 @@
-import ColorSchemeToggle from '@core/components/ColorSchemeToggle/ColorSchemeToggle'
-import Dots from '@core/components/Dots'
-import MyFrameMotion from '@core/components/MyFrameMotion'
 import { Avatar, Center, Container, Text, Title } from '@mantine/core'
+import ColorSchemeToggle from '~/core/components/ColorSchemeToggle/ColorSchemeToggle'
+import Dots from '~/core/components/Dots'
+import MyFrameMotion from '~/core/components/MyFrameMotion'
 import heroStyles from './styles'
 
 function HeroSection() {

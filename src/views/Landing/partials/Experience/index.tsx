@@ -1,5 +1,3 @@
-import MyFrameMotion from '@core/components/MyFrameMotion'
-import dummyData from '@data/dummy/experience.json'
 import {
   Container,
   Group,
@@ -13,6 +11,8 @@ import {
 import { IconDeviceLaptop, IconDevices, IconSocial } from '@tabler/icons'
 import { formatDistance } from 'date-fns'
 import React from 'react'
+import MyFrameMotion from '~/core/components/MyFrameMotion'
+import dummyData from '~/data/dummy/experience.json'
 import experienceStyle from './styles'
 
 interface FeatureProps {

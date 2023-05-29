@@ -1,4 +1,4 @@
-import Footer from '@layouts/Footer'
+import Footer from '~/layouts/Footer'
 import EducationSection from './partials/Education'
 import ExperienceSection from './partials/Experience'
 import GithubSection from './partials/Github'

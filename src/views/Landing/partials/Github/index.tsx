@@ -1,6 +1,3 @@
-import Dots from '@core/components/Dots'
-import MyFrameMotion from '@core/components/MyFrameMotion'
-import dummyData from '@data/dummy/github.json'
 import {
   Container,
   Image,
@@ -10,6 +7,9 @@ import {
   UnstyledButton,
 } from '@mantine/core'
 import Link from 'next/link'
+import Dots from '~/core/components/Dots'
+import MyFrameMotion from '~/core/components/MyFrameMotion'
+import dummyData from '~/data/dummy/github.json'
 import githubStyles from './styles'
 
 interface FeatureProps {
