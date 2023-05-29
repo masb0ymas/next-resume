@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -16,13 +15,9 @@
     "jsx": "preserve",
     "incremental": true,
     "downlevelIteration": true,
+    "baseUrl": "./",
     "paths": {
-      "@core/*": ["@core/*"],
-      "@data/*": ["data/*"],
-      "@config/*": ["config/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
-      "@views/*": ["views/*"],
+      "~/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

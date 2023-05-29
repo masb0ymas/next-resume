@@ -42,11 +42,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     '@typescript-eslint/naming-convention': 'off',
     'react/require-default-props': 'off',
-    'import/no-unresolved': [
-      2,
-      {
-        ignore: ['@core', '@data', '@layouts', '@pages', '@views'],
-      },
-    ],
+    'import/extensions': 'off',
+    'import/no-unresolved': [2, { ignore: ['~'] }],
   },
 }
