@@ -3,7 +3,7 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from '@mantine/core'
-import { NotificationsProvider } from '@mantine/notifications'
+import { Notifications } from '@mantine/notifications'
 import { getCookie, setCookie } from 'cookies-next'
 import { GetServerSidePropsContext } from 'next'
 import { AppProps } from 'next/app'
@@ -58,14 +58,17 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         colorScheme={colorScheme}
         toggleColorScheme={toggleColorScheme}
       >
+        {/* Mantine Global Provider */}
         <MantineProvider
           theme={{ colorScheme, fontFamily: 'Lato' }}
           withGlobalStyles
           withNormalizeCSS
         >
-          <NotificationsProvider>
-            <Component {...pageProps} />
-          </NotificationsProvider>
+          {/* Notification Provider */}
+          <Notifications />
+          
+          {/* Render Component */}
+          <Component {...pageProps} />
         </MantineProvider>
       </ColorSchemeProvider>
     </>

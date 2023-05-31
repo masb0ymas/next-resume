@@ -2,8 +2,8 @@ import { createStyles } from '@mantine/core'
 
 const experienceStyle = createStyles((theme) => ({
   wrapper: {
-    paddingTop: theme.spacing.xl * 4,
-    paddingBottom: theme.spacing.xl * 4,
+    paddingTop: Number(theme.spacing.xl) * 4,
+    paddingBottom: Number(theme.spacing.xl) * 4,
   },
 
   colorTheme: {
@@ -36,7 +36,7 @@ const experienceStyle = createStyles((theme) => ({
     overflow: 'hidden',
     transition: 'transform 150ms ease, box-shadow 100ms ease',
     padding: theme.spacing.xl,
-    paddingLeft: theme.spacing.xl * 2,
+    paddingLeft: Number(theme.spacing.xl) * 2,
 
     '&:hover': {
       boxShadow: theme.shadows.md,
@@ -64,7 +64,7 @@ const experienceStyle = createStyles((theme) => ({
     overflow: 'hidden',
     transition: 'transform 150ms ease, box-shadow 100ms ease',
     padding: theme.spacing.xl,
-    paddingLeft: theme.spacing.xl * 2,
+    paddingLeft: Number(theme.spacing.xl) * 2,
 
     '&:hover': {
       boxShadow: theme.shadows.md,

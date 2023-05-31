@@ -8,7 +8,7 @@ import {
   ThemeIcon,
   Title,
 } from '@mantine/core'
-import { IconDeviceLaptop, IconDevices, IconSocial } from '@tabler/icons'
+import { IconDeviceLaptop, IconDevices, IconSocial } from '@tabler/icons-react'
 import { formatDistance } from 'date-fns'
 import React from 'react'
 import MyFrameMotion from '~/core/components/MyFrameMotion'

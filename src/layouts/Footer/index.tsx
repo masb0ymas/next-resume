@@ -13,9 +13,8 @@ import {
   IconBrandLinkedin,
   IconBrandTwitter,
   IconBrandWhatsapp,
-} from '@tabler/icons'
+} from '@tabler/icons-react'
 import Link from 'next/link'
-import React from 'react'
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -63,7 +62,11 @@ function Footer() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner} size={1280}>
-        <Link href="https://github.com/masb0ymas" passHref>
+        <Link
+          href="https://github.com/masb0ymas"
+          passHref
+          style={{ textDecoration: 'none' }}
+        >
           <UnstyledButton component="a" target="_blank">
             <Group noWrap spacing="xs">
               <IconBrandGithub size={28} />

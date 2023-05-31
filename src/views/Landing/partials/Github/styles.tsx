@@ -2,8 +2,8 @@ import { createStyles } from '@mantine/core'
 
 const githubStyles = createStyles((theme) => ({
   wrapper: {
-    paddingTop: theme.spacing.xl * 4,
-    paddingBottom: theme.spacing.xl * 4,
+    paddingTop: Number(theme.spacing.xl) * 4,
+    paddingBottom: Number(theme.spacing.xl) * 4,
   },
 
   inner: {

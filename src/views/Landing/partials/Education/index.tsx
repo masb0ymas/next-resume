@@ -8,7 +8,7 @@ import {
   ThemeIcon,
   Title,
 } from '@mantine/core'
-import { IconSchool } from '@tabler/icons'
+import { IconSchool } from '@tabler/icons-react'
 import React from 'react'
 import Dots from '~/core/components/Dots'
 import MyFrameMotion from '~/core/components/MyFrameMotion'
