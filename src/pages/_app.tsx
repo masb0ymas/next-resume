@@ -3,27 +3,33 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from '@mantine/core'
+import { ModalsProvider } from '@mantine/modals'
 import { Notifications } from '@mantine/notifications'
 import { getCookie, setCookie } from 'cookies-next'
-import { GetServerSidePropsContext } from 'next'
-import { AppProps } from 'next/app'
+import _ from 'lodash'
+import NextApp, { AppContext, AppProps } from 'next/app'
 import Head from 'next/head'
 import { useState } from 'react'
+import slugify from 'slugify'
+import { BRAND } from '~/config/env'
+import { RouterTransition } from '~/core/components/RouterTransition'
+import getSiteLayout from '~/layouts/core'
 
-const cookieName = 'masb0ymas-resume'
+const brand = _.toLower(slugify(BRAND))
+const cookieName = `${brand}-color-scheme`
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
-  const { Component, pageProps } = props
-
   const [colorScheme, setColorScheme] = useState<ColorScheme>(props.colorScheme)
 
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark')
     setColorScheme(nextColorScheme)
-    setCookie(`${cookieName}-scheme`, nextColorScheme, {
+    setCookie(cookieName, nextColorScheme, {
       maxAge: 60 * 60 * 24 * 30,
     })
   }
+
+  const siteLayout = getSiteLayout(props)
 
   const title = 'Resume'
   const description = 'My Resume ( masb0ymas )'
@@ -58,23 +64,33 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         colorScheme={colorScheme}
         toggleColorScheme={toggleColorScheme}
       >
-        {/* Mantine Global Provider */}
         <MantineProvider
           theme={{ colorScheme, fontFamily: 'Lato' }}
           withGlobalStyles
           withNormalizeCSS
         >
-          {/* Notification Provider */}
-          <Notifications />
-          
-          {/* Render Component */}
-          <Component {...pageProps} />
+          {/* nprogress loader */}
+          <RouterTransition />
+
+          {/* notification provider */}
+          <Notifications position="top-right" zIndex={2077} />
+
+          {/* modal provider */}
+          <ModalsProvider>
+            {/* render site layout */}
+            {siteLayout}
+            {/* render site layout */}
+          </ModalsProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>
   )
 }
 
-App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
-  colorScheme: getCookie(`${cookieName}-scheme`, ctx) || 'dark',
-})
+App.getInitialProps = async (appContext: AppContext) => {
+  const appProps = await NextApp.getInitialProps(appContext)
+  return {
+    ...appProps,
+    colorScheme: getCookie(cookieName, appContext.ctx) || 'dark',
+  }
+}

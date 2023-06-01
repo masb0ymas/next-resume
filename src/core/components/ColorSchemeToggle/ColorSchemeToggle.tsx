@@ -6,7 +6,7 @@ interface ColorSchemeToggleProps {
   styleGroup: CSSProperties
 }
 
-export default function ColorSchemeToggle({
+export function ColorSchemeToggle({
   styleGroup,
 }: Partial<ColorSchemeToggleProps>) {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()

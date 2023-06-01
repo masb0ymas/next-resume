@@ -1,5 +1,3 @@
-import LandingPage from '~/views/Landing'
+import HomePage from '~/views/Home'
 
-export default function HomePage() {
-  return <LandingPage />
-}
+export default HomePage
