@@ -1,4 +1,3 @@
-import Footer from '~/layouts/containers/Public/Footer'
 import EducationSection from './partials/Education'
 import ExperienceSection from './partials/Experience'
 import GithubSection from './partials/Github'
@@ -17,8 +16,6 @@ function LandingPage() {
       <ExperienceSection />
 
       <GithubSection />
-
-      <Footer />
     </div>
   )
 }
