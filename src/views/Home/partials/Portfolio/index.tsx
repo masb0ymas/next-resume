@@ -11,8 +11,8 @@ import {
   Stack,
   Text,
   Title,
-  UnstyledButton,
 } from '@mantine/core'
+import Link from 'next/link'
 import { useState } from 'react'
 import MyFrameMotion from '~/core/components/MyFrameMotion'
 import dummyData from '~/data/dummy/portfolio.json'
@@ -23,6 +23,7 @@ interface FeatureProps {
   src: string
   logoSrc: string
   title: string
+  slug: string
   job: string
   stack: string
   description: string
@@ -33,6 +34,7 @@ export function Feature({
   src,
   logoSrc,
   title,
+  slug,
   job,
   stack,
   description,
@@ -42,7 +44,7 @@ export function Feature({
 
   return (
     <>
-      <UnstyledButton onClick={() => setOpened(true)}>
+      <Link href={`/p/${slug}`} passHref style={{ textDecoration: 'none' }}>
         <MyFrameMotion>
           <Card key={id} p="md" radius="md" withBorder className={classes.card}>
             <AspectRatio ratio={16 / 9}>
@@ -71,7 +73,7 @@ export function Feature({
             </Group>
           </Card>
         </MyFrameMotion>
-      </UnstyledButton>
+      </Link>
 
       <Modal
         opened={opened}
