@@ -1,7 +1,9 @@
 import { Carousel } from '@mantine/carousel'
 import {
   Avatar,
+  Badge,
   Container,
+  Divider,
   Grid,
   Group,
   Image,
@@ -14,19 +16,28 @@ import {
 import { useRouter } from 'next/router'
 import dummyData from '~/data/dummy/portfolio.json'
 import portfolioStyles from '../styles'
+import Dots from '~/core/components/Dots'
+import heroStyles from '../../Hero/styles'
 
 function PortfolioDetail() {
   const { classes } = portfolioStyles()
+  const { classes: heroClasses } = heroStyles()
 
   const router = useRouter()
   const slug = router.query?.slug
 
   const { data } = dummyData
-
   const newData = data.find((x) => x.slug === slug)
+
+  const newStack = newData?.stack.split(',')
 
   return (
     <Container className={classes.wrapper} size={1280}>
+      <Dots className={heroClasses.dots} style={{ left: 0, top: 0 }} />
+      <Dots className={heroClasses.dots} style={{ left: 60, top: 0 }} />
+      <Dots className={heroClasses.dots} style={{ left: 0, top: 140 }} />
+      <Dots className={heroClasses.dots} style={{ right: 0, top: 60 }} />
+
       <Group position="center">
         <Avatar src={newData?.logoSrc} mb="1rem" />
         <Title className={classes.title}>{newData?.title}</Title>
@@ -42,40 +53,43 @@ function PortfolioDetail() {
         loop
         withIndicators
       >
-        <Carousel.Slide>
-          <Image src={newData?.src} alt={`${newData?.title}`} fit="contain" />
-        </Carousel.Slide>
-
-        <Carousel.Slide>
-          <Image src={newData?.src} alt={`${newData?.title}`} fit="contain" />
-        </Carousel.Slide>
-
-        <Carousel.Slide>
-          <Image src={newData?.src} alt={`${newData?.title}`} fit="contain" />
-        </Carousel.Slide>
+        {newData?.images?.map((item) => (
+          <Carousel.Slide key={item}>
+            <Image src={item} alt={`${item}`} fit="contain" radius="lg" />
+          </Carousel.Slide>
+        ))}
       </Carousel>
 
       <Space h="md" />
 
       <Container size={720} p={0}>
-        <Stack mb="md">
+        <Stack mb="3rem">
           <Title order={3}>Description :</Title>
           <Text size="lg">{newData?.description}</Text>
         </Stack>
 
-        <Stack mb="md">
+        <Stack mb="3rem">
           <Title order={3}>Job :</Title>
           <Text size="lg">{newData?.job}</Text>
         </Stack>
 
-        <Stack mb="md">
+        <Stack mb="3rem">
           <Title order={3}>Stack :</Title>
-          <Text size="lg">{newData?.stack}</Text>
+
+          <Group>
+            {newStack?.map((item) => (
+              <Badge size="lg" key={item}>
+                {item}
+              </Badge>
+            ))}
+          </Group>
         </Stack>
 
-        <Grid>
+        <Divider variant="dashed" my="lg" />
+
+        <Grid columns={24}>
           {newData?.tools.map((item) => (
-            <Grid.Col sm={2}>
+            <Grid.Col sm={4} key={item}>
               <Tooltip
                 label={item}
                 transitionProps={{ transition: 'pop', duration: 300 }}

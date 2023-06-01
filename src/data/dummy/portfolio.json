@@ -2,12 +2,12 @@
   "data": [
     {
       "id": 1,
-      "src": "/static/website-frigel-ai.png",
+      "src": "/static/frigel-ai/kelola-produk.png",
       "logoSrc": "/static/frigel-ai-logo.png",
       "title": "Frigel Ai ( ERP )",
       "slug": "frigel-ai-erp",
       "job": "Fullstack Developer",
-      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker",
+      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker, AWS, Open Street Map",
       "tools": [
         "vscode",
         "expressjs",
@@ -16,13 +16,21 @@
         "nextjs",
         "react-query",
         "mantine-ui",
-        "docker"
+        "docker",
+        "osm",
+        "aws"
+      ],
+      "images": [
+        "/static/frigel-ai/login.png",
+        "/static/frigel-ai/product.png",
+        "/static/frigel-ai/kelola-produk.png",
+        "/static/frigel-ai/delivery.png"
       ],
       "description": "ERP Website with OpenStreetMap integration for shipping tracking"
     },
     {
       "id": 2,
-      "src": "/static/website-holding-mining.png",
+      "src": "/static/minings/jetty.png",
       "logoSrc": "/static/holding-mining-logo.png",
       "title": "Holding Mining",
       "slug": "holding-mining",
@@ -37,11 +45,17 @@
         "gcp",
         "docker"
       ],
+      "images": [
+        "/static/minings/company.png",
+        "/static/minings/dashboard.png",
+        "/static/minings/operational.png",
+        "/static/minings/jetty.png"
+      ],
       "description": "Mine management website development, both from requests, finance, barges, etc."
     },
     {
       "id": 3,
-      "src": "/static/website-trasmi.png",
+      "src": "/static/trasmi/landing.png",
       "logoSrc": "/static/trasmi-logo.png",
       "title": "Trasmi ( Insurance )",
       "slug": "trasmi-insurance",
@@ -56,16 +70,22 @@
         "docker",
         "aws"
       ],
+      "images": [
+        "/static/trasmi/b2c.png",
+        "/static/trasmi/master.png",
+        "/static/trasmi/b2c.png",
+        "/static/trasmi/landing.png"
+      ],
       "description": "Website development for buying insurance and claims, both Business to Customer and Business to Business."
     },
     {
       "id": 4,
-      "src": "/static/website-app-karcisbola.png",
+      "src": "/static/karcisbola/match.png",
       "logoSrc": "/static/karcisbola-logo.png",
       "title": "Karcisbola",
       "slug": "karcisbola",
       "job": "Full Stack Developer",
-      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, React Query, Formik, Mantine UI, Docker",
+      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, React Query, Formik, Mantine UI, Docker, Google Cloud Platform",
       "tools": [
         "vscode",
         "expressjs",
@@ -78,11 +98,17 @@
         "docker",
         "gcp"
       ],
+      "images": [
+        "/static/karcisbola/login.png",
+        "/static/karcisbola/match.png",
+        "/static/karcisbola/pnl.png",
+        "/static/karcisbola/karcis.png"
+      ],
       "description": "Website development for buying football tickets and prize draws."
     },
     {
       "id": 5,
-      "src": "/static/website-bri-agro-learning.png",
+      "src": "/static/bri-agro-lms/login.png",
       "logoSrc": "/static/bri-agro-logo.png",
       "title": "BRI Agro LMS",
       "slug": "bri-agro-lms",
@@ -99,16 +125,21 @@
         "formik",
         "flutter"
       ],
+      "images": [
+        "/static/bri-agro-lms/login.png",
+        "/static/bri-agro-lms/materi.png",
+        "/static/bri-agro-lms/news.png"
+      ],
       "description": "Development of a learning management system website for internal BRI Agro."
     },
     {
       "id": 6,
-      "src": "/static/website-nadine.png",
+      "src": "/static/nadine/login.png",
       "logoSrc": "/static/kemenkeu-logo.png",
       "title": "Nadine ( Kemenkeu )",
       "slug": "nadine-kemenkeu",
       "job": "Backend Developer",
-      "stack": "Laravel, MongoDB, SSO, Docker, MinIO",
+      "stack": "Laravel, MongoDB, SSO, Docker, MinIO, E-Sign BSSN",
       "tools": [
         "vscode",
         "laravel",
@@ -117,11 +148,14 @@
         "minio",
         "bssn"
       ],
+      "images": [
+        "/static/nadine/login.png"
+      ],
       "description": "The development of the old application, Nadine (Electronic Service Memorandum) focuses on electronic mail within the Ministry of Finance."
     },
     {
       "id": 7,
-      "src": "/static/website-kementan.png",
+      "src": "/static/simpel/landing.png",
       "logoSrc": "/static/kementan-logo.png",
       "title": "SIMPEL ( Kementan )",
       "slug": "simpel-kementan",
@@ -136,11 +170,14 @@
         "bulma-css",
         "formik"
       ],
+      "images": [
+        "/static/simpel/landing.png"
+      ],
       "description": "The development of the old, simple application from the Ministry of Agriculture is more focused on licensing fertilizers and pesticides."
     },
     {
       "id": 8,
-      "src": "/static/website-indramayu-kependudukan.png",
+      "src": "/static/indramayu/login-kependudukan.png",
       "logoSrc": "/static/indramayu-logo.jpg",
       "title": "Indramayu Kependudukan",
       "slug": "indramayu-kependudukan",
@@ -154,11 +191,14 @@
         "reactjs",
         "bulma-css"
       ],
+      "images": [
+        "/static/indramayu/login-kependudukan.png"
+      ],
       "description": "Development of the Indramayu population website (KTP, KK, and other documents) and integration with the Bandung City Samsat."
     },
     {
       "id": 9,
-      "src": "/static/website-indramayu-satu.png",
+      "src": "/static/indramayu/dashboard-aio.png",
       "logoSrc": "/static/indramayu-logo.jpg",
       "title": "Indramayu All In One",
       "slug": "indramayu-all-in-one",
@@ -171,6 +211,9 @@
         "mariadb",
         "reactjs",
         "bootstrap"
+      ],
+      "images": [
+        "/static/indramayu/dashboard-aio.png"
       ],
       "description": "Development of a smart city website Indramayu but more on information services and public complaints."
     }
