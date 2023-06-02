@@ -2,6 +2,7 @@ import { Carousel } from '@mantine/carousel'
 import {
   Avatar,
   Badge,
+  Center,
   Container,
   Divider,
   Grid,
@@ -89,17 +90,19 @@ function PortfolioDetail() {
 
         <Grid columns={24}>
           {newData?.tools.map((item) => (
-            <Grid.Col sm={4} key={item}>
-              <Tooltip
-                label={item}
-                transitionProps={{ transition: 'pop', duration: 300 }}
-              >
-                <Avatar
-                  size="xl"
-                  radius="3rem"
-                  src={`/static/tools/${item}.png`}
-                />
-              </Tooltip>
+            <Grid.Col xs={8} sm={4} key={item}>
+              <Center>
+                <Tooltip
+                  label={item}
+                  transitionProps={{ transition: 'pop', duration: 300 }}
+                >
+                  <Avatar
+                    size="xl"
+                    radius="3rem"
+                    src={`/static/tools/${item}.png`}
+                  />
+                </Tooltip>
+              </Center>
             </Grid.Col>
           ))}
         </Grid>
