@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable react/jsx-no-constructed-context-values */
 import { Loader } from '@mantine/core'
 import { ReactComponentLike } from 'prop-types'

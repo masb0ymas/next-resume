@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable react/jsx-no-constructed-context-values */
 import { AppShell, Loader, useMantineTheme } from '@mantine/core'
 import _ from 'lodash'

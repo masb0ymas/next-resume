@@ -1,3 +1,5 @@
+'use client'
+
 import { motion, useAnimation } from 'framer-motion'
 import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
@@ -21,7 +23,7 @@ function MyFrameMotion(props: MyFrameMotionProps) {
   }, [control, inView])
 
   const motionVariants = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } },
     hidden: { opacity: 0, scale: 0 },
   }
 
@@ -31,7 +33,7 @@ function MyFrameMotion(props: MyFrameMotionProps) {
       initial="hidden"
       animate={control}
       variants={motionVariants}
-      transition={{ ease: 'easeOut', duration: 0.8 }}
+      transition={{ ease: 'easeInOut', duration: 0.8 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
