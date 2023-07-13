@@ -1,5 +1,4 @@
 import {
-  Anchor,
   Box,
   Button,
   Center,
@@ -59,12 +58,12 @@ export function ForgotPassPage() {
 
         <Group position="apart" mt="lg" className={classes.controls}>
           <Link href="/login" passHref>
-            <Anchor color="dimmed" size="sm" className={classes.control}>
+            <Text color="dimmed" size="sm" className={classes.control}>
               <Center inline>
                 <IconArrowLeft size={12} stroke={1.5} />
                 <Box ml={5}>Back to login page</Box>
               </Center>
-            </Anchor>
+            </Text>
           </Link>
           <Button
             className={classes.control}
