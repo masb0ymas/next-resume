@@ -80,14 +80,14 @@ function GithubSection() {
         >
           <MyFrameMotion>
             <Image
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=masb0ymas&hide_border=true&layout=compact&theme=vue-dark"
+              src="https://grs.masb0ymas.com/api/top-langs/?username=masb0ymas&hide_border=true&layout=compact&theme=vue-dark"
               alt="my github board"
             />
           </MyFrameMotion>
 
           <MyFrameMotion>
             <Image
-              src="https://github-readme-stats.vercel.app/api?username=masb0ymas&show_icons=true&hide_border=true&theme=vue-dark"
+              src="https://grs.masb0ymas.com/api?username=masb0ymas&show_icons=true&hide_border=true&theme=vue-dark"
               alt="my github board"
             />
           </MyFrameMotion>
