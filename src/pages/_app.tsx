@@ -3,6 +3,7 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from '@mantine/core'
+import { Analytics } from '@vercel/analytics/react'
 import { ModalsProvider } from '@mantine/modals'
 import { Notifications } from '@mantine/notifications'
 import { getCookie, setCookie } from 'cookies-next'
@@ -81,6 +82,8 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
             {siteLayout}
             {/* render site layout */}
           </ModalsProvider>
+
+          <Analytics />
         </MantineProvider>
       </ColorSchemeProvider>
     </>
