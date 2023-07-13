@@ -1,5 +1,4 @@
 import {
-  Anchor,
   Button,
   Checkbox,
   Container,
@@ -101,7 +100,7 @@ function LoginPage() {
         {`Do not have an account yet? `}
 
         <Link href="/register" className={classes.rootLink}>
-          <Anchor size="sm">Create account</Anchor>
+          <Text size="sm">Create account</Text>
         </Link>
       </Text>
 
@@ -130,7 +129,7 @@ function LoginPage() {
             <Checkbox label="Remember me" />
 
             <Link href="/forgot-password" className={classes.rootLink}>
-              <Anchor size="sm">Forgot password?</Anchor>
+              <Text size="sm">Forgot password?</Text>
             </Link>
           </Group>
 
