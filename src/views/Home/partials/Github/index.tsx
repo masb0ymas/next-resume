@@ -22,8 +22,8 @@ interface FeatureProps {
 function Feature({ id, title, repositoryURL, githubStatURL }: FeatureProps) {
   return (
     <MyFrameMotion>
-      <Link href={repositoryURL} passHref key={id}>
-        <UnstyledButton component="a">
+      <Link href={repositoryURL} target="_blank" passHref key={id}>
+        <UnstyledButton>
           <Image src={githubStatURL} alt={title} width="100%" />
         </UnstyledButton>
       </Link>
