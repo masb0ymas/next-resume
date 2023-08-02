@@ -8,9 +8,11 @@ import {
   UnstyledButton,
 } from '@mantine/core'
 import {
+  IconBrandFacebook,
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandMastodon,
   IconBrandTwitter,
   IconBrandWhatsapp,
 } from '@tabler/icons-react'
@@ -56,6 +58,34 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
+const data = [
+  {
+    label: 'Linked in',
+    url: 'https://www.linkedin.com/in/masb0ymas/',
+    icon: <IconBrandLinkedin size={24} stroke={1.5} />,
+  },
+  {
+    label: 'Twitter',
+    url: 'https://twitter.com/masb0ymas',
+    icon: <IconBrandTwitter size={24} stroke={1.5} />,
+  },
+  {
+    label: 'Facebook',
+    url: 'https://www.facebook.com/profile.php?id=100000480470670',
+    icon: <IconBrandFacebook size={24} stroke={1.5} />,
+  },
+  {
+    label: 'Instagram',
+    url: 'https://www.instagram.com/masb0ymas/',
+    icon: <IconBrandInstagram size={24} stroke={1.5} />,
+  },
+  {
+    label: 'Mastodon',
+    url: 'https://mastodon.social/@masb0ymas',
+    icon: <IconBrandMastodon size={24} stroke={1.5} />,
+  },
+]
+
 function Footer() {
   const { classes } = useStyles()
 
@@ -65,9 +95,10 @@ function Footer() {
         <Link
           href="https://github.com/masb0ymas"
           passHref
+          target="_blank"
           style={{ textDecoration: 'none' }}
         >
-          <UnstyledButton component="a" target="_blank">
+          <UnstyledButton>
             <Tooltip
               label="Github"
               transitionProps={{ transition: 'pop', duration: 300 }}
@@ -81,38 +112,19 @@ function Footer() {
         </Link>
 
         <Group spacing={5} className={classes.links} position="right" noWrap>
-          <Tooltip
-            label="Linkedin"
-            transitionProps={{ transition: 'pop', duration: 300 }}
-          >
-            <Link href="https://www.linkedin.com/in/masb0ymas/" passHref>
-              <ActionIcon size="lg" component="a" target="_blank">
-                <IconBrandLinkedin size={24} stroke={1.5} />
-              </ActionIcon>
-            </Link>
-          </Tooltip>
-
-          <Tooltip
-            label="Twitter"
-            transitionProps={{ transition: 'pop', duration: 300 }}
-          >
-            <Link href="https://twitter.com/masb0ymas" passHref>
-              <ActionIcon size="lg" component="a" target="_blank">
-                <IconBrandTwitter size={24} stroke={1.5} />
-              </ActionIcon>
-            </Link>
-          </Tooltip>
-
-          <Tooltip
-            label="Instagram"
-            transitionProps={{ transition: 'pop', duration: 300 }}
-          >
-            <Link href="https://www.instagram.com/masb0ymas/" passHref>
-              <ActionIcon size="lg" component="a" target="_blank">
-                <IconBrandInstagram size={24} stroke={1.5} />
-              </ActionIcon>
-            </Link>
-          </Tooltip>
+          {data.map((item) => {
+            return (
+              <Tooltip
+                label={item.label}
+                transitionProps={{ transition: 'pop', duration: 300 }}
+                key={item.label}
+              >
+                <Link href={item.url} passHref target="_blank">
+                  <ActionIcon size="lg">{item.icon}</ActionIcon>
+                </Link>
+              </Tooltip>
+            )
+          })}
         </Group>
       </Container>
 
