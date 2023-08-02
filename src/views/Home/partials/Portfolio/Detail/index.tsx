@@ -2,12 +2,15 @@ import { Carousel } from '@mantine/carousel'
 import {
   Avatar,
   Badge,
+  Button,
+  Card,
   Center,
   Container,
   Divider,
   Grid,
   Group,
   Image,
+  SimpleGrid,
   Space,
   Stack,
   Text,
@@ -15,10 +18,13 @@ import {
   Tooltip,
 } from '@mantine/core'
 import { useRouter } from 'next/router'
-import dummyData from '~/data/dummy/portfolio.json'
-import portfolioStyles from '../styles'
+import _ from 'lodash'
+import Link from 'next/link'
 import Dots from '~/core/components/Dots'
+import dummyData from '~/data/dummy/portfolio.json'
 import heroStyles from '../../Hero/styles'
+import portfolioStyles from '../styles'
+import Feature from '../partials/Feature'
 
 function PortfolioDetail() {
   const { classes } = portfolioStyles()
@@ -31,6 +37,11 @@ function PortfolioDetail() {
   const newData = data.find((x) => x.slug === slug)
 
   const newStack = newData?.stack.split(',')
+
+  const shuffleData = _.shuffle(data)
+  const features = shuffleData
+    .slice(0, 3)
+    .map((feature) => <Feature {...feature} key={feature.id} />)
 
   return (
     <Container className={classes.wrapper} size={1280}>
@@ -91,22 +102,39 @@ function PortfolioDetail() {
         <Grid columns={24}>
           {newData?.tools.map((item) => (
             <Grid.Col xs={8} sm={4} key={item}>
-              <Center>
-                <Tooltip
-                  label={item}
-                  transitionProps={{ transition: 'pop', duration: 300 }}
-                >
-                  <Avatar
-                    size="xl"
-                    radius="3rem"
-                    src={`/static/tools/${item}.png`}
-                  />
-                </Tooltip>
-              </Center>
+              <Tooltip
+                label={item}
+                transitionProps={{ transition: 'pop', duration: 300 }}
+              >
+                <Card shadow="md" radius="lg" padding="sm">
+                  <Avatar size="xl" src={`/static/tools/${item}.png`} />
+                </Card>
+              </Tooltip>
             </Grid.Col>
           ))}
         </Grid>
       </Container>
+
+      <Divider variant="dashed" my="lg" />
+
+      <Title className={classes.title}>Other Portfolio</Title>
+
+      <SimpleGrid
+        mt={40}
+        cols={3}
+        breakpoints={[
+          { maxWidth: 980, cols: 2, spacing: 'xl' },
+          { maxWidth: 755, cols: 1, spacing: 'xl' },
+        ]}
+      >
+        {features}
+      </SimpleGrid>
+
+      <Center my="lg">
+        <Link href="/" passHref>
+          <Button radius="lg">Back Home</Button>
+        </Link>
+      </Center>
     </Container>
   )
 }
