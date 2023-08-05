@@ -7,7 +7,6 @@ import {
   Center,
   Container,
   Divider,
-  Grid,
   Group,
   Image,
   SimpleGrid,
@@ -17,14 +16,14 @@ import {
   Title,
   Tooltip,
 } from '@mantine/core'
-import { useRouter } from 'next/router'
 import _ from 'lodash'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Dots from '~/core/components/Dots'
 import dummyData from '~/data/dummy/portfolio.json'
 import heroStyles from '../../Hero/styles'
-import portfolioStyles from '../styles'
 import Feature from '../partials/Feature'
+import portfolioStyles from '../styles'
 
 function PortfolioDetail() {
   const { classes } = portfolioStyles()
@@ -99,20 +98,26 @@ function PortfolioDetail() {
 
         <Divider variant="dashed" my="lg" />
 
-        <Grid columns={24}>
+        <SimpleGrid
+          mt={40}
+          cols={6}
+          breakpoints={[
+            { maxWidth: 980, cols: 6, spacing: 'md' },
+            { maxWidth: 755, cols: 3, spacing: 'md' },
+          ]}
+        >
           {newData?.tools.map((item) => (
-            <Grid.Col xs={8} sm={4} key={item}>
-              <Tooltip
-                label={item}
-                transitionProps={{ transition: 'pop', duration: 300 }}
-              >
-                <Card shadow="md" radius="lg" padding="sm">
-                  <Avatar size="xl" src={`/static/tools/${item}.png`} />
-                </Card>
-              </Tooltip>
-            </Grid.Col>
+            <Tooltip
+              label={item}
+              transitionProps={{ transition: 'pop', duration: 300 }}
+              key={item}
+            >
+              <Card shadow="md" radius="lg" padding="sm">
+                <Avatar size="xl" src={`/static/tools/${item}.png`} />
+              </Card>
+            </Tooltip>
           ))}
-        </Grid>
+        </SimpleGrid>
       </Container>
 
       <Divider variant="dashed" my="lg" />
