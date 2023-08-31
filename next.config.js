@@ -10,6 +10,7 @@ module.exports = withBundleAnalyzer({
   env: {
     BRAND: process.env.BRAND,
     URL_ENV: process.env.URL_ENV,
+    SITE_URL: process.env.SITE_URL,
     AXIOS_TIMEOUT: process.env.AXIOS_TIMEOUT,
     LOCAL_STORAGE_SESSION: process.env.LOCAL_STORAGE_SESSION,
   },
