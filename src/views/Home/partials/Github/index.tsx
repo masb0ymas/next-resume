@@ -1,4 +1,6 @@
 import {
+  Button,
+  Center,
   Container,
   Image,
   SimpleGrid,
@@ -6,6 +8,7 @@ import {
   Title,
   UnstyledButton,
 } from '@mantine/core'
+import { IconHeartHandshake } from '@tabler/icons-react'
 import Link from 'next/link'
 import Dots from '~/core/components/Dots'
 import MyFrameMotion from '~/core/components/MyFrameMotion'
@@ -71,7 +74,7 @@ function GithubSection() {
         {features}
       </SimpleGrid>
 
-      <Container size={1080} p={0}>
+      <Container size={1080} p={0} mb={120}>
         <SimpleGrid
           mt="md"
           cols={2}
@@ -93,6 +96,19 @@ function GithubSection() {
           </MyFrameMotion>
         </SimpleGrid>
       </Container>
+
+      <Center>
+        <Link href="https://s.id/masb0ymas" passHref target="_blank">
+          <Button
+            size="lg"
+            radius="xl"
+            variant="light"
+            leftIcon={<IconHeartHandshake />}
+          >
+            How to support me
+          </Button>
+        </Link>
+      </Center>
     </Container>
   )
 }
