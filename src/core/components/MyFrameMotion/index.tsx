@@ -23,7 +23,7 @@ function MyFrameMotion(props: MyFrameMotionProps) {
   }, [control, inView])
 
   const motionVariants = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
     hidden: { opacity: 0, scale: 0 },
   }
 
@@ -33,7 +33,7 @@ function MyFrameMotion(props: MyFrameMotionProps) {
       initial="hidden"
       animate={control}
       variants={motionVariants}
-      transition={{ ease: 'easeInOut', duration: 0.8 }}
+      transition={{ ease: 'easeInOut', duration: 2 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
