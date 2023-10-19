@@ -1,12 +1,17 @@
 {
-  "name": "mantine-minimal-next-template",
-  "version": "0.1.0",
+  "name": "resume-masb0ymas",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "author": "<n.fajri@mail.com> masb0ymas",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18.x"
   },
   "dependencies": {
     "@mantine/core": "7.1.3",
