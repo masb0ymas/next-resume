@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://resume.masb0ymas.com
-
-# Sitemaps
-Sitemap: https://resume.masb0ymas.com/sitemap.xml

@@ -1,18 +1,17 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
-
-module.exports = withBundleAnalyzer({
-  reactStrictMode: false,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
+
   env: {
-    BRAND: process.env.BRAND,
-    URL_ENV: process.env.URL_ENV,
-    SITE_URL: process.env.SITE_URL,
-    AXIOS_TIMEOUT: process.env.AXIOS_TIMEOUT,
-    LOCAL_STORAGE_SESSION: process.env.LOCAL_STORAGE_SESSION,
+    APP_NAME: process.env.APP_NAME,
+    APP_PREFIX: process.env.APP_PREFIX,
   },
-  output: 'standalone',
-})
+
+  output: "standalone",
+};
+
+module.exports = nextConfig;

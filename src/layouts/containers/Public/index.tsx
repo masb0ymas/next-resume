@@ -1,43 +1,40 @@
-'use client'
+"use client";
 
-/* eslint-disable react/jsx-no-constructed-context-values */
-import { Loader } from '@mantine/core'
-import { ReactComponentLike } from 'prop-types'
-import React, { useState } from 'react'
-import PublicFooterLayout from './Footer'
+import { Container, Loader } from "@mantine/core";
+import { ReactComponentLike } from "prop-types";
+import React, { useState } from "react";
+import PublicFooter from "./Footer";
+import classes from "./main.module.css";
 
 interface IProps {
-  Component: ReactComponentLike
+  Component: ReactComponentLike;
 }
 
 const PublicContext = React.createContext<
   {
-    stateLayoutLoading: [boolean, (loading: boolean) => void]
+    stateLayoutLoading: [boolean, (loading: boolean) => void];
   } & any
 >({
   stateLayoutLoading: [false, () => {}],
-})
+});
 
-/**
- *
- * @param props
- * @returns
- */
-function PublicContainer(props: IProps) {
-  const { Component } = props
+export default function PublicContainer(props: IProps) {
+  const { Component } = props;
 
-  const stateLayoutLoading = useState(false)
-  const [isLayoutLoading] = stateLayoutLoading
+  const stateLayoutLoading = useState(false);
+  const [isLayoutLoading] = stateLayoutLoading;
 
   return (
     <PublicContext.Provider value={{ stateLayoutLoading }}>
       {isLayoutLoading && <Loader />}
 
-      <Component {...props} />
+      <div className={classes.root_layout}>
+        <Container className={classes.wrapper} size="xl">
+          <Component {...props} />
 
-      <PublicFooterLayout />
+          <PublicFooter />
+        </Container>
+      </div>
     </PublicContext.Provider>
-  )
+  );
 }
-
-export default PublicContainer

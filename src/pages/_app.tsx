@@ -1,43 +1,33 @@
-/* eslint-disable import/no-unresolved */
-import {
-  ColorScheme,
-  ColorSchemeProvider,
-  MantineProvider,
-} from '@mantine/core'
-import { Analytics } from '@vercel/analytics/react'
-import { ModalsProvider } from '@mantine/modals'
-import { Notifications } from '@mantine/notifications'
-import { getCookie, setCookie } from 'cookies-next'
-import _ from 'lodash'
-import NextApp, { AppContext, AppProps } from 'next/app'
-import Head from 'next/head'
-import { useState } from 'react'
-import slugify from 'slugify'
-import { BRAND } from '~/config/env'
-import { RouterTransition } from '~/core/components/RouterTransition'
-import getSiteLayout from '~/layouts/core'
+import { MantineProvider, localStorageColorSchemeManager } from "@mantine/core";
+import AOS from "aos";
+import { AppProps } from "next/app";
+import Head from "next/head";
+import { useEffect } from "react";
+import env from "~/config/env";
+import { theme } from "~/core/styles/theme";
+import getSiteLayout from "~/layouts/core";
 
-const brand = _.toLower(slugify(BRAND))
-const cookieName = `${brand}-color-scheme`
+import "@mantine/core/styles.css";
+import "aos/dist/aos.css";
 
-export default function App(props: AppProps & { colorScheme: ColorScheme }) {
-  const [colorScheme, setColorScheme] = useState<ColorScheme>(props.colorScheme)
+const colorSchemeManager = localStorageColorSchemeManager({
+  key: `${env.APP_PREFIX}-color-scheme`,
+});
 
-  const toggleColorScheme = (value?: ColorScheme) => {
-    const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark')
-    setColorScheme(nextColorScheme)
-    setCookie(cookieName, nextColorScheme, {
-      maxAge: 60 * 60 * 24 * 30,
-    })
-  }
+export default function App(props: AppProps) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
 
-  const siteLayout = getSiteLayout(props)
+  const siteLayout = getSiteLayout(props);
 
-  const title = 'Resume'
-  const description = 'My Resume ( masb0ymas )'
-  const metaURL = 'https://masb0ymas.netlify.app/'
-  const metaImage = '/static/github-logo.png'
-  const webIconURL = '/static/github-logo.png'
+  const title = "Resume";
+  const description = "My Resume ( masb0ymas )";
+  const metaURL = "https://resume.masb0ymas.com";
+  const metaImage = "/static/logo.png";
+  const webIconURL = "/static/logo.png";
 
   return (
     <>
@@ -62,39 +52,9 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         />
       </Head>
 
-      <ColorSchemeProvider
-        colorScheme={colorScheme}
-        toggleColorScheme={toggleColorScheme}
-      >
-        <MantineProvider
-          theme={{ colorScheme, fontFamily: 'Lato' }}
-          withGlobalStyles
-          withNormalizeCSS
-        >
-          {/* nprogress loader */}
-          <RouterTransition />
-
-          {/* notification provider */}
-          <Notifications position="top-right" zIndex={2077} />
-
-          {/* modal provider */}
-          <ModalsProvider>
-            {/* render site layout */}
-            {siteLayout}
-            {/* render site layout */}
-          </ModalsProvider>
-
-          <Analytics />
-        </MantineProvider>
-      </ColorSchemeProvider>
+      <MantineProvider theme={theme} colorSchemeManager={colorSchemeManager}>
+        {siteLayout}
+      </MantineProvider>
     </>
-  )
-}
-
-App.getInitialProps = async (appContext: AppContext) => {
-  const appProps = await NextApp.getInitialProps(appContext)
-  return {
-    ...appProps,
-    colorScheme: getCookie(cookieName, appContext.ctx) || 'dark',
-  }
+  );
 }

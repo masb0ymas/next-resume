@@ -1,0 +1,221 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "thumbnail": "/static/images/frigel-ai/kelola-produk.png",
+      "brand_logo": "/static/images/frigel-ai/frigel-ai-logo.png",
+      "title": "Frigel Ai ( ERP )",
+      "slug": "frigel-ai-erp",
+      "job": "Fullstack Developer",
+      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker, AWS, Open Street Map",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "typeorm",
+        "postgresql",
+        "nextjs",
+        "react-query",
+        "mantine-ui",
+        "docker",
+        "osm",
+        "aws"
+      ],
+      "images": [
+        "/static/images/frigel-ai/login.png",
+        "/static/images/frigel-ai/product.png",
+        "/static/images/frigel-ai/kelola-produk.png",
+        "/static/images/frigel-ai/delivery.png"
+      ],
+      "description": "ERP Website with OpenStreetMap integration for shipping tracking"
+    },
+    {
+      "id": 2,
+      "thumbnail": "/static/images/miningsapp/jetty.png",
+      "brand_logo": "/static/images/miningsapp/mining-logo.png",
+      "title": "Holding Mining",
+      "slug": "holding-mining",
+      "job": "Backend Developer",
+      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, Docker, Google Cloud Platform",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "typeorm",
+        "postgresql",
+        "nextjs",
+        "gcp",
+        "docker"
+      ],
+      "images": [
+        "/static/images/miningsapp/company.png",
+        "/static/images/miningsapp/dashboard.png",
+        "/static/images/miningsapp/operational.png",
+        "/static/images/miningsapp/jetty.png"
+      ],
+      "description": "Mine management website development, both from requests, finance, barges, etc."
+    },
+    {
+      "id": 3,
+      "thumbnail": "/static/images/trasmi/landing.png",
+      "brand_logo": "/static/images/trasmi/trasmi-logo.png",
+      "title": "Trasmi ( Insurance )",
+      "slug": "trasmi-insurance",
+      "job": "Backend Developer",
+      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, Docker, AWS",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "typeorm",
+        "postgresql",
+        "nextjs",
+        "docker",
+        "aws"
+      ],
+      "images": [
+        "/static/images/trasmi/b2c.png",
+        "/static/images/trasmi/master.png",
+        "/static/images/trasmi/b2c.png",
+        "/static/images/trasmi/landing.png"
+      ],
+      "description": "Website development for buying insurance and claims, both Business to Customer and Business to Business."
+    },
+    {
+      "id": 4,
+      "thumbnail": "/static/images/karcisbola/match.png",
+      "brand_logo": "/static/images/karcisbola/karcisbola-logo.png",
+      "title": "Karcisbola",
+      "slug": "karcisbola",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, React Query, Formik, Mantine UI, Docker, Google Cloud Platform",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "typeorm",
+        "postgresql",
+        "nextjs",
+        "react-query",
+        "formik",
+        "mantine-ui",
+        "docker",
+        "gcp"
+      ],
+      "images": [
+        "/static/images/karcisbola/login.png",
+        "/static/images/karcisbola/match.png",
+        "/static/images/karcisbola/pnl.png",
+        "/static/images/karcisbola/karcis.png"
+      ],
+      "description": "Website development for buying football tickets and prize draws."
+    },
+    {
+      "id": 5,
+      "thumbnail": "/static/images/bri-agro/login.png",
+      "brand_logo": "/static/images/bri-agro/bri-agro-logo.png",
+      "title": "BRI Agro LMS",
+      "slug": "bri-agro-lms",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, PostgreSQL, NextJS, React Query, Ant Design, Formik, Flutter",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "sequelize",
+        "postgresql",
+        "nextjs",
+        "react-query",
+        "ant-design",
+        "formik",
+        "flutter"
+      ],
+      "images": [
+        "/static/images/bri-agro/login.png",
+        "/static/images/bri-agro/materi.png",
+        "/static/images/bri-agro/news.png"
+      ],
+      "description": "Development of a learning management system website for internal BRI Agro."
+    },
+    {
+      "id": 6,
+      "thumbnail": "/static/images/kemenkeu/nadine/login.png",
+      "brand_logo": "/static/images/kemenkeu/kemenkeu-logo.png",
+      "title": "Nadine ( Kemenkeu )",
+      "slug": "nadine-kemenkeu",
+      "job": "Backend Developer",
+      "stack": "Laravel, MongoDB, SSO, Docker, MinIO, E-Sign BSSN",
+      "tools": [
+        "vscode",
+        "laravel",
+        "mongodb",
+        "docker",
+        "minio",
+        "bssn"
+      ],
+      "images": [
+        "/static/images/kemenkeu/nadine/login.png"
+      ],
+      "description": "The development of the old application, Nadine (Electronic Service Memorandum) focuses on electronic mail within the Ministry of Finance."
+    },
+    {
+      "id": 7,
+      "thumbnail": "/static/images/kementan/simpel/landing.png",
+      "brand_logo": "/static/images/kementan/kementan-logo.png",
+      "title": "SIMPEL ( Kementan )",
+      "slug": "simpel-kementan",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, MariaDB, ReactJS, Bulma CSS, Formik",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "sequelize",
+        "mariadb",
+        "reactjs",
+        "bulma-css",
+        "formik"
+      ],
+      "images": [
+        "/static/images/kementan/simpel/landing.png"
+      ],
+      "description": "The development of the old, simple application from the Ministry of Agriculture is more focused on licensing fertilizers and pesticides."
+    },
+    {
+      "id": 8,
+      "thumbnail": "/static/images/indramayu/siayu/login-kependudukan.png",
+      "brand_logo": "/static/images/indramayu/indramayu-logo.jpg",
+      "title": "Indramayu Kependudukan",
+      "slug": "indramayu-kependudukan",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, MariaDB, ReactJS, Bulma CSS",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "sequelize",
+        "mariadb",
+        "reactjs",
+        "bulma-css"
+      ],
+      "images": [
+        "/static/images/indramayu/siayu/login-kependudukan.png"
+      ],
+      "description": "Development of the Indramayu population website (KTP, KK, and other documents) and integration with the Bandung City Samsat."
+    },
+    {
+      "id": 9,
+      "thumbnail": "/static/images/indramayu/aio/dashboard-aio.png",
+      "brand_logo": "/static/images/indramayu/indramayu-logo.jpg",
+      "title": "Indramayu All In One",
+      "slug": "indramayu-all-in-one",
+      "job": "Full Stack Developer",
+      "stack": "ExpressJS, Sequelize, MariaDB, ReactJS, Bootstrap",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "sequelize",
+        "mariadb",
+        "reactjs",
+        "bootstrap"
+      ],
+      "images": [
+        "/static/images/indramayu/aio/dashboard-aio.png"
+      ],
+      "description": "Development of a smart city website Indramayu but more on information services and public complaints."
+    }
+  ]
+}
