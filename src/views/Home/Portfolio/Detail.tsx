@@ -94,8 +94,6 @@ export default function PortfolioDetail() {
               width={50}
               height={50}
               style={{ borderRadius: rem(10), objectFit: "cover" }}
-              placeholder="blur"
-              blurDataURL="https://placehold.co/720x512"
             />
 
             <Title>{title}</Title>
@@ -122,8 +120,6 @@ export default function PortfolioDetail() {
                   width={1280}
                   height={512}
                   style={{ borderRadius: rem(20), width: "100%" }}
-                  placeholder="blur"
-                  blurDataURL="https://placehold.co/1280x512"
                 />
               </Carousel.Slide>
             ))}

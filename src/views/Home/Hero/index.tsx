@@ -21,8 +21,6 @@ export default function HeroSection() {
             height={140}
             style={{ borderRadius: rem(55) }}
             data-aos="fade-up"
-            placeholder="blur"
-            blurDataURL="https://placehold.co/720x512"
           />
 
           <Title data-aos="fade-up" className={classes.title}>

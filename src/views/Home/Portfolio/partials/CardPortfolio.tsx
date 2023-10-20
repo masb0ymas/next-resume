@@ -42,8 +42,6 @@ export default function CardPortfolio(props: CardPortfolioProps) {
           width={720}
           height={512}
           style={{ borderRadius: rem(10) }}
-          placeholder="blur"
-          blurDataURL="https://placehold.co/720x512"
         />
       </AspectRatio>
 
@@ -61,11 +59,9 @@ export default function CardPortfolio(props: CardPortfolioProps) {
         <Image
           src={data.brand_logo}
           alt={data.title}
-          width={35}
-          height={35}
+          width={40}
+          height={40}
           style={{ borderRadius: rem(10) }}
-          placeholder="blur"
-          blurDataURL="https://placehold.co/720x512"
         />
       </Group>
     </Card>
