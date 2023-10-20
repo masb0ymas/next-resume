@@ -86,6 +86,7 @@ export default function CardWorkEdu(props: CardWorkEduProps) {
           >
             {icon}
           </ThemeIcon>
+
           <Text size="xl" fw={500} mt="md">
             {data.title}
           </Text>

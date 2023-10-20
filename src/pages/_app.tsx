@@ -8,6 +8,7 @@ import { theme } from "~/core/styles/theme";
 import getSiteLayout from "~/layouts/core";
 
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import "aos/dist/aos.css";
 
 const colorSchemeManager = localStorageColorSchemeManager({
@@ -26,8 +27,8 @@ export default function App(props: AppProps) {
   const title = "Resume";
   const description = "My Resume ( masb0ymas )";
   const metaURL = "https://resume.masb0ymas.com";
-  const metaImage = "/static/logo.png";
-  const webIconURL = "/static/logo.png";
+  const metaImage = "/static/images/logo.png";
+  const webIconURL = "/static/images/logo.png";
 
   return (
     <>
@@ -52,7 +53,11 @@ export default function App(props: AppProps) {
         />
       </Head>
 
-      <MantineProvider theme={theme} colorSchemeManager={colorSchemeManager}>
+      <MantineProvider
+        theme={theme}
+        colorSchemeManager={colorSchemeManager}
+        defaultColorScheme="dark"
+      >
         {siteLayout}
       </MantineProvider>
     </>

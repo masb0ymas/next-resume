@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": 1,
+      "id": "2e5ff238-f1b9-4917-ac88-a6f56815fe22",
       "thumbnail": "/static/images/frigel-ai/kelola-produk.png",
       "brand_logo": "/static/images/frigel-ai/frigel-ai-logo.png",
       "title": "Frigel Ai ( ERP )",
@@ -17,7 +17,7 @@
         "react-query",
         "mantine-ui",
         "docker",
-        "osm",
+        "open street map",
         "aws"
       ],
       "images": [
@@ -29,7 +29,7 @@
       "description": "ERP Website with OpenStreetMap integration for shipping tracking"
     },
     {
-      "id": 2,
+      "id": "646160de-6617-4a09-9a6d-400ef0e28b3c",
       "thumbnail": "/static/images/miningsapp/jetty.png",
       "brand_logo": "/static/images/miningsapp/mining-logo.png",
       "title": "Holding Mining",
@@ -42,7 +42,7 @@
         "typeorm",
         "postgresql",
         "nextjs",
-        "gcp",
+        "google cloud platform",
         "docker"
       ],
       "images": [
@@ -54,7 +54,7 @@
       "description": "Mine management website development, both from requests, finance, barges, etc."
     },
     {
-      "id": 3,
+      "id": "04a1054c-67bd-4774-9481-461524542e46",
       "thumbnail": "/static/images/trasmi/landing.png",
       "brand_logo": "/static/images/trasmi/trasmi-logo.png",
       "title": "Trasmi ( Insurance )",
@@ -79,7 +79,7 @@
       "description": "Website development for buying insurance and claims, both Business to Customer and Business to Business."
     },
     {
-      "id": 4,
+      "id": "7eb4e0df-14f2-4f6a-9c31-6f4f6ca94d3f",
       "thumbnail": "/static/images/karcisbola/match.png",
       "brand_logo": "/static/images/karcisbola/karcisbola-logo.png",
       "title": "Karcisbola",
@@ -96,7 +96,7 @@
         "formik",
         "mantine-ui",
         "docker",
-        "gcp"
+        "google cloud platform"
       ],
       "images": [
         "/static/images/karcisbola/login.png",
@@ -107,7 +107,7 @@
       "description": "Website development for buying football tickets and prize draws."
     },
     {
-      "id": 5,
+      "id": "9ddc2fa9-002e-469f-bf44-abbe8e6ce5de",
       "thumbnail": "/static/images/bri-agro/login.png",
       "brand_logo": "/static/images/bri-agro/bri-agro-logo.png",
       "title": "BRI Agro LMS",
@@ -133,7 +133,7 @@
       "description": "Development of a learning management system website for internal BRI Agro."
     },
     {
-      "id": 6,
+      "id": "d7cab37d-3edd-4bed-befc-c270a7aa3d33",
       "thumbnail": "/static/images/kemenkeu/nadine/login.png",
       "brand_logo": "/static/images/kemenkeu/kemenkeu-logo.png",
       "title": "Nadine ( Kemenkeu )",
@@ -154,7 +154,7 @@
       "description": "The development of the old application, Nadine (Electronic Service Memorandum) focuses on electronic mail within the Ministry of Finance."
     },
     {
-      "id": 7,
+      "id": "b5a1c598-0a72-4fa1-be7c-451c6b45b66d",
       "thumbnail": "/static/images/kementan/simpel/landing.png",
       "brand_logo": "/static/images/kementan/kementan-logo.png",
       "title": "SIMPEL ( Kementan )",
@@ -176,7 +176,7 @@
       "description": "The development of the old, simple application from the Ministry of Agriculture is more focused on licensing fertilizers and pesticides."
     },
     {
-      "id": 8,
+      "id": "c24912ab-4264-441d-804c-5d061e8834a9",
       "thumbnail": "/static/images/indramayu/siayu/login-kependudukan.png",
       "brand_logo": "/static/images/indramayu/indramayu-logo.jpg",
       "title": "Indramayu Kependudukan",
@@ -197,7 +197,7 @@
       "description": "Development of the Indramayu population website (KTP, KK, and other documents) and integration with the Bandung City Samsat."
     },
     {
-      "id": 9,
+      "id": "f02e19f9-42ef-4de9-9ffc-d820a5bc5de6",
       "thumbnail": "/static/images/indramayu/aio/dashboard-aio.png",
       "brand_logo": "/static/images/indramayu/indramayu-logo.jpg",
       "title": "Indramayu All In One",

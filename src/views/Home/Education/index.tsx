@@ -1,11 +1,9 @@
-import { Grid, Group, Paper, Stack, Text, ThemeIcon, rem } from "@mantine/core";
-import { IconInfoCircle, IconSchool } from "@tabler/icons-react";
-import { intervalToDuration } from "date-fns";
+import { Grid, Stack } from "@mantine/core";
 import { Dots } from "~/core/components/Dots";
+import CardWorkEdu from "../partials/CardWorkEdu";
 import SectionHead from "../partials/SectionHead";
 import classes from "../partials/home.module.css";
 import jsonData from "./education.json";
-import CardWorkEdu from "../partials/CardWorkEdu";
 
 export default function EducationSection() {
   const cards = jsonData.data.map((item, index) => {

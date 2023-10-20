@@ -9,6 +9,10 @@ const routes = [
     path: "/",
     layout: PublicContainer,
   },
+  {
+    path: "/p",
+    layout: PublicContainer,
+  },
 ];
 
 const homeRoutes = routes;

@@ -1,16 +1,7 @@
-import {
-  ActionIcon,
-  Container,
-  Image,
-  Stack,
-  Text,
-  Title,
-  rem,
-} from "@mantine/core";
-import { IconColorSwatch } from "@tabler/icons-react";
+import { Container, Image, Stack, Text, Title, rem } from "@mantine/core";
+import { ColorSchemeToggle } from "~/core/components/ColorSchemeToggle/ColorSchemeToggle";
 import { Dots } from "~/core/components/Dots";
 import classes from "../partials/home.module.css";
-import { ColorSchemeToggle } from "~/core/components/ColorSchemeToggle/ColorSchemeToggle";
 
 export default function HeroSection() {
   return (

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Grid, Image, Stack, UnstyledButton, rem } from "@mantine/core";
 import Link from "next/link";
 import SectionHead from "../partials/SectionHead";

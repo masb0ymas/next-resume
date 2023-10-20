@@ -1,5 +1,4 @@
 import { Text, Title } from "@mantine/core";
-import React from "react";
 import classes from "./home.module.css";
 
 interface SectionHeadProps {

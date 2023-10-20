@@ -1,5 +1,3 @@
-"use client";
-
 import { Container, Loader } from "@mantine/core";
 import { ReactComponentLike } from "prop-types";
 import React, { useState } from "react";
@@ -28,13 +26,13 @@ export default function PublicContainer(props: IProps) {
     <PublicContext.Provider value={{ stateLayoutLoading }}>
       {isLayoutLoading && <Loader />}
 
-      <div className={classes.root_layout}>
+      <main className={classes.root_layout}>
         <Container className={classes.wrapper} size="xl">
           <Component {...props} />
 
           <PublicFooter />
         </Container>
-      </div>
+      </main>
     </PublicContext.Provider>
   );
 }
