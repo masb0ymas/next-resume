@@ -1,11 +1,9 @@
-"use client";
-
-import { Button, Grid, Image, Stack, UnstyledButton, rem } from "@mantine/core";
+import { Button, Grid, Image, Stack, UnstyledButton } from "@mantine/core";
+import { IconHeartHandshake } from "@tabler/icons-react";
 import Link from "next/link";
 import SectionHead from "../partials/SectionHead";
 import classes from "../partials/home.module.css";
 import jsonData from "./github.json";
-import { IconHeartHandshake } from "@tabler/icons-react";
 
 export default function GithubSection() {
   const cards = jsonData.data.map((item, index) => {

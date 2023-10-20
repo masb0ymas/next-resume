@@ -3,10 +3,11 @@ import {
   Avatar,
   Card,
   Group,
-  Image,
   Stack,
   Text,
+  rem,
 } from "@mantine/core";
+import Image from "next/image";
 import Link from "next/link";
 import classes from "~/views/Home/partials/home.module.css";
 
@@ -43,7 +44,15 @@ export default function CardPortfolio(props: CardPortfolioProps) {
       data-aos-delay={100 * (index + 1)}
     >
       <AspectRatio ratio={1920 / 1080}>
-        <Image src={data.thumbnail} alt={data.title} />
+        <Image
+          src={data.thumbnail}
+          alt={data.title}
+          width={720}
+          height={512}
+          style={{ borderRadius: rem(10) }}
+          placeholder="blur"
+          blurDataURL="https://placehold.co/720x512"
+        />
       </AspectRatio>
 
       <Group justify="space-between" mt="md">

@@ -1,4 +1,5 @@
-import { Container, Image, Stack, Text, Title, rem } from "@mantine/core";
+import { Container, Stack, Text, Title, rem } from "@mantine/core";
+import Image from "next/image";
 import { ColorSchemeToggle } from "~/core/components/ColorSchemeToggle/ColorSchemeToggle";
 import { Dots } from "~/core/components/Dots";
 import classes from "../partials/home.module.css";
@@ -14,12 +15,14 @@ export default function HeroSection() {
       <div className={classes.inner}>
         <Stack gap={10} justify="center" align="center">
           <Image
-            radius={rem(60)}
             src="/static/images/avatar.jpeg"
-            h={140}
-            w={140}
             alt="avatar"
+            width={140}
+            height={140}
+            style={{ borderRadius: rem(55) }}
             data-aos="fade-up"
+            placeholder="blur"
+            blurDataURL="https://placehold.co/720x512"
           />
 
           <Title data-aos="fade-up" className={classes.title}>

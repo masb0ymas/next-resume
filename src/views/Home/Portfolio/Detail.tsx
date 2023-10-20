@@ -95,7 +95,7 @@ export default function PortfolioDetail() {
           >
             {data?.images?.map((item) => (
               <Carousel.Slide key={item}>
-                <Image src={item} alt={`${item}`} fit="contain" radius="xl" />
+                <Image src={item} alt={`${item}`} fit="cover" radius="xl" />
               </Carousel.Slide>
             ))}
           </Carousel>
