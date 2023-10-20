@@ -29,7 +29,7 @@ export default function GithubSection() {
     <div className={classes.inner}>
       <Stack gap={10} justify="center" align="center">
         <SectionHead
-          title="My Open source github"
+          title="My Open Source github"
           subtitle="My activities on open source github."
         />
 

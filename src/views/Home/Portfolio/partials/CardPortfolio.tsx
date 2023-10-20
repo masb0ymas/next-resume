@@ -1,17 +1,9 @@
-import {
-  AspectRatio,
-  Avatar,
-  Card,
-  Group,
-  Stack,
-  Text,
-  rem,
-} from "@mantine/core";
+import { AspectRatio, Card, Group, Stack, Text, rem } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "~/views/Home/partials/home.module.css";
 
-interface PortfolioEntity {
+export interface PortfolioEntity {
   id: string;
   thumbnail: string;
   brand_logo: string;
@@ -66,7 +58,15 @@ export default function CardPortfolio(props: CardPortfolioProps) {
           </Text>
         </Stack>
 
-        <Avatar src={data.brand_logo} alt={data.title} />
+        <Image
+          src={data.brand_logo}
+          alt={data.title}
+          width={35}
+          height={35}
+          style={{ borderRadius: rem(10) }}
+          placeholder="blur"
+          blurDataURL="https://placehold.co/720x512"
+        />
       </Group>
     </Card>
   );

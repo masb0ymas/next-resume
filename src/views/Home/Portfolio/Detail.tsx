@@ -1,6 +1,7 @@
+"use client";
+
 import { Carousel } from "@mantine/carousel";
 import {
-  Avatar,
   Badge,
   Container,
   Divider,
@@ -15,6 +16,7 @@ import {
 import { useViewportSize } from "@mantine/hooks";
 import Autoplay from "embla-carousel-autoplay";
 import _ from "lodash";
+import NextImage from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import { Dots } from "~/core/components/Dots";
@@ -48,8 +50,16 @@ export default function PortfolioDetail() {
   const { width } = useViewportSize();
   const autoplay = useRef(Autoplay({ delay: 5000 }));
 
-  const data = jsonData.data.find((x) => x.slug === slug);
-  const newStack = data?.stack.split(",");
+  const findBySlug = jsonData.data.find((x) => x.slug === slug);
+  const brand_logo = _.get(findBySlug, "brand_logo", "");
+  const title = _.get(findBySlug, "title", "");
+  const stack = _.get(findBySlug, "stack", "");
+  const description = _.get(findBySlug, "description", "");
+  const job = _.get(findBySlug, "job", "");
+  const images = _.get(findBySlug, "images", []);
+  const tools = _.get(findBySlug, "tools", []);
+
+  const newStack = stack.split(",");
 
   const shuffleData = _.shuffle(jsonData.data);
   const cards = shuffleData.slice(0, 3).map((item, index) => {
@@ -78,14 +88,24 @@ export default function PortfolioDetail() {
       <div className={classes.inner}>
         <Stack gap="xl" justify="center" align="center">
           <Group>
-            <Avatar src={data?.brand_logo} alt={data?.title} />
-            <Title>{data?.title}</Title>
+            <NextImage
+              src={brand_logo}
+              alt={title}
+              width={50}
+              height={50}
+              style={{ borderRadius: rem(10), objectFit: "cover" }}
+              placeholder="blur"
+              blurDataURL="https://placehold.co/720x512"
+            />
+
+            <Title>{title}</Title>
           </Group>
 
           <Carousel
             slideSize={slideSize}
-            height="100%"
             slideGap={gapSize}
+            w="100%"
+            h="100%"
             loop
             withIndicators
             withControls
@@ -93,21 +113,27 @@ export default function PortfolioDetail() {
             onMouseEnter={autoplay.current.stop}
             onMouseLeave={autoplay.current.reset}
           >
-            {data?.images?.map((item) => (
+            {images?.map((item) => (
               <Carousel.Slide key={item}>
-                <Image src={item} alt={`${item}`} fit="cover" radius="xl" />
+                <Image
+                  src={item}
+                  alt={item}
+                  component={NextImage}
+                  width={1280}
+                  height={512}
+                  style={{ borderRadius: rem(20), width: "100%" }}
+                  placeholder="blur"
+                  blurDataURL="https://placehold.co/1280x512"
+                />
               </Carousel.Slide>
             ))}
           </Carousel>
 
           <Container size={720} p={0}>
             <Stack>
-              <Description
-                label="Description:"
-                value={String(data?.description)}
-              />
+              <Description label="Description:" value={description} />
 
-              <Description label="Job:" value={String(data?.job)} />
+              <Description label="Job:" value={job} />
 
               <div>
                 <Title fz="xl" pb={rem(5)} data-aos="fade-left">
@@ -136,7 +162,7 @@ export default function PortfolioDetail() {
                   Tools:
                 </Title>
 
-                {data?.tools?.map((item, index) => {
+                {tools?.map((item, index) => {
                   return (
                     <Badge
                       key={item}

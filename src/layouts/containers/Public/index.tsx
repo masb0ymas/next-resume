@@ -26,13 +26,13 @@ export default function PublicContainer(props: IProps) {
     <PublicContext.Provider value={{ stateLayoutLoading }}>
       {isLayoutLoading && <Loader />}
 
-      <main className={classes.root_layout}>
+      <div className={classes.root_layout}>
         <Container className={classes.wrapper} size="xl">
           <Component {...props} />
 
           <PublicFooter />
         </Container>
-      </main>
+      </div>
     </PublicContext.Provider>
   );
 }
