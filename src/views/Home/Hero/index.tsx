@@ -4,6 +4,14 @@ import { ColorSchemeToggle } from "~/core/components/ColorSchemeToggle/ColorSche
 import { Dots } from "~/core/components/Dots";
 import classes from "../partials/home.module.css";
 
+const company = "Moneyflow ID";
+const first_time_work = 2018;
+
+const dateNow = new Date();
+const yearNow = dateNow.getFullYear();
+
+const experience = yearNow - first_time_work;
+
 export default function HeroSection() {
   return (
     <>
@@ -33,7 +41,7 @@ export default function HeroSection() {
           <Title data-aos="fade-up" c="dimmed" className={classes.subtitle}>
             {`Software Engineer at `}
             <Text component="span" inherit>
-              Karcisbola
+              {company}
             </Text>
           </Title>
 
@@ -44,9 +52,10 @@ export default function HeroSection() {
               c="dimmed"
               className={classes.description}
             >
-              Currently I work as a software engineer at Karcisbola, I like
-              sports and also traveling. On the other hand, I also enjoy
-              learning new things, both in technology and other fields.
+              {`I currently work as a software engineer at ${company}, 
+              I have more than ${experience} years of experience creating applications 
+              in the private and government sectors. I like sports and also travelling. 
+              On the other hand, I also enjoy learning new things in technology and other fields.`}
             </Text>
           </Container>
 
