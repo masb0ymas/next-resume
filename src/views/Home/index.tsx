@@ -16,9 +16,9 @@ export default function HomePage() {
 
       <PortfolioSection />
 
-      <EducationSection />
-
       <ExperienceSection />
+
+      <EducationSection />
 
       <GithubSection />
 

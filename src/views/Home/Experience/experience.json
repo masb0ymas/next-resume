@@ -1,48 +1,70 @@
 {
   "data": [
     {
+      "id": "7450affa-a7fb-4878-94bf-7efb7305657d",
+      "company": "Moneyflow ID",
+      "job": "Software Engineer",
+      "employment_type": "Self-employed",
+      "location": "Jakarta - Indonesia",
+      "content": "My first internet product with a subscription type, this application only focuses on cash flow, both from recording income, expenses, budgeting and reporting every month. This application is equipped with a feature to scan grocery receipts and find out your income or expenses.",
+      "start_date": "2023-06-01",
+      "end_date": null,
+      "logo": "/static/images/moneyflow-logo.png"
+    },
+    {
+      "id": "7c1f512a-201b-4edf-82d2-6408b9617af5",
+      "company": "Trasmi Broker",
+      "job": "Software Engineer",
+      "employment_type": "Full-time",
+      "location": "Jakarta - Indonesia",
+      "content": "I rebuilt the insurance broker system from scratch again, because the old system could not be maintained well. The broker system that I created only helps brokers in cross checking data from bank to insurance and vice versa.",
+      "start_date": "2022-08-01",
+      "end_date": null,
+      "logo": "/static/images/trasmi-logo.png"
+    },
+    {
       "id": "cde0c620-cb11-416f-a062-4195fc4203d6",
-      "title": "Karcisbola",
-      "subtitle": "Software Engineer ( Fulltime )",
-      "description": "With the experience I got before, now I maintain open source code, also analyze an application that will be built or developed in the future what it looks like. As well as finding critical solutions when there are major changes.",
-      "period": "Mar 2021 - Present",
+      "company": "Karcisbola",
+      "job": "Software Engineer",
+      "employment_type": "Full-time",
+      "location": "Jakarta - Indonesia",
+      "content": "I built a ticketing & raffle system from scratch on the Karcisbola application, including a payment gateway, but the ticketing system is not yet fully used. I also researched many clouds to reduce costs in terms of deployment, both staging and production.",
       "start_date": "2021-03-01",
-      "end_date": "",
-      "is_active": true,
-      "tag": "device"
+      "end_date": "2023-11-01",
+      "logo": "/static/images/karcisbola-logo.png"
     },
     {
       "id": "3c789dbd-f608-4d96-b3c4-88721291794c",
-      "title": "Nusantech",
-      "subtitle": "Fullstack Developer ( Fulltime )",
-      "description": "With the experience I got before, now I maintain open source code, also analyze an application that will be built or developed in the future what it looks like. As well as finding critical solutions when there are major changes.",
-      "period": "Sep 2020 - Mar 2021",
+      "company": "Nusantech",
+      "job": "Fullstack Developer",
+      "employment_type": "Full-time",
+      "location": "Jakarta - Indonesia",
+      "content": "The first time I worked at this company, I played the role of Backend Developer, this company operates in the Software House sector for private and government companies. with the many applications created, I developed many skills learned, both from the Backend, Frontend and DevOps side.",
       "start_date": "2020-09-01",
       "end_date": "2021-03-30",
-      "is_active": false,
-      "tag": "device"
+      "logo": "/static/images/nusantech-logo.jpeg"
     },
     {
       "id": "53122c95-3051-4ae5-b789-0ccbacda3d79",
-      "title": "Nusantech",
-      "subtitle": "Web Developer ( Fulltime )",
-      "description": "The development of an application using the sprint method, the task that is carried out becomes more neat and directed. I also explore various programming languages. and I build a coding standard that is used in the office, especially for projects and products.",
-      "period": "Jun 2019 - Sep 2020",
+      "company": "Nusantech",
+      "job": "Web Developer",
+      "employment_type": "Full-time",
+      "location": "Jakarta - Indonesia",
+      "content": "The development of an application using the sprint method, the task that is carried out becomes more neat and directed. I also explore various programming languages. and I build a coding standard that is used in the office, especially for projects and products.",
       "start_date": "2019-06-01",
       "end_date": "2020-09-30",
-      "is_active": false,
-      "tag": "device-laptop"
+      "logo": "/static/images/nusantech-logo.jpeg"
     },
     {
       "id": "a19a59fd-a760-430c-8cf4-35fb17dac8bd",
-      "title": "Minang IT Camp",
-      "subtitle": "Minang Programmer Community",
-      "description": "I joined this community at the end of 2017. I learned a lot here from versioning with git, learning coding with case studies, and managing a project in the field. And now I manage this community both in terms of websites and participants who want to learn together.",
-      "period": "Okt 2017 - Present",
+      "company": "Minang IT Camp",
+      "job": "Volunteer Community Programmer",
+      "employment_type": "Remote",
+      "location": "Padang - Indonesia",
+      "content": "I joined this community at the end of 2017. I learned a lot here from versioning with git, learning coding with case studies, and managing a project in the field. And now I manage this community both in terms of websites and participants who want to learn together.",
       "start_date": "2017-10-01",
-      "end_date": "",
-      "is_active": true,
-      "tag": "social"
+      "end_date": null,
+      "logo": "/static/images/mic-logo.png"
     }
   ]
 }
