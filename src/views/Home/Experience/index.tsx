@@ -1,10 +1,21 @@
-import { Avatar, Grid, Stack, Text, Title, Tooltip, rem } from "@mantine/core";
+import {
+  Avatar,
+  Button,
+  Grid,
+  Stack,
+  Text,
+  Title,
+  Tooltip,
+  rem,
+} from "@mantine/core";
 import _ from "lodash";
 import { Dots } from "~/core/components/Dots";
 import { formatDate } from "~/core/utils/date";
 import SectionHead from "../partials/SectionHead";
 import classes from "../partials/home.module.css";
 import jsonData from "./experience.json";
+import { IconExternalLink } from "@tabler/icons-react";
+import Link from "next/link";
 
 interface TimelineProps {
   logo: string;
@@ -15,7 +26,7 @@ interface TimelineProps {
   content: string;
   start_date: Date | string;
   end_date: Date | string | null;
-  index: number,
+  index: number;
 }
 
 function Timeline(props: TimelineProps) {
@@ -90,6 +101,20 @@ export default function ExperienceSection() {
               return <Timeline {...item} index={index} key={item.id} />;
             })}
           </Stack>
+
+          <Button
+            mt={20}
+            radius="md"
+            variant="light"
+            rightSection={<IconExternalLink />}
+            component={Link}
+            href="/static/pdf/en/my_resume.pdf"
+            target="_blank"
+            data-aos="zoom-in"
+            data-aos-delay={100 * (jsonData.data.length + 1)}
+          >
+            View Resume
+          </Button>
         </Stack>
       </div>
     </>

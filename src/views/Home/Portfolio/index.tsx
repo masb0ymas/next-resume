@@ -1,4 +1,6 @@
-import { Grid, Stack } from "@mantine/core";
+import { Button, Grid, Stack } from "@mantine/core";
+import { IconExternalLink } from "@tabler/icons-react";
+import Link from "next/link";
 import SectionHead from "../partials/SectionHead";
 import classes from "../partials/home.module.css";
 import CardPortfolio from "./partials/CardPortfolio";
@@ -20,6 +22,20 @@ export default function PortfolioSection() {
         />
 
         <Grid p={20}>{cards}</Grid>
+
+        <Button
+          mt={20}
+          radius="md"
+          variant="light"
+          rightSection={<IconExternalLink />}
+          component={Link}
+          href="/static/pdf/en/my_portfolio.pdf"
+          target="_blank"
+          data-aos="zoom-in"
+          data-aos-delay={100 * (jsonData.data.length + 1)}
+        >
+          View Portfolio
+        </Button>
       </Stack>
     </div>
   );
