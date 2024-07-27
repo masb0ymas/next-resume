@@ -27,7 +27,7 @@ export default function CardPortfolio(props: CardPortfolioProps) {
   return (
     <Card
       p="md"
-      radius="md"
+      radius="lg"
       component={Link}
       href={`/p/${data.slug}`}
       className={classes.card}
@@ -39,8 +39,8 @@ export default function CardPortfolio(props: CardPortfolioProps) {
         <Image
           src={data.thumbnail}
           alt={data.title}
-          width={720}
-          height={512}
+          width={320}
+          height={240}
           style={{ borderRadius: rem(10) }}
         />
       </AspectRatio>
