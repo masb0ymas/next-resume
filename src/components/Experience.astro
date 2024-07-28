@@ -1,0 +1,52 @@
+---
+import { format } from "date-fns";
+import { id } from "date-fns/locale";
+import _ from "lodash";
+import experienceJson from "~/data/experience.json";
+
+const formatDate = (value: Date | string) => {
+  return format(new Date(value), "MMM yyyy", { locale: id });
+};
+---
+
+<div class="py-6">
+  <div class="grid gap-2 pb-6">
+    <h1 class="text-2xl sm:text-4xl text-slate-300 font-semibold">
+      <u>Experience</u>
+    </h1>
+
+    <h2 class="text-normal text-slate-300">
+      The experience I gained while working in several companies or several
+      projects.
+    </h2>
+  </div>
+
+  {
+    experienceJson.data.map((item) => {
+      let new_start_date = formatDate(item.start_date);
+      let new_end_date = "Present";
+
+      if (!_.isNil(item.end_date)) {
+        new_end_date = formatDate(String(item.end_date));
+      }
+
+      return (
+        <div class="flex mb-6 justify-start items-center">
+          <div class="sm:px-0 px-2">
+            <h1 class="text-xl sm:text-2xl font-semibold text-slate-300">
+              <u>{item.company}</u>
+            </h1>
+            <h2 class="text-md sm:text-lg text-slate-300">
+              {`${item.job} - ${item.employment_type}`}
+            </h2>
+            <h3 class="text-sm sm:text-md text-slate-500">
+              {`${new_start_date} - ${new_end_date}`}
+            </h3>
+            <h3 class="text-sm sm:text-md text-slate-500">{item.location}</h3>
+            <p class="text-slate-300 text-pretty">{item.content}</p>
+          </div>
+        </div>
+      );
+    })
+  }
+</div>
