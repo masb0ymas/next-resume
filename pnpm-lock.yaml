@@ -17,9 +17,6 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.12.2(typescript@5.5.4))(tailwindcss@3.4.7)
-      '@types/canvas-confetti':
-        specifier: ^1.6.4
-        version: 1.6.4
       astro:
         specifier: ^4.12.2
         version: 4.12.2(typescript@5.5.4)
@@ -41,13 +38,16 @@ importers:
       tailwindcss:
         specifier: ^3.4.5
         version: 3.4.7
-      typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
     devDependencies:
+      '@types/canvas-confetti':
+        specifier: ^1.6.4
+        version: 1.6.4
       '@types/lodash':
         specifier: ^4.17.7
         version: 4.17.7
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
 
 packages:
 
@@ -2200,8 +2200,8 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==, tarball: https://registry.npmjs.org/yocto-queue/-/yocto-queue-1.1.1.tgz}
     engines: {node: '>=12.20'}
 
-  zod-to-json-schema@3.23.1:
-    resolution: {integrity: sha512-oT9INvydob1XV0v1d2IadrR74rLtDInLvDFfAa1CG0Pmg/vxATk7I2gSelfj271mbzeM4Da0uuDQE/Nkj3DWNw==, tarball: https://registry.npmjs.org/zod-to-json-schema/-/zod-to-json-schema-3.23.1.tgz}
+  zod-to-json-schema@3.23.2:
+    resolution: {integrity: sha512-uSt90Gzc/tUfyNqxnjlfBs8W6WSGpNBv0rVsNxP/BVSMHMKGdthPYff4xtCHYloJGM0CFxFsb3NbC0eqPhfImw==, tarball: https://registry.npmjs.org/zod-to-json-schema/-/zod-to-json-schema-3.23.2.tgz}
     peerDependencies:
       zod: ^3.23.3
 
@@ -2984,7 +2984,7 @@ snapshots:
       which-pm: 3.0.0
       yargs-parser: 21.1.1
       zod: 3.23.8
-      zod-to-json-schema: 3.23.1(zod@3.23.8)
+      zod-to-json-schema: 3.23.2(zod@3.23.8)
     optionalDependencies:
       sharp: 0.33.4
     transitivePeerDependencies:
@@ -4845,7 +4845,7 @@ snapshots:
 
   yocto-queue@1.1.1: {}
 
-  zod-to-json-schema@3.23.1(zod@3.23.8):
+  zod-to-json-schema@3.23.2(zod@3.23.8):
     dependencies:
       zod: 3.23.8
 
