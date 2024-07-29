@@ -1,50 +1,32 @@
 {
-  "name": "resume-masb0ymas",
-  "description": "My Resume build in NextJS",
-  "version": "1.0.0",
-  "private": true,
+  "name": "masb0ymas-resume-v2",
+  "description": "My Resume built in AstroJs",
+  "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": "<n.fajri@mail.com> masb0ymas",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18.x"
-  },
+  "author": "masb0ymas <n.fajri@mail.com>",
+  "type": "module",
+  "private": true,
   "dependencies": {
-    "@mantine/carousel": "^7.11.2",
-    "@mantine/core": "^7.11.2",
-    "@mantine/hooks": "^7.11.2",
-    "@tabler/icons-react": "^2.47.0",
-    "@tanstack/react-query": "^5.51.15",
-    "@tanstack/react-query-devtools": "^5.51.15",
-    "aos": "3.0.0-beta.6",
-    "clsx": "^2.1.1",
-    "date-fns": "^2.30.0",
-    "embla-carousel-autoplay": "8.0.0-rc14",
-    "embla-carousel-react": "8.0.0-rc14",
+    "@astrojs/check": "^0.8.3",
+    "@astrojs/mdx": "^3.1.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.12.2",
+    "autoprefixer": "^10.4.19",
+    "canvas-confetti": "^1.9.3",
+    "date-fns": "^3.6.0",
     "lodash": "^4.17.21",
-    "next": "13.5.4",
-    "path-to-regexp": "^6.2.2",
-    "prop-types": "^15.8.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.5"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.7",
     "@types/lodash": "^4.17.7",
-    "@types/node": "20.8.4",
-    "@types/prop-types": "^15.7.12",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
-    "eslint": "8.51.0",
-    "eslint-config-next": "13.5.4",
-    "postcss": "^8.4.40",
-    "postcss-preset-mantine": "1.9.0",
-    "postcss-simple-vars": "^7.0.1",
-    "typescript": "5.2.2"
+    "@types/canvas-confetti": "^1.6.4",
+    "typescript": "^5.5.4"
   }
 }

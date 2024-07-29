@@ -1,0 +1,58 @@
+---
+import Education from "~/components/Education.astro";
+import Experience from "~/components/Experience.astro";
+import GithubRepo from "~/components/GithubRepo.astro";
+import PageMeta from "~/components/PageMeta.astro";
+import Project from "~/components/Project.astro";
+import SocialMedia from "~/components/SocialMedia.astro";
+import { MY_NAME, MY_POSITION, SITE_TITLE } from "~/config/site";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <PageMeta title={`${SITE_TITLE} | Web3`} slot="meta" />
+
+  <section>
+    <div class="sm:mt-14 mt-8">
+      <div class="flex gap-3 sm:gap-5 justify-start items-center">
+        <div>
+          <img
+            src="/static/images/avatar.webp"
+            alt="avatar"
+            class="w-28 rounded-full border-white"
+          />
+        </div>
+
+        <div class="sm:px-0 px-2">
+          <h1 class="text-2xl sm:text-3xl font-bold text-slate-300">
+            {MY_NAME}
+          </h1>
+          <h2 class="text-xl sm:text-2xl text-slate-300 pb-5">
+            {MY_POSITION}
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-4">
+      <div class="py-6">
+        <div class="relative rounded-lg p-[2px]">
+          <p class="text-slate-100">
+            I currently work as a software engineer at Moneyflow ID, I have more
+            than 6 years of experience creating applications in the private and
+            government sectors. I like sports and also travelling. On the other
+            hand, I also enjoy learning new things in technology and other
+            fields.
+          </p>
+        </div>
+      </div>
+
+      <SocialMedia />
+    </div>
+  </section>
+
+  <Project />
+  <Experience />
+  <Education />
+  <GithubRepo />
+</BaseLayout>
