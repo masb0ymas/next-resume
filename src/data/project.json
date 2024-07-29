@@ -2,8 +2,8 @@
   "data": [
     {
       "id": "2e5ff238-f1b9-4917-ac88-a6f56815fe22",
-      "thumbnail": "/static/projects/frigel-ai/kelola-produk.png",
-      "brand_logo": "/static/projects/frigel-ai/frigel-ai-logo.png",
+      "thumbnail": "/static/projects/frigel-ai/kelola-produk.webp",
+      "brand_logo": "/static/projects/frigel-ai/frigel-ai-logo.webp",
       "title": "Frigel Ai - ERP",
       "slug": "frigel-ai-erp",
       "job": "Fullstack Developer",
@@ -21,17 +21,17 @@
         "aws"
       ],
       "images": [
-        "/static/projects/frigel-ai/login.png",
-        "/static/projects/frigel-ai/product.png",
-        "/static/projects/frigel-ai/kelola-produk.png",
-        "/static/projects/frigel-ai/delivery.png"
+        "/static/projects/frigel-ai/login.webp",
+        "/static/projects/frigel-ai/product.webp",
+        "/static/projects/frigel-ai/kelola-produk.webp",
+        "/static/projects/frigel-ai/delivery.webp"
       ],
       "description": "ERP Website with OpenStreetMap integration for shipping tracking"
     },
     {
       "id": "646160de-6617-4a09-9a6d-400ef0e28b3c",
-      "thumbnail": "/static/projects/miningsapp/jetty.png",
-      "brand_logo": "/static/projects/miningsapp/mining-logo.png",
+      "thumbnail": "/static/projects/miningsapp/jetty.webp",
+      "brand_logo": "/static/projects/miningsapp/mining-logo.webp",
       "title": "Mining Apps",
       "slug": "mining-apps",
       "job": "Backend Developer",
@@ -46,17 +46,17 @@
         "docker"
       ],
       "images": [
-        "/static/projects/miningsapp/company.png",
-        "/static/projects/miningsapp/dashboard.png",
-        "/static/projects/miningsapp/operational.png",
-        "/static/projects/miningsapp/jetty.png"
+        "/static/projects/miningsapp/company.webp",
+        "/static/projects/miningsapp/dashboard.webp",
+        "/static/projects/miningsapp/operational.webp",
+        "/static/projects/miningsapp/jetty.webp"
       ],
       "description": "Mine management website development, both from requests, finance, barges, etc."
     },
     {
       "id": "9ddc2fa9-002e-469f-bf44-abbe8e6ce5de",
-      "thumbnail": "/static/projects/bri-agro/login.png",
-      "brand_logo": "/static/projects/bri-agro/bri-agro-logo.png",
+      "thumbnail": "/static/projects/bri-agro/login.webp",
+      "brand_logo": "/static/projects/bri-agro/bri-agro-logo.webp",
       "title": "BRI Agro Learning - LMS",
       "slug": "bri-agro-lms",
       "job": "Full Stack Developer",
@@ -73,16 +73,16 @@
         "flutter"
       ],
       "images": [
-        "/static/projects/bri-agro/login.png",
-        "/static/projects/bri-agro/materi.png",
-        "/static/projects/bri-agro/news.png"
+        "/static/projects/bri-agro/login.webp",
+        "/static/projects/bri-agro/materi.webp",
+        "/static/projects/bri-agro/news.webp"
       ],
       "description": "Development of a learning management system website for internal BRI Agro."
     },
     {
       "id": "d7cab37d-3edd-4bed-befc-c270a7aa3d33",
-      "thumbnail": "/static/projects/kemenkeu/nadine/login.png",
-      "brand_logo": "/static/projects/kemenkeu/kemenkeu-logo.png",
+      "thumbnail": "/static/projects/kemenkeu/nadine/login.webp",
+      "brand_logo": "/static/projects/kemenkeu/kemenkeu-logo.webp",
       "title": "Nota Dinas Elektronik - Kemenkeu",
       "slug": "nadine-kemenkeu",
       "job": "Backend Developer",
@@ -96,13 +96,13 @@
         "bssn"
       ],
       "images": [
-        "/static/projects/kemenkeu/nadine/login.png"
+        "/static/projects/kemenkeu/nadine/login.webp"
       ],
       "description": "The development of the old application, Nadine (Electronic Service Memorandum) focuses on electronic mail within the Ministry of Finance."
     },
     {
       "id": "04a1054c-67bd-4774-9481-461524542e46",
-      "thumbnail": "/static/projects/trasmi/landing.png",
+      "thumbnail": "/static/projects/trasmi/placing.webp",
       "brand_logo": "/static/projects/trasmi/trasmi-logo.png",
       "title": "Trasmi - Insurance Broker",
       "slug": "trasmi-insurance",
@@ -118,17 +118,15 @@
         "aws"
       ],
       "images": [
-        "/static/projects/trasmi/b2c.png",
-        "/static/projects/trasmi/master.png",
-        "/static/projects/trasmi/b2c.png",
-        "/static/projects/trasmi/landing.png"
+        "/static/projects/trasmi/placing.webp",
+        "/static/projects/trasmi/rk-klaim.webp"
       ],
       "description": "Website development for buying insurance and claims, both Business to Customer and Business to Business."
     },
     {
       "id": "7eb4e0df-14f2-4f6a-9c31-6f4f6ca94d3f",
       "thumbnail": "/static/projects/karcisbola/match.png",
-      "brand_logo": "/static/projects/karcisbola/karcisbola-logo.png",
+      "brand_logo": "/static/projects/karcisbola/karcisbola-logo.webp",
       "title": "Karcisbola",
       "slug": "karcisbola",
       "job": "Full Stack Developer",
@@ -155,8 +153,8 @@
     },
     {
       "id": "b5a1c598-0a72-4fa1-be7c-451c6b45b66d",
-      "thumbnail": "/static/projects/kementan/simpel/landing.png",
-      "brand_logo": "/static/projects/kementan/kementan-logo.png",
+      "thumbnail": "/static/projects/kementan/simpel/landing.webp",
+      "brand_logo": "/static/projects/kementan/kementan-logo.webp",
       "title": "SIMPEL - Kementan",
       "slug": "simpel-kementan",
       "job": "Full Stack Developer",
@@ -171,7 +169,7 @@
         "formik"
       ],
       "images": [
-        "/static/projects/kementan/simpel/landing.png"
+        "/static/projects/kementan/simpel/landing.webp"
       ],
       "description": "The development of the old, simple application from the Ministry of Agriculture is more focused on licensing fertilizers and pesticides."
     },
