@@ -103,7 +103,7 @@
     {
       "id": "04a1054c-67bd-4774-9481-461524542e46",
       "thumbnail": "/static/projects/trasmi/placing.webp",
-      "brand_logo": "/static/projects/trasmi/trasmi-logo.png",
+      "brand_logo": "/static/projects/trasmi/trasmi-logo.webp",
       "title": "Trasmi - Insurance Broker",
       "slug": "trasmi-insurance",
       "job": "Backend Developer",
@@ -125,7 +125,7 @@
     },
     {
       "id": "7eb4e0df-14f2-4f6a-9c31-6f4f6ca94d3f",
-      "thumbnail": "/static/projects/karcisbola/match.png",
+      "thumbnail": "/static/projects/karcisbola/match.webp",
       "brand_logo": "/static/projects/karcisbola/karcisbola-logo.webp",
       "title": "Karcisbola",
       "slug": "karcisbola",
@@ -144,10 +144,10 @@
         "google cloud platform"
       ],
       "images": [
-        "/static/projects/karcisbola/login.png",
-        "/static/projects/karcisbola/match.png",
-        "/static/projects/karcisbola/pnl.png",
-        "/static/projects/karcisbola/karcis.png"
+        "/static/projects/karcisbola/login.webp",
+        "/static/projects/karcisbola/match.webp",
+        "/static/projects/karcisbola/pnl.webp",
+        "/static/projects/karcisbola/karcis.webp"
       ],
       "description": "Website development for buying football tickets and prize draws."
     },
@@ -175,8 +175,8 @@
     },
     {
       "id": "c24912ab-4264-441d-804c-5d061e8834a9",
-      "thumbnail": "/static/projects/indramayu/siayu/login-kependudukan.png",
-      "brand_logo": "/static/projects/indramayu/indramayu-logo.jpg",
+      "thumbnail": "/static/projects/indramayu/siayu/login-kependudukan.webp",
+      "brand_logo": "/static/projects/indramayu/indramayu-logo.webp",
       "title": "Indramayu Kependudukan",
       "slug": "indramayu-kependudukan",
       "job": "Full Stack Developer",
@@ -190,14 +190,14 @@
         "bulma-css"
       ],
       "images": [
-        "/static/projects/indramayu/siayu/login-kependudukan.png"
+        "/static/projects/indramayu/siayu/login-kependudukan.webp"
       ],
       "description": "Development of the Indramayu population website (KTP, KK, and other documents) and integration with the Bandung City Samsat."
     },
     {
       "id": "f02e19f9-42ef-4de9-9ffc-d820a5bc5de6",
-      "thumbnail": "/static/projects/indramayu/aio/dashboard-aio.png",
-      "brand_logo": "/static/projects/indramayu/indramayu-logo.jpg",
+      "thumbnail": "/static/projects/indramayu/aio/dashboard-aio.webp",
+      "brand_logo": "/static/projects/indramayu/indramayu-logo.webp",
       "title": "Indramayu All In One",
       "slug": "indramayu-all-in-one",
       "job": "Full Stack Developer",
@@ -211,7 +211,7 @@
         "bootstrap"
       ],
       "images": [
-        "/static/projects/indramayu/aio/dashboard-aio.png"
+        "/static/projects/indramayu/aio/dashboard-aio.webp"
       ],
       "description": "Development of a smart city website Indramayu but more on information services and public complaints."
     }
