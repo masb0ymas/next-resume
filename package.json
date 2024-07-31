@@ -28,6 +28,7 @@
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.4",
     "@types/lodash": "^4.17.7",
+    "daisyui": "^4.12.10",
     "typescript": "^5.5.4"
   }
 }

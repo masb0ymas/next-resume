@@ -1,3 +1,5 @@
+import daisyui from "daisyui";
+
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -6,5 +8,5 @@ module.exports = {
       sans: ["Poppins", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [daisyui],
 };
