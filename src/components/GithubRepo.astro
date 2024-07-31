@@ -11,7 +11,8 @@ const githubs = githubJson.data.slice(0, 4);
     </h1>
 
     <h2 class="text-normal text-slate-300">
-      List of open sources on GitHub that I'm working on and am free to use those repositories under the MIT license.
+      List of open sources on GitHub that I'm working on and am free to use
+      those repositories under the MIT license.
     </h2>
   </div>
 
@@ -20,7 +21,7 @@ const githubs = githubJson.data.slice(0, 4);
       githubs.map((item) => {
         return (
           <div class="grid gap-4">
-            <a href={item.repository_url} target="_blank">
+            <a href={item.repository_url} target="_blank" rel="noopener">
               <img class="w-full rounded" src={item.gsr_url} alt={item.title} />
             </a>
           </div>

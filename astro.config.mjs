@@ -1,5 +1,6 @@
-import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
 
 const SERVER_PORT = 3000;
 const LOCALHOST_URL = `http://localhost:${SERVER_PORT}`;
@@ -18,5 +19,5 @@ if (isBuild) {
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
-  integrations: [tailwind()],
+  integrations: [sitemap(), tailwind()],
 });
