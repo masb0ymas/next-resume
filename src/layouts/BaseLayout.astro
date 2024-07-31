@@ -1,5 +1,6 @@
 ---
 import Footer from "./Footer.astro";
+import GoogleAnalytic from "./GoogleAnalytic.astro";
 import GoogleFont from "./GoogleFont.astro";
 import TablerIcon from "./TablerIcon.astro";
 ---
@@ -12,6 +13,7 @@ import TablerIcon from "./TablerIcon.astro";
     <slot name="meta" />
     <GoogleFont />
     <TablerIcon />
+    <GoogleAnalytic />
   </head>
 
   <body class="relative min-h-screen">
@@ -20,7 +22,5 @@ import TablerIcon from "./TablerIcon.astro";
         <slot />
       </div>
     </main>
-  </body>
-  
-  <Footer />
+  </body><Footer />
 </html>
