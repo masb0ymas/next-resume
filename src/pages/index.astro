@@ -10,24 +10,27 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <PageMeta title={`${SITE_TITLE} | All about software development`} slot="meta" />
+  <PageMeta
+    title={`${SITE_TITLE} | All about software development`}
+    slot="meta"
+  />
 
   <section>
     <div class="sm:mt-14 mt-8">
       <div class="flex gap-3 sm:gap-5 justify-start items-center">
-        <div>
-          <img
-            src="/static/images/avatar.webp"
-            alt="avatar"
-            class="w-28 rounded-full border-white"
-          />
+        <div class="avatar">
+          <div
+            class="ring-teal-400 ring-offset-base-100 w-20 rounded-full ring ring-offset-2"
+          >
+            <img src="/static/images/avatar.webp" alt="avatar" />
+          </div>
         </div>
 
         <div class="sm:px-0 px-2">
           <h1 class="text-2xl sm:text-3xl font-bold text-slate-300">
             {MY_NAME}
           </h1>
-          <h2 class="text-xl sm:text-2xl text-slate-300 pb-5">
+          <h2 class="text-xl sm:text-2xl text-slate-300">
             {MY_POSITION}
           </h2>
         </div>
