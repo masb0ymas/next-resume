@@ -4,11 +4,15 @@
 			"id": "e521f605-6f84-4351-90be-87071d424733",
 			"title": "Computer Science",
 			"subtitle": "Universitas Putra Indonesia YPTK Padang",
-			"description": "I continued my education in computer science, understanding how to analyze a problem and find a solution, which is applied to an application/software. In addition, we also appreciate AI in general, not in detail, such as machine learning, deep learning, and neural networks.",
+			"description": "I continued my education in computer science, honing my skills in problem analysis and software solution development. In addition, I gained a broad understanding of AI, including concepts such as machine learning, deep learning, and neural networks, without delving too deeply into the specifics.",
 			"period": "Agust 2013 - Mar 2017",
+			"degree": "Bachelor",
+			"link": "https://upiyptk.ac.id",
 			"start_date": "2013-08-01",
 			"end_date": "2017-03-10",
-			"location": "Padang - Indonesia",
+			"location": "Padang",
+			"country": "Indonesia",
+			"logo": "/static/images/upi-logo.webp",
 			"is_active": true,
 			"tag": "school"
 		}

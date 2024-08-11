@@ -2,7 +2,7 @@
 import { format } from "date-fns";
 import { id } from "date-fns/locale";
 import _ from "lodash";
-import experienceJson from "~/data/experience.json";
+import volunteerJson from "~/data/volunteer.json";
 
 const formatDate = (value: Date | string) => {
   return format(new Date(value), "MMM yyyy", { locale: id });
@@ -12,27 +12,22 @@ const formatDate = (value: Date | string) => {
 <section class="pt-6">
   <div class="grid gap-2 pb-6">
     <h1 class="text-2xl sm:text-4xl text-slate-300 font-semibold">
-      <u>Experience</u>
+      <u>Volunteer Experience</u>
     </h1>
 
     <h2 class="text-normal text-slate-300">
-      The experience I gained while working in several companies or several
-      projects.
+      The experience I gained while working as a volunteer in the community.
     </h2>
   </div>
 
   {
-    experienceJson.data.map((item) => {
+    volunteerJson.data.map((item) => {
       let new_start_date = formatDate(item.start_date);
       let new_end_date = "Present";
 
       if (!_.isNil(item.end_date)) {
         new_end_date = formatDate(String(item.end_date));
       }
-
-      const company_work = _.isNil(item.end_date)
-        ? `${item.company} - ${item.employment_type}`
-        : item.company;
 
       const linkCss = item.link !== "#" ? "text-blue-400" : "";
 
@@ -53,7 +48,7 @@ const formatDate = (value: Date | string) => {
               <h2 class="text-sm sm:text-base text-slate-300 italic">
                 <span class={`link-hover ${linkCss}`}>
                   <a href={item.link} target="_blank" rel="noopener">
-                    {company_work}
+                    {`${item.company} - ${item.employment_type}`}
                   </a>
                 </span>
                 <span>| {item.location}</span>
@@ -65,16 +60,6 @@ const formatDate = (value: Date | string) => {
           </div>
 
           <p class="text-slate-300 text-pretty">{item.content}</p>
-
-          <div class="flex flex-wrap gap-2 py-2">
-            {item.skills.map((skill) => {
-              return (
-                <span class="bg-gradient-to-br from-teal-400 via-green-300 to-lime-400 text-xs font-bold px-2.5 py-0.5 rounded-lg text-gray-800 border-yellow-300 dark:border-yellow-300">
-                  {skill}
-                </span>
-              );
-            })}
-          </div>
         </div>
       );
     })

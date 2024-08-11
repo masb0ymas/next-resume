@@ -2,6 +2,56 @@
   "data": [
     {
       "id": "2e5ff238-f1b9-4917-ac88-a6f56815fe22",
+      "thumbnail": "/static/projects/defi-calculator/defi-calculator.webp",
+      "brand_logo": "/static/projects/defi-calculator/currency-market.webp",
+      "title": "DeFi Calculator",
+      "slug": "defi-calculator",
+      "job": "Full-stack Developer",
+      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker, AWS, CoinGecko API",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "typeorm",
+        "postgresql",
+        "nextjs",
+        "react-query",
+        "mantine-ui",
+        "docker",
+        "coingecko api",
+        "aws"
+      ],
+      "images": [
+        "/static/projects/defi-calculator/defi-calculator.webp"
+      ],
+      "description": "DeFi Calculator is a website to calculate your Lending asset when health price, liquidation price and considered paid off."
+    },
+    {
+      "id": "2e5ff238-f1b9-4917-ac88-a6f56815fe22",
+      "thumbnail": "/static/projects/moneyflow/moneyflow-id.webp",
+      "brand_logo": "/static/projects/moneyflow/moneyflow-logo.webp",
+      "title": "Moneyflow ID",
+      "slug": "moneyflow-id",
+      "job": "Software Engineer",
+      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker, AWS, Payment Gateway",
+      "tools": [
+        "vscode",
+        "expressjs",
+        "typeorm",
+        "postgresql",
+        "nextjs",
+        "react-query",
+        "mantine-ui",
+        "docker",
+        "payment gateway",
+        "aws"
+      ],
+      "images": [
+        "/static/projects/moneyflow/moneyflow-id.webp"
+      ],
+      "description": "My first subscription-based internet product focuses on cash flow management, allowing users to record income, expenses, and budgets, and generate monthly reports. It also includes a feature to scan grocery receipts and track income or expenses."
+    },
+    {
+      "id": "2e5ff238-f1b9-4917-ac88-a6f56815fe22",
       "thumbnail": "/static/projects/frigel-ai/kelola-produk.webp",
       "brand_logo": "/static/projects/frigel-ai/frigel-ai-logo.webp",
       "title": "Frigel Ai - ERP",
