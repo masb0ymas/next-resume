@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "id": "a19a59fd-a760-430c-8cf4-35fb17dac8bd",
+      "company": "Minang IT Camp",
+      "job": "Community Programmer",
+      "employment_type": "Hybrid",
+      "location": "Padang",
+      "country": "Indonesia",
+      "content": "I am motivated to join this community to learn more about coding, managing teams, and helping anyone handle projects. Sometimes I share my knowledge in offline workshops. From here, I build a network with new people.",
+      "start_date": "2017-10-01",
+      "end_date": null,
+      "link": "https://minangitcamp.com",
+      "logo": "/static/images/mic-logo.webp"
+    }
+  ]
+}
