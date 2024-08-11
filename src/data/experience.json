@@ -5,66 +5,84 @@
       "company": "Moneyflow ID",
       "job": "Software Engineer",
       "employment_type": "Self-employed",
-      "location": "Jakarta - Indonesia",
-      "content": "My first internet product with a subscription type, this application only focuses on cash flow, both from recording income, expenses, budgeting and reporting every month. This application is equipped with a feature to scan grocery receipts and find out your income or expenses.",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "content": "My first subscription-based internet product focuses on cash flow management, allowing users to record income, expenses, and budgets, and generate monthly reports. It also includes a feature to scan grocery receipts and track income or expenses.",
       "start_date": "2023-06-01",
       "end_date": null,
-      "logo": "/static/images/moneyflow-logo.webp"
+      "link": "https://moneyflow.id",
+      "logo": "/static/images/moneyflow-logo.webp",
+      "skills": ["NextJs", "ExpressJs", "PostgreSQL", "Payment Gateway", "Docker", "AWS"]
     },
     {
       "id": "7c1f512a-201b-4edf-82d2-6408b9617af5",
       "company": "Trasmi Broker",
       "job": "Software Engineer",
       "employment_type": "Full-time",
-      "location": "Jakarta - Indonesia",
-      "content": "I rebuilt the insurance broker system from scratch again, because the old system could not be maintained well. The broker system that I created only rebuilt the existing system and helps brokers in cross-checking data from bank to insurance and vice versa.",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "content": "I completely rebuilt the insurance broker system from the ground up due to the old system's unmanageability. The new system efficiently assists brokers in cross-checking data between banks and insurance companies, ensuring accuracy and streamlined operations.",
       "start_date": "2022-08-01",
       "end_date": null,
-      "logo": "/static/images/trasmi-logo.webp"
+      "link": "https://trasmi.id",
+      "logo": "/static/images/trasmi-logo.webp",
+      "skills": ["NextJs", "ExpressJs", "PostgreSQL", "Payment Gateway", "Docker", "AWS"]
+    },
+    {
+      "id": "7c1f512a-201b-4edf-82d2-6408b9617af5",
+      "company": "Mining App",
+      "job": "Software Engineer",
+      "employment_type": "Full-time",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "content": "I created a website to manage mining income and expenses, including budgeting operational costs and managing permits.",
+      "start_date": "2022-08-01",
+      "end_date": "2024-02-01",
+      "link": "https://miningsapp.net",
+      "logo": "/static/images/mining-logo.webp",
+      "skills": ["NextJs", "ExpressJs", "PostgreSQL", "Docker", "Google Cloud"]
     },
     {
       "id": "cde0c620-cb11-416f-a062-4195fc4203d6",
       "company": "Karcisbola",
       "job": "Software Engineer",
       "employment_type": "Full-time",
-      "location": "Jakarta - Indonesia",
-      "content": "I built a ticketing & raffle system from scratch on the Karcisbola application, including a payment gateway, but the ticketing system is not yet fully used. I also researched many clouds to reduce costs in terms of deployment, both staging and production.",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "content": "I developed a ticketing and raffle system with a payment gateway for the Karcisbola app. While the ticketing system is not fully utilized yet, I also researched various cloud options to minimize deployment costs for both staging and production environments.",
       "start_date": "2021-03-01",
       "end_date": "2023-11-01",
-      "logo": "/static/images/karcisbola-logo.webp"
+      "link": "#",
+      "logo": "/static/images/karcisbola-logo.webp",
+      "skills": ["NextJs", "ExpressJs", "PostgreSQL", "Payment Gateway", "Docker", "Google Cloud"]
     },
     {
       "id": "3c789dbd-f608-4d96-b3c4-88721291794c",
       "company": "Nusantech",
       "job": "Fullstack Developer",
       "employment_type": "Full-time",
-      "location": "Jakarta - Indonesia",
-      "content": "After 2 years I finally handled many roles, such as Frontend, Backend, Mobile and also DevOps. Then during the COVID pandemic, the company started to experience financial difficulties and I decided to resign and move to apply for a new job in another company.",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "content": "After a year, I became a Full-Stack Developer managing various projects. While I occasionally develop mobile apps with Flutter, I primarily focus on backend development, utilizing Node.js for robust and scalable server-side solutions.",
       "start_date": "2020-09-01",
       "end_date": "2021-03-30",
-      "logo": "/static/images/nusantech-logo.webp"
+      "link": "https://nusantech.com",
+      "logo": "/static/images/nusantech-logo.webp",
+      "skills": ["NextJs", "ExpressJs", "PostgreSQL", "AWS"]
     },
     {
       "id": "53122c95-3051-4ae5-b789-0ccbacda3d79",
       "company": "Nusantech",
       "job": "Web Developer",
       "employment_type": "Full-time",
-      "location": "Jakarta - Indonesia",
-      "content": "The first time I worked at Software House Company, This company handles products and projects from the government and private sector. My first role as a Web developer was handling frontend and backend development. I learned more about development from scratch to ready-to-use product.",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "content": "My journey as a web developer began at this company, where I gained extensive experience and knowledge. Working in the Software House sector, I mastered coding and had opportunities to interact with clients from both the government and private sectors.",
       "start_date": "2019-06-01",
       "end_date": "2020-09-30",
-      "logo": "/static/images/nusantech-logo.webp"
-    },
-    {
-      "id": "a19a59fd-a760-430c-8cf4-35fb17dac8bd",
-      "company": "Minang IT Camp",
-      "job": "Volunteer Community Programmer",
-      "employment_type": "Remote",
-      "location": "Padang - Indonesia",
-      "content": "I joined this community at the end of 2017. I learned a lot here from versioning with git, learning coding with case studies, and managing a project in the field. And now I manage this community both in terms of websites and participants who want to learn together.",
-      "start_date": "2017-10-01",
-      "end_date": null,
-      "logo": "/static/images/mic-logo.webp"
+      "link": "https://nusantech.com",
+      "logo": "/static/images/nusantech-logo.webp",
+      "skills": ["ReactJs", "ExpressJs", "MySQL", "AWS"]
     }
   ]
 }
