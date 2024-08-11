@@ -25,9 +25,14 @@ const projects = projectJson.data;
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
       {
         projects.map((item) => {
+          const short_description =
+            item.description.length > 80
+              ? `${item.description.substring(0, 90)}...`
+              : item.description;
+
           return (
             <div class="grid gap-4">
-              <a href={`${SITE_URL}/project/${item.slug}`}>
+              <a class="link-hover" href={`${SITE_URL}/project/${item.slug}`}>
                 <img
                   class="w-full rounded-xl"
                   src={item.thumbnail}
@@ -35,11 +40,11 @@ const projects = projectJson.data;
                 />
               </a>
 
-              <a class="inline-block" href={`${SITE_URL}/project/${item.slug}`}>
-                <div class="font-bold text-xl text-slate-300">{item.title}</div>
+              <a class="link-hover" href={`${SITE_URL}/project/${item.slug}`}>
+                <span class="font-bold text-xl text-slate-300">{item.title}</span>
               </a>
 
-              <p class="text-gray-300 text-sm">{item.description}</p>
+              <p class="text-gray-300 text-sm">{short_description}</p>
             </div>
           );
         })
