@@ -1,10 +1,12 @@
 ---
+import CoreSkill from "~/components/CoreSkill.astro";
 import Education from "~/components/Education.astro";
 import Experience from "~/components/Experience.astro";
 import GithubRepo from "~/components/GithubRepo.astro";
 import PageMeta from "~/components/PageMeta.astro";
 import Project from "~/components/Project.astro";
 import SocialMedia from "~/components/SocialMedia.astro";
+import Volunteer from "~/components/Volunteer.astro";
 import { MY_NAME, MY_POSITION, SITE_TITLE } from "~/config/site";
 import BaseLayout from "~/layouts/BaseLayout.astro";
 ---
@@ -41,11 +43,10 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
       <div class="py-6">
         <div class="relative rounded-lg p-[2px]">
           <p class="text-slate-100">
-            I currently work as a software engineer at Moneyflow ID, I have more
-            than 6 years of experience creating applications in the private and
-            government sectors. I like sports and also travelling. On the other
-            hand, I also enjoy learning new things in technology and other
-            fields.
+            Passionate about Software Development since 2017, I have over 6
+            years of experience in the field and junior-level expertise in web3
+            development. I quickly adapt to new challenges, excel in teamwork,
+            focus on solutions, and manage work-related stress effectively.
           </p>
         </div>
       </div>
@@ -54,8 +55,10 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
     </div>
   </section>
 
-  <Project />
   <Experience />
+  <Volunteer />
+  <CoreSkill />
+  <Project />
   <Education />
   <GithubRepo />
 </BaseLayout>
