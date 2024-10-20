@@ -1,0 +1,60 @@
+---
+import { format } from "date-fns/format"
+import { id } from "date-fns/locale"
+import _ from "lodash"
+import experienceJson from "~/data/experience.json"
+
+const formatDate = (value: Date | string) => {
+  return format(new Date(value), "MMM yyyy", { locale: id })
+}
+
+const experience = experienceJson.data
+---
+
+<div class={`-my-6`}>
+  {
+    experience.map((item) => {
+      let new_start_date = formatDate(item.start_date)
+      let new_end_date = "Present"
+
+      if (!_.isNil(item.end_date)) {
+        new_end_date = formatDate(String(item.end_date))
+      }
+
+      const company_work = _.isNil(item.end_date)
+        ? `${item.company} - ${item.employment_type}`
+        : item.company
+
+      return (
+        <div class="group relative py-6 pl-8 sm:pl-32">
+          {/* Purple company */}
+          <div class="mb-1 font-caveat text-2xl font-semibold text-gray-100 sm:mb-0">
+            {item.job}
+          </div>
+          {/* Time + Title */}
+          <div class="mb-1 flex flex-col items-start before:absolute before:left-2 before:h-full before:-translate-x-1/2 before:translate-y-3 before:self-start before:bg-slate-300 before:px-px after:absolute after:left-2 after:box-content after:h-2 after:w-2 after:-translate-x-1/2 after:translate-y-1.5 after:rounded-full after:border-4 after:border-slate-50 after:bg-slate-900 group-last:before:hidden sm:flex-row sm:before:left-0 sm:before:ml-[6.5rem] sm:after:left-0 sm:after:ml-[6.5rem]">
+            <time class="left-0 mb-3 inline-flex h-6 w-20 translate-y-0.5 items-center justify-center rounded-full bg-gray-100 text-xs font-semibold text-slate-900 sm:absolute sm:mb-0">
+              {new_start_date}
+            </time>
+
+            <div class="flex flex-auto justify-between">
+              <div class="text-lg hover:underline text-gray-100">
+                <a href={item.link} target="_blank" rel="noopener">
+                  <span>
+                    {company_work} | {item.location}
+                  </span>
+                </a>
+              </div>
+
+              <div class="text-sm text-gray-300 my-auto">
+                {new_start_date} - {new_end_date}
+              </div>
+            </div>
+          </div>
+          {/* Description */}
+          <div class="text-gray-400">{item.content}</div>
+        </div>
+      )
+    })
+  }
+</div>

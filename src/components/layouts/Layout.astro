@@ -1,11 +1,10 @@
 ---
-import Footer from "./Footer.astro";
-import GoogleAnalytic from "./GoogleAnalytic.astro";
-import GoogleFont from "./GoogleFont.astro";
-import TablerIcon from "./TablerIcon.astro";
+import GoogleAnalytic from "../head/GoogleAnalytic.astro"
+import GoogleFont from "../head/GoogleFont.astro"
+import TablerIcon from "../head/TablerIcon.astro"
 ---
 
-<html lang="en" class="bg-gray-800">
+<html lang="en" class="bg-slate-900">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -18,9 +17,7 @@ import TablerIcon from "./TablerIcon.astro";
 
   <body class="relative min-h-screen">
     <main class="max-w-5xl mx-auto antialiased">
-      <div class="max-w-3xl mx-auto antialiased p-6 sm:p-4">
-        <slot />
-      </div>
+      <slot />
     </main>
-  </body><Footer />
+  </body>
 </html>

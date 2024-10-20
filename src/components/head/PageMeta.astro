@@ -1,18 +1,13 @@
 ---
-import { getPageMeta } from "~/config/seo";
-import {
-  SITE_URL,
-  SITE_TITLE,
-  SITE_DESCRIPTION,
-  TWITTER_HANDLE,
-} from "~/config/site";
+import { getPageMeta } from "~/config/seo"
+import { SITE_URL, SITE_TITLE, SITE_DESCRIPTION, TWITTER_HANDLE } from "~/config/site"
 
 interface Props {
-  title?: string | undefined;
-  description?: string | undefined;
+  title?: string | undefined
+  description?: string | undefined
 }
 
-const { title, description } = Astro.props;
+const { title, description } = Astro.props
 
 const { meta, og, twitter } = getPageMeta({
   title: title || SITE_TITLE,
@@ -24,7 +19,7 @@ const { meta, og, twitter } = getPageMeta({
   ogImageHeight: 630,
   siteOwnerTwitterHandle: TWITTER_HANDLE,
   contentAuthorTwitterHandle: TWITTER_HANDLE,
-});
+})
 ---
 
 <!-- Primary Meta Tags -->
@@ -44,21 +39,9 @@ const { meta, og, twitter } = getPageMeta({
 
 <!-- Twitter -->
 {twitter.title && <meta property="twitter:title" content={twitter.title} />}
-{
-  twitter.description && (
-    <meta property="twitter:description" content={twitter.description} />
-  )
-}
+{twitter.description && <meta property="twitter:description" content={twitter.description} />}
 {twitter.site && <meta property="twitter:site" content={twitter.site} />}
-{
-  twitter.creator && (
-    <meta property="twitter:creator" content={twitter.creator} />
-  )
-}
+{twitter.creator && <meta property="twitter:creator" content={twitter.creator} />}
 <meta property="twitter:card" content="summary_large_image" />
 {twitter.image && <meta property="twitter:image" content={twitter.image} />}
-{
-  twitter.imageAlt && (
-    <meta property="twitter:image:alt" content={twitter.imageAlt} />
-  )
-}
+{twitter.imageAlt && <meta property="twitter:image:alt" content={twitter.imageAlt} />}
