@@ -1,0 +1,75 @@
+---
+import ProjectCarousel from "~/components/carousel/ProjectCarousel"
+import PageMeta from "~/components/head/PageMeta.astro"
+import Layout from "~/components/layouts/Layout.astro"
+import projectJson from "~/data/project.json"
+
+interface ProjectProps {
+  id: string
+  thumbnail: string
+  brand_logo: string
+  title: string
+  slug: string
+  job: string
+  tech_stack: string[]
+  images: string[]
+  description: string
+}
+
+interface Props {
+  project: ProjectProps
+}
+
+export function getStaticPaths() {
+  return projectJson.data.map((item) => ({
+    params: { slug: item.slug },
+    props: { project: item },
+  }))
+}
+
+const { project } = Astro.props
+
+const projectImages = project.images.map((item) => {
+  return {
+    thumbnail: item,
+    title: project.title,
+    slug: project.slug,
+  }
+})
+---
+
+<Layout>
+  <PageMeta title={`${project.title} | All about software development`} slot="meta" />
+
+  <section class="py-16">
+    <div class="grid gap-2">
+      <h1 class="text-2xl sm:text-4xl text-gray-200 font-semibold">
+        {project.title}
+      </h1>
+
+      <h2 class="text-normal text-gray-400">
+        {project.description}
+      </h2>
+    </div>
+
+    <div class="my-8">
+      <ProjectCarousel data={projectImages} imgStyle="h-[480px]" />
+    </div>
+
+    <div class="my-8 text-gray-200">
+      {project.description}
+
+      <div class="flex flex-wrap gap-2 py-4">
+        {
+          project.tech_stack.map((skill) => {
+            return (
+              <span class="bg-gradient-to-br from-teal-400 via-green-300 to-lime-400 text-xs font-bold px-2.5 py-0.5 rounded-lg text-gray-800 border-yellow-300 dark:border-yellow-300">
+                {skill}
+              </span>
+            )
+          })
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -5,28 +5,11 @@ import PageMeta from "~/components/head/PageMeta.astro"
 import Layout from "~/components/layouts/Layout.astro"
 import { SITE_TITLE } from "~/config/site"
 import Experience from "~/ui/home/Experience.astro"
+import Github from "~/ui/home/Github.astro"
 import Introduce from "~/ui/home/Introduce.astro"
+import projectJson from "~/data/project.json"
 
-const logos = [
-  { src: "/static/brand/slack.svg", alt: "Slack" },
-  { src: "/static/brand/sentry.svg", alt: "Sentry" },
-  { src: "/static/brand/framer.svg", alt: "Framer" },
-  { src: "/static/brand/cloudflare.svg", alt: "Cloudflare" },
-  { src: "/static/brand/docker.svg", alt: "Docker" },
-  { src: "/static/brand/github.svg", alt: "Github" },
-  { src: "/static/brand/atlassian.svg", alt: "Atlassian" },
-]
-
-const projects = [
-  { src: "/static/projects/bri-agro/login.webp", alt: "BRI Agro" },
-  { src: "/static/projects/defi-calculator/defi-calculator.webp", alt: "DeFi Calculator" },
-  { src: "/static/projects/frigel-ai/product.webp", alt: "Frigel AI" },
-  { src: "/static/projects/indramayu/aio/dashboard-aio.webp", alt: "Indramayu AIO" },
-  { src: "/static/projects/indramayu/siayu/login-kependudukan.webp", alt: "Indramayu Kependudukan" },
-  { src: "/static/projects/karcisbola/match.webp", alt: "Karcisbola" },
-  { src: "/static/projects/kemenkeu/nadine/login.webp", alt: "Kemenkeu" },
-  { src: "/static/projects/kementan/simpel/landing.webp", alt: "Kementan" },
-]
+const projects = projectJson.data
 ---
 
 <Layout>
@@ -36,13 +19,15 @@ const projects = [
 
   <div class="my-16">
     <div class="text-center mb-4 text-gray-600 font-semibold">Tools used</div>
-    <LogoCarousel data={logos} />
+    <LogoCarousel />
   </div>
 
   <Experience />
 
-	<div class="my-16">
+  <div class="my-16">
     <div class="text-center mb-4 text-gray-200 text-2xl font-semibold">Recent projects</div>
     <ProjectCarousel data={projects} />
   </div>
+
+  <Github />
 </Layout>
