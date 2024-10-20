@@ -1,24 +1,47 @@
 {
   "data": [
     {
+      "id": "05bb521d-8ab5-4579-870c-595c14e4bd6d",
+      "thumbnail": "/static/projects/house-of-wizard/how.webp",
+      "brand_logo": "/static/projects/house-of-wizard/how.webp",
+      "title": "House of Wizard",
+      "slug": "house-of-wizard",
+      "job": "Software Engineer",
+      "tech_stack": [
+        "ExpressJs",
+        "TypeORM",
+        "PostgreSQL",
+        "Redis",
+        "S3",
+        "NextJs",
+        "Mantine UI",
+        "React Query",
+        "React Table",
+        "Docker",
+        "Vercel",
+        "Solidity",
+        "Hardhat",
+        "Wagmi"
+      ],
+      "images": [
+        "/static/projects/house-of-wizard/how.webp"
+      ],
+      "description": "House of Wizard is a Education platform that provides a platform for students to learn about the world of web3, data analyst, and blockchain."
+    },
+    {
       "id": "2e5ff238-f1b9-4917-ac88-a6f56815fe22",
       "thumbnail": "/static/projects/defi-calculator/defi-calculator.webp",
       "brand_logo": "/static/projects/defi-calculator/currency-market.webp",
       "title": "DeFi Calculator",
       "slug": "defi-calculator",
       "job": "Full-stack Developer",
-      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker, AWS, CoinGecko API",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "typeorm",
-        "postgresql",
-        "nextjs",
-        "react-query",
-        "mantine-ui",
-        "docker",
-        "coingecko api",
-        "aws"
+      "tech_stack": [
+        "NextJs",
+        "Mantine UI",
+        "Zustand",
+        "Docker",
+        "Vercel",
+        "Coingecko API"
       ],
       "images": [
         "/static/projects/defi-calculator/defi-calculator.webp"
@@ -32,18 +55,20 @@
       "title": "Moneyflow ID",
       "slug": "moneyflow-id",
       "job": "Software Engineer",
-      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker, AWS, Payment Gateway",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "typeorm",
-        "postgresql",
-        "nextjs",
-        "react-query",
-        "mantine-ui",
-        "docker",
-        "payment gateway",
-        "aws"
+      "tech_stack": [
+        "ExpressJs",
+        "TypeORM",
+        "PostgreSQL",
+        "Redis",
+        "S3",
+        "NextJs",
+        "Mantine UI",
+        "React Query",
+        "React Table",
+        "Docker",
+        "Vercel",
+        "Payment Gateway",
+        "Midtrans"
       ],
       "images": [
         "/static/projects/moneyflow/moneyflow-id.webp"
@@ -57,18 +82,18 @@
       "title": "Frigel Ai - ERP",
       "slug": "frigel-ai-erp",
       "job": "Fullstack Developer",
-      "stack": "NextJS, React Query, ExpressJS, TypeORM, PostgreSQL, Docker, AWS, Open Street Map",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "typeorm",
-        "postgresql",
-        "nextjs",
-        "react-query",
-        "mantine-ui",
-        "docker",
-        "open street map",
-        "aws"
+      "tech_stack": [
+        "ExpressJs",
+        "TypeORM",
+        "PostgreSQL",
+        "Redis",
+        "S3",
+        "NextJs",
+        "Mantine UI",
+        "React Query",
+        "React Table",
+        "Docker",
+        "Open Street Maps"
       ],
       "images": [
         "/static/projects/frigel-ai/login.webp",
@@ -85,15 +110,18 @@
       "title": "Mining Apps",
       "slug": "mining-apps",
       "job": "Backend Developer",
-      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, Docker, Google Cloud Platform",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "typeorm",
-        "postgresql",
-        "nextjs",
-        "google cloud platform",
-        "docker"
+      "tech_stack": [
+        "ExpressJs",
+        "TypeORM",
+        "PostgreSQL",
+        "Redis",
+        "S3",
+        "NextJs",
+        "Mantine UI",
+        "React Query",
+        "React Table",
+        "Docker",
+        "Google Cloud"
       ],
       "images": [
         "/static/projects/miningsapp/company.webp",
@@ -110,17 +138,18 @@
       "title": "BRI Agro Learning - LMS",
       "slug": "bri-agro-lms",
       "job": "Full Stack Developer",
-      "stack": "ExpressJS, Sequelize, PostgreSQL, NextJS, React Query, Ant Design, Formik, Flutter",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "sequelize",
-        "postgresql",
-        "nextjs",
-        "react-query",
-        "ant-design",
-        "formik",
-        "flutter"
+      "tech_stack": [
+        "ExpressJs",
+        "Sequelize",
+        "PostgreSQL",
+        "Redis",
+        "S3",
+        "NextJs",
+        "Ant Design",
+        "React Query",
+        "React Table",
+        "Formik",
+        "Flutter"
       ],
       "images": [
         "/static/projects/bri-agro/login.webp",
@@ -136,14 +165,18 @@
       "title": "Nota Dinas Elektronik - Kemenkeu",
       "slug": "nadine-kemenkeu",
       "job": "Backend Developer",
-      "stack": "Laravel, MongoDB, SSO, Docker, MinIO, E-Sign BSSN",
-      "tools": [
-        "vscode",
-        "laravel",
-        "mongodb",
-        "docker",
-        "minio",
-        "bssn"
+      "tech_stack": [
+        "Laravel",
+        "PostgreSQL",
+        "Redis",
+        "MinIO",
+        "NextJs",
+        "Ant Design",
+        "React Query",
+        "React Table",
+        "Docker",
+        "SSO",
+        "eSign BSSN"
       ],
       "images": [
         "/static/projects/kemenkeu/nadine/login.webp"
@@ -157,15 +190,17 @@
       "title": "Trasmi - Insurance Broker",
       "slug": "trasmi-insurance",
       "job": "Backend Developer",
-      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, Docker, AWS",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "typeorm",
-        "postgresql",
-        "nextjs",
-        "docker",
-        "aws"
+      "tech_stack": [
+        "ExpressJs",
+        "TypeORM",
+        "PostgreSQL",
+        "Redis",
+        "S3",
+        "NextJs",
+        "Mantine UI",
+        "React Query",
+        "React Table",
+        "Docker"
       ],
       "images": [
         "/static/projects/trasmi/placing.webp",
@@ -180,18 +215,18 @@
       "title": "Karcisbola",
       "slug": "karcisbola",
       "job": "Full Stack Developer",
-      "stack": "ExpressJS, TypeORM, PostgreSQL, NextJS, React Query, Formik, Mantine UI, Docker, Google Cloud Platform",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "typeorm",
-        "postgresql",
-        "nextjs",
-        "react-query",
-        "formik",
-        "mantine-ui",
-        "docker",
-        "google cloud platform"
+      "tech_stack": [
+        "ExpressJs",
+        "TypeORM",
+        "PostgreSQL",
+        "Redis",
+        "S3",
+        "NextJs",
+        "Mantine UI",
+        "React Query",
+        "React Table",
+        "Docker",
+        "Google Cloud"
       ],
       "images": [
         "/static/projects/karcisbola/login.webp",
@@ -208,15 +243,14 @@
       "title": "SIMPEL - Kementan",
       "slug": "simpel-kementan",
       "job": "Full Stack Developer",
-      "stack": "ExpressJS, Sequelize, MariaDB, ReactJS, Bulma CSS, Formik",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "sequelize",
-        "mariadb",
-        "reactjs",
-        "bulma-css",
-        "formik"
+      "tech_stack": [
+        "ExpressJs",
+        "Sequelize",
+        "MariaDB",
+        "Redis",
+        "ReactJs",
+        "Bulma CSS",
+        "Formik"
       ],
       "images": [
         "/static/projects/kementan/simpel/landing.webp"
@@ -230,14 +264,13 @@
       "title": "Indramayu Kependudukan",
       "slug": "indramayu-kependudukan",
       "job": "Full Stack Developer",
-      "stack": "ExpressJS, Sequelize, MariaDB, ReactJS, Bulma CSS",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "sequelize",
-        "mariadb",
-        "reactjs",
-        "bulma-css"
+      "tech_stack": [
+        "ExpressJs",
+        "Sequelize",
+        "PostgreSQL",
+        "ReactJs",
+        "Bulma CSS",
+        "Formik"
       ],
       "images": [
         "/static/projects/indramayu/siayu/login-kependudukan.webp"
@@ -252,13 +285,12 @@
       "slug": "indramayu-all-in-one",
       "job": "Full Stack Developer",
       "stack": "ExpressJS, Sequelize, MariaDB, ReactJS, Bootstrap",
-      "tools": [
-        "vscode",
-        "expressjs",
-        "sequelize",
-        "mariadb",
-        "reactjs",
-        "bootstrap"
+      "tech_stack": [
+        "ExpressJs",
+        "Sequelize",
+        "MariaDB",
+        "ReactJs",
+        "Bootstrap"
       ],
       "images": [
         "/static/projects/indramayu/aio/dashboard-aio.webp"

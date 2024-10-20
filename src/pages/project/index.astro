@@ -1,0 +1,39 @@
+---
+import PageMeta from "~/components/head/PageMeta.astro"
+import Layout from "~/components/layouts/Layout.astro"
+import projectJson from "~/data/project.json"
+
+const projects = projectJson.data
+---
+
+<Layout>
+  <PageMeta title={`All projects | All about software development`} slot="meta" />
+
+  <section class="py-16">
+    <div class="grid gap-2">
+      <h1 class="text-2xl sm:text-4xl text-gray-200 font-semibold">Projects</h1>
+
+      <h2 class="text-normal text-gray-400">
+        Some of the projects i have worked on so far are full-time or even freelance.
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
+        {
+          projects.map((item) => {
+            const shortDesc = `${item.description.slice(0, 100)}...`
+
+            return (
+              <a href={`/project/${item.slug}`}>
+                <img class="h-72 w-auto mb-2" src={item.thumbnail} alt={item.title} />
+                <div class="grid grid-rows-2 gap-2">
+                  <span class="text-gray-200 text-2xl font-semibold">{item.title}</span>
+                  <span class="text-gray-200">{shortDesc}</span>
+                </div>
+              </a>
+            )
+          })
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
